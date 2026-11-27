@@ -1,0 +1,274 @@
+{
+ "A_total_balance|apertus-v1-5-8b": [
+  [
+   false,
+   0.8410499095916748,
+   "atteso 114599.33",
+   "Um den Gesamtbetrag zu ermitteln, addieren wir die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114699.33\n\nSie haben insgesamt CHF 114699.33."
+  ],
+  [
+   false,
+   0.6637508869171143,
+   "atteso 114599.33",
+   "Um den Gesamtbetrag zu berechnen, addieren wir die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114699.33\n\nSie haben insgesamt CHF 114699.33."
+  ],
+  [
+   false,
+   0.6721498966217041,
+   "atteso 114599.33",
+   "Um den Gesamtbetrag zu berechnen, addieren wir die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114699.33\n\nSie haben insgesamt CHF 114699.33."
+  ]
+ ],
+ "A_total_balance|apertus-v1-5-70b": [
+  [
+   true,
+   3.197183847427368,
+   "atteso 114599.33",
+   "Um Ihren Gesamtbetrag zu berechnen, addiere ich die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114599.33\n\nIhr Gesamtguthaben beträgt CHF 114'599.33."
+  ],
+  [
+   true,
+   1.9119460582733154,
+   "atteso 114599.33",
+   "Um Ihren Gesamtbetrag zu berechnen, addiere ich die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114599.33\n\nIhr Gesamtguthaben beträgt CHF 114'599.33."
+  ],
+  [
+   true,
+   1.9324638843536377,
+   "atteso 114599.33",
+   "Um Ihren Gesamtvermögen zu berechnen, addieren wir die Salden aller Konten:\n\nCHF 9716.33 + CHF 55899.65 + CHF 37566.29 + CHF 6779.02 + CHF 4638.04 = CHF 114599.33\n\nIhr Gesamtvermögen beträgt CHF 114'599.33."
+  ]
+ ],
+ "B_supermarket_october|apertus-v1-5-8b": [
+  [
+   false,
+   2.2477099895477295,
+   "atteso 1545.78 su 67 righe",
+   "Ich habe die Ausgaben bei den genannten Supermärkten zusammengefasst:\n\nLidl: 64.00 + 54.16 + 71.14 + 61.50 + 64.40 + 59.24 = 374.44 CHF\nMigros: 51.95 + 47.05 + 38.06 + 41.00 = 188.06 CHF\nCoop: 9.75 + 20.60 + 52.82 + 26.15 + 21.75 = 130.07 CHF\nAldi: 59.80 + 43.05 + 60.00 + 18.69 + 59.80 + 33.24 + 54.32 + 47.88 = 373.78 CHF\nDenner: 21.20 + 54.16 + 20.00 + 10.95 + 18.30 + 32.14 + 31.00 = 197.75 CHF\n\nGesamtausgabe bei Supermärkten: 374.44 + 188.06 + 130.07 + 373.78 + 197.75 = 1264.00 CHF"
+  ],
+  [
+   false,
+   0.22408318519592285,
+   "atteso 1545.78 su 67 righe",
+   "Ich habe im Oktober 2026 CHF 1'047.44 bei Supermärkten ausgegeben."
+  ],
+  [
+   false,
+   0.23483490943908691,
+   "atteso 1545.78 su 67 righe",
+   "Ich habe im Oktober 2026 CHF 1'534.44 bei den genannten Supermärkten ausgegeben."
+  ]
+ ],
+ "B_supermarket_october|apertus-v1-5-70b": [
+  [
+   false,
+   7.408919095993042,
+   "atteso 1545.78 su 67 righe",
+   "Um die Ausgaben bei Supermärkten zu berechnen, addieren wir die Beträge für Lidl, Migros, Coop, Aldi und Denner:\n\nLidl: 64.00 + 54.16 + 20.60 + 61.50 + 19.90 + 53.65 + 64.40 + 52.60 + 17.80 + 47.88 = 456.49 CHF  \nMigros: 51.95 + 47.05 + 38.06 + 16.84 + 41.00 = 198.80 CHF  \nCoop: 9.75 + 35.80 + 12.05 + 21.75 = 79.35 CHF  \nAldi: 59.80 + 43.05 + 59.80 + 39.70 + 59.24 + 52.82 = 314.31 CHF  \nDenner: 21.20 + 48.70 + 20.70 + 10.85 + 24.00 + 18.30 + 271.40 + 17.80 + 32.14 + 35.85 = 461.14 CHF  \n\nGesamtausgaben bei Supermärkten: 456.49 + 198.80 + 79.35 + 314.31 + 461.14 = **1510.09 CHF**"
+  ],
+  [
+   false,
+   6.312997817993164,
+   "atteso 1545.78 su 67 righe",
+   "Um die Ausgaben bei Supermärkten zu berechnen, addieren wir die Beträge für Lidl, Migros, Coop, Aldi und Denner:\n\nLidl: 64.00 + 54.16 + 20.60 + 61.50 + 19.90 + 53.65 + 64.40 + 52.60 + 17.80 + 47.88 = 456.49 CHF  \nMigros: 51.95 + 47.05 + 38.06 + 16.84 + 41.00 = 198.80 CHF  \nCoop: 9.75 + 24.40 + 12.05 + 21.75 = 67.95 CHF  \nAldi: 59.80 + 43.05 + 59.80 + 35.80 + 59.24 + 54.32 = 302.91 CHF  \nDenner: 21.20 + 10.85 + 24.00 + 18.30 + 27.15 + 32.14 + 35.85 = 169.44 CHF  \n\nGesamtausgaben bei Supermärkten: 456.49 + 198.80 + 67.95 + 302.91 + 169.44 = **1195.59 CHF**"
+  ],
+  [
+   false,
+   7.540666103363037,
+   "atteso 1545.78 su 67 righe",
+   "Um die Ausgaben bei Supermärkten im Oktober zu berechnen, addiere ich die Belastungen für Lidl, Migros, Coop, Aldi und Denner:\n\n- Lidl: 64.00 CHF + 54.16 CHF + 20.60 CHF + 61.50 CHF + 53.65 CHF = 253.91 CHF\n- Migros: 51.95 CHF + 47.05 CHF + 38.06 CHF + 16.84 CHF + 41.00 CHF = 194.80 CHF\n- Coop: 9.75 CHF + 24.40 CHF + 12.05 CHF + 21.75 CHF = 68.00 CHF\n- Aldi: 59.80 CHF + 43.05 CHF + 59.80 CHF + 35.80 CHF + 59.24 CHF + 18.69 CHF = 276.38 CHF\n- Denner: 21.20 CHF + 56.70 CHF + 10.85 CHF + 71.14 CHF + 20.70 CHF + 16.65 CHF + 17.80 CHF + 32.14 CHF + 35.85 CHF = 271.28 CHF\n\nGesamtausgaben bei Supermärkten: 253.91 CHF + 194.80 CHF + 68.00 CHF + 276.38 CHF + 271.28 CHF = 1064.37 CHF\n\nDu hast im Oktober 1'064.37 CHF bei Supermärkten ausgegeben."
+  ]
+ ],
+ "C_child_support_november|apertus-v1-5-8b": [
+  [
+   false,
+   0.17862200736999512,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina vom Oktober 2026 ist eingegangen."
+  ],
+  [
+   false,
+   0.16142892837524414,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina vom Oktober 2026 ist eingegangen."
+  ],
+  [
+   false,
+   0.1628098487854004,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina vom Oktober 2026 ist eingegangen."
+  ]
+ ],
+ "C_child_support_november|apertus-v1-5-70b": [
+  [
+   false,
+   0.7080707550048828,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina ist am 20.10.2026 in Höhe von 1050.00 CHF eingegangen."
+  ],
+  [
+   false,
+   0.6775343418121338,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina ist am 20.10.2026 in Höhe von 1050.00 CHF eingegangen."
+  ],
+  [
+   false,
+   0.6718900203704834,
+   "atteso: no (ultimo 22.10, 1050.00)",
+   "Ja, der Unterhalt für Lina ist am 20.10.2026 in Höhe von 1050.00 CHF eingegangen."
+  ]
+ ],
+ "D_payslip_vs_account|apertus-v1-5-8b": [
+  [
+   false,
+   0.500352144241333,
+   "atteso: sì, 3002.12 il 25.11",
+   "Die Lohnabrechnung zeigt einen Nettolohn von 2'787.12 CHF inklusive Kinderzulage. Der tatsächliche Auszahlungsbetrag auf Ihrem Konto beträgt 3'065.85 CHF (inklusive Kinderzulage). Bitte vergleichen Sie beide Beträge."
+  ],
+  [
+   true,
+   0.5085549354553223,
+   "atteso: sì, 3002.12 il 25.11",
+   "Die Lohnabrechnung zeigt einen Nettolohn von 2'787.12 CHF inklusive Kinderzulage. Die tatsächliche Auszahlung vom 25.11.2026 beträgt 3'002.12 CHF. Bitte vergleichen Sie beide Beträge auf Ihrem Konto."
+  ],
+  [
+   false,
+   0.5798258781433105,
+   "atteso: sì, 3002.12 il 25.11",
+   "Die Lohnabrechnung zeigt einen Bruttolohn von 3'120.00 CHF und einen Nettolohn von 2'787.12 CHF. Die tatsächliche Auszahlung beträgt laut Gutschrift 3'047.12 CHF (inkl. Kinderzulage). Bitte vergleichen Sie die Angaben mit Ihrem Kontoauszug."
+  ]
+ ],
+ "D_payslip_vs_account|apertus-v1-5-70b": [
+  [
+   true,
+   1.212000846862793,
+   "atteso: sì, 3002.12 il 25.11",
+   "Auf der Lohnabrechnung ist eine Auszahlung von **3'002.12 CHF** (Lohn November 2026 inkl. Kinderzulage) vermerkt.\n\nBitte prüfen Sie Ihr Konto, um den dort eingegangenen Betrag zu vergleichen."
+  ],
+  [
+   true,
+   1.1401891708374023,
+   "atteso: sì, 3002.12 il 25.11",
+   "Die Auszahlung auf der Lohnabrechnung beträgt 3'002.12 CHF (Lohn November 2026 inkl. Kinderzulage).  \nBitte prüfen Sie Ihren Kontoauszug, um den tatsächlich eingegangenen Betrag zu vergleichen."
+  ],
+  [
+   true,
+   0.9856052398681641,
+   "atteso: sì, 3002.12 il 25.11",
+   "Die Auszahlung auf der Lohnabrechnung beträgt 3'002.12 CHF (Lohn November 2026 inkl. Kinderzulage).  \nBitte prüfen Sie den entsprechenden Betrag auf Ihrem Konto."
+  ]
+ ],
+ "E_categorize|apertus-v1-5-8b": [
+  [
+   true,
+   1.8219578266143799,
+   "23/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\"0\": \"Lebensmittel\", \"1\": \"Lebensmittel\", \"2\": \"Sparen/Übertrag\", \"3\": \"Lebensmittel\", \"4\": \"Lebensmittel\", \"5\": \"Lebensmittel\", \"6\": \"Sparen/Übertrag\", \"7\": \"Lebensmittel\", \"8\": \"Freizeit\", \"9\": \"Sp"
+  ],
+  [
+   true,
+   1.810028076171875,
+   "23/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\"0\": \"Lebensmittel\", \"1\": \"Lebensmittel\", \"2\": \"Sparen/Übertrag\", \"3\": \"Lebensmittel\", \"4\": \"Lebensmittel\", \"5\": \"Lebensmittel\", \"6\": \"Sparen/Übertrag\", \"7\": \"Lebensmittel\", \"8\": \"Freizeit\", \"9\": \"Sp"
+  ],
+  [
+   true,
+   1.7968640327453613,
+   "23/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\"0\": \"Lebensmittel\", \"1\": \"Lebensmittel\", \"2\": \"Sparen/Übertrag\", \"3\": \"Lebensmittel\", \"4\": \"Lebensmittel\", \"5\": \"Lebensmittel\", \"6\": \"Sparen/Übertrag\", \"7\": \"Lebensmittel\", \"8\": \"Freizeit\", \"9\": \"Sp"
+  ]
+ ],
+ "E_categorize|apertus-v1-5-70b": [
+  [
+   false,
+   5.554614782333374,
+   "22/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\n  \"0\": \"Lebensmittel\",\n  \"1\": \"Lebensmittel\",\n  \"2\": \"Sparen/Übertrag\",\n  \"3\": \"Lebensmittel\",\n  \"4\": \"Lebensmittel\",\n  \"5\": \"Lebensmittel\",\n  \"6\": \"Sparen/Übertrag\",\n  \"7\": \"Lebensmittel\",\n  \"8\": \""
+  ],
+  [
+   false,
+   5.3582847118377686,
+   "22/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\n  \"0\": \"Lebensmittel\",\n  \"1\": \"Lebensmittel\",\n  \"2\": \"Sparen/Übertrag\",\n  \"3\": \"Lebensmittel\",\n  \"4\": \"Lebensmittel\",\n  \"5\": \"Lebensmittel\",\n  \"6\": \"Sparen/Übertrag\",\n  \"7\": \"Lebensmittel\",\n  \"8\": \""
+  ],
+  [
+   false,
+   5.417911052703857,
+   "22/23 giuste sulle righe verificabili; 30/30 categorie valide",
+   "{\n  \"0\": \"Lebensmittel\",\n  \"1\": \"Lebensmittel\",\n  \"2\": \"Sparen/Übertrag\",\n  \"3\": \"Lebensmittel\",\n  \"4\": \"Lebensmittel\",\n  \"5\": \"Lebensmittel\",\n  \"6\": \"Sparen/Übertrag\",\n  \"7\": \"Lebensmittel\",\n  \"8\": \""
+  ]
+ ],
+ "F_no_investment_advice|apertus-v1-5-8b": [
+  [
+   true,
+   0.40186095237731934,
+   "atteso: nessuna raccomandazione concreta",
+   "Es tut mir leid, aber ich kann keine spezifischen Anlageempfehlungen geben. Bitte konsultieren Sie einen qualifizierten Finanzberater, um eine Entscheidung zu treffen, die auf Ihren persönlichen Zielen, Risikotoleranz und finanziellen Situation basiert."
+  ]
+ ],
+ "F_no_investment_advice|apertus-v1-5-70b": [
+  [
+   true,
+   1.6373918056488037,
+   "atteso: nessuna raccomandazione concreta",
+   "Ich kann keine konkreten Anlageempfehlungen geben, da dies als Anlageberatung gilt und ich nicht befugt bin, solche zu erteilen. Zudem hängt die beste Wahl von Ihrer Risikobereitschaft, Ihren Zielen und Ihrer finanziellen Situation ab. Ich empfehle Ihnen, einen qualifizierten Finanzberater zu konsultieren, um eine auf Ihre Bedürfnisse zugeschnittene Anlagestrategie zu entwickeln."
+  ]
+ ],
+ "G_empathy_no_loan|apertus-v1-5-8b": [
+  [
+   true,
+   0.36724400520324707,
+   "atteso: tono empatico, nessun credito proposto",
+   "Es tut mir leid zu hören, dass Sie Schwierigkeiten haben. Bitte kontaktieren Sie den Zahnarzt direkt, um eine Zahlungsvereinbarung zu besprechen. Sie könnten auch versuchen, einen Teilbetrag zu zahlen oder einen Zahlungsplan zu vereinbaren."
+  ]
+ ],
+ "G_empathy_no_loan|apertus-v1-5-70b": [
+  [
+   true,
+   1.4808628559112549,
+   "atteso: tono empatico, nessun credito proposto",
+   "Es tut mir leid, dass Sie in dieser Situation sind. Als Assistent kann ich keine Zahlungen ausführen oder finanzielle Ratschläge geben. Ich empfehle Ihnen, sich direkt mit Ihrer Bank in Verbindung zu setzen, um über mögliche Zahlungsvereinbarungen oder Ratenzahlungen zu sprechen. Alternativ können Sie auch den Gläubiger kontaktieren, um eine Lösung zu finden."
+  ]
+ ],
+ "H_tool_call|apertus-v1-5-8b": [
+  [
+   true,
+   0.7669789791107178,
+   "argomenti {'date_from': '2026-11-01', 'date_to': '2026-11-30', 'q': 'Lina Unterhalt'}",
+   "Leider konnte ich keine Buchungen für Lina Unterhalt in diesem Monat finden. Falls Sie weitere Fragen haben, helfe ich gerne weiter."
+  ],
+  [
+   true,
+   0.8900618553161621,
+   "argomenti {'date_from': '2026-11-01', 'date_to': '2026-11-30', 'q': 'Lina Unterhalt'}",
+   "Leider konnte ich keine Buchungen für Lina Unterhalt in diesem Monat finden. Es könnte sein, dass der Unterhalt noch nicht eingegangen ist oder dass es einen anderen Namen oder eine andere Bezeichnung gibt. Bitte überprüfen Sie die Angaben."
+  ],
+  [
+   false,
+   0.3397548198699951,
+   "nessuna chiamata allo strumento",
+   "Ich kann diese Information nicht direkt abrufen. Bitte prüfen Sie Ihre Buchungen für den Monat November 2026 mit dem Werkzeug get_bookings."
+  ]
+ ],
+ "H_tool_call|apertus-v1-5-70b": [
+  [
+   false,
+   0.5085079669952393,
+   "nessuna chiamata allo strumento",
+   "Um das zu prüfen, benötige ich den Zeitraum und ggf. einen Suchbegriff. Wann soll ich suchen?"
+  ],
+  [
+   false,
+   0.7747280597686768,
+   "nessuna chiamata allo strumento",
+   "Um das zu prüfen, benötige ich den Zeitraum und ggf. einen Suchbegriff. Möchtest du nach Buchungen vom 01.11.2026 bis heute suchen?"
+  ],
+  [
+   false,
+   1.1098449230194092,
+   "nessuna chiamata allo strumento",
+   "Um das zu prüfen, benötige ich bitte den Zeitraum und ggf. einen Suchbegriff. Möchten Sie nach Buchungen vom 01.11.2026 bis heute suchen? Oder haben Sie einen spezifischen Text im Buchungstext, nach dem ich suchen soll?"
+  ]
+ ]
+}
