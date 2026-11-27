@@ -1,0 +1,23 @@
+due_date,debit_account_id,type,payee_name,amount,currency,description,source_id
+2026-11-27,ACC-PRIV,standing_order,Sparkonto Haus,900.0,CHF,Rücklage Haus,SO-HOUSE
+2026-11-27,ACC-PRIV,standing_order,Sparkonto Familie,1500.0,CHF,Sparen Familie,SO-SAV
+2026-11-27,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,600.0,CHF,Einzahlung Säule 3a,SO-3A
+2026-12-01,ACC-PRIV,direct_debit,Seeblick Auto-Leasing AG,489.0,CHF,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 30/48",PAY-0199
+2026-12-14,ACC-PRIV,ebill,Swisscom (Schweiz) AG,164.0,CHF,"blue Internet, TV, 3× Mobile Dezember 2026",PAY-0201
+2026-12-15,ACC-HOUSE,qr_bill,"Stadt Wädenswil, Werke und Gebühren",142.7,CHF,Wasser/Abwasser Verbrauch Q4 2026,PAY-0205
+2026-12-18,ACC-PRIV,account_transfer,Vorsorgekonto Säule 3a,58.0,CHF,"Säule 3a 2026, Restbetrag bis Maximum CHF 7'258",MANUAL-3A
+2026-12-21,ACC-PRIV,standing_order,Steueramt Wädenswil,1450.0,CHF,Vorauszahlung Steuern 2026,SO-TAX
+2026-12-23,ACC-PRIV,ebill,Helsana Versicherungen AG,1262.3,CHF,"Prämie Januar 2027, Familie Baumann (4 Personen)",PAY-0203
+2026-12-28,ACC-PRIV,standing_order,Sparkonto Haus,900.0,CHF,Rücklage Haus,SO-HOUSE
+2026-12-28,ACC-PRIV,standing_order,Sparkonto Familie,1500.0,CHF,Sparen Familie,SO-SAV
+2026-12-28,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,600.0,CHF,Einzahlung Säule 3a,SO-3A
+2026-12-31,ACC-PRIV,loan_interest,ti&m Demo Bank AG,1050.0,CHF,"Hypothekarzins Q4 2026, Festhypothek 10 Jahre 0880-4471.01",LOAN-01
+2026-12-31,ACC-PRIV,loan_interest,ti&m Demo Bank AG,831.25,CHF,"Hypothekarzins Q4 2026, Festhypothek 8 Jahre 0880-4471.02",LOAN-02
+2026-12-31,ACC-PRIV,loan_interest,ti&m Demo Bank AG,225.0,CHF,"Hypothekarzins Q4 2026, SARON-Hypothek 0880-4471.03 (provisorisch, SARON wird am Quartalsende festgelegt)",LOAN-03
+2026-12-31,ACC-PRIV,loan_amortisation,ti&m Demo Bank AG,1250.0,CHF,"Amortisation Q4 2026, SARON-Hypothek 0880-4471.03",LOAN-03
+2027-01-04,ACC-PRIV,direct_debit,Seeblick Auto-Leasing AG,489.0,CHF,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 31/48",PAY-0200
+2027-01-08,ACC-PRIV,qr_bill,Schule Wädenswil,320.0,CHF,Skilager Schule 2027,PAY-0207
+2027-01-12,ACC-PRIV,ebill,Swisscom (Schweiz) AG,164.0,CHF,"blue Internet, TV, 3× Mobile Januar 2027",PAY-0202
+2027-01-15,ACC-HOUSE,ebill,Die Mobiliar Versicherungsgesellschaft AG,631.4,CHF,Hausrat- & Privathaftpflicht 2027 (EFH),PAY-0204
+2027-01-18,ACC-PRIV,ebill,EKZ Elektrizitätswerke des Kantons Zürich,778.2,CHF,Strom Q4 2026 (inkl. Wärmepumpe),PAY-0206
+2027-01-20,ACC-PRIV,standing_order,Steueramt Wädenswil,1450.0,CHF,Vorauszahlung Steuern 2027,SO-TAX

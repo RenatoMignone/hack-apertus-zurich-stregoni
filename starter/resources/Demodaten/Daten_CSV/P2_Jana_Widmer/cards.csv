@@ -1,0 +1,2 @@
+card_id,type,product,masked_number,linked_account,holder,valid_until,status,monthly_limit_chf,billing
+CARD-DEBIT,debit,Debit Mastercard,5349 •••• •••• 8841,ACC-PRIV,Jana Widmer,2029-02,active,3000,direkt über Privatkonto

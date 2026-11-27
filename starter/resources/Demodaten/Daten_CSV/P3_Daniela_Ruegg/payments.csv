@@ -1,0 +1,255 @@
+payment_id,payment_type,status,execution_date,debit_account_id,payee_id,payee_name,payee_iban,amount,currency,amount_chf,message,booking_id
+PAY-0001,ebill,completed,2023-12-22,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Januar 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00030
+PAY-0002,direct_debit,completed,2023-12-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Dezember 2023,BK-00007
+PAY-0003,ebill,completed,2023-12-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Dezember 2023,BK-00021
+PAY-0004,ebill,completed,2023-12-11,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Dezember 2023 (subventioniert),BK-00015
+PAY-0005,standing_order,completed,2023-12-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Dezember 2023,BK-00025
+PAY-0006,ebill,completed,2024-01-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Februar 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00070
+PAY-0007,direct_debit,completed,2024-01-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Januar 2024,BK-00053
+PAY-0008,ebill,completed,2024-01-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Januar 2024,BK-00060
+PAY-0009,ebill,completed,2024-01-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Januar 2024 (subventioniert),BK-00057
+PAY-0010,standing_order,completed,2024-01-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Januar 2024,BK-00065
+PAY-0011,ebill,completed,2024-02-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie März 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00114
+PAY-0012,direct_debit,completed,2024-02-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Februar 2024,BK-00090
+PAY-0013,ebill,completed,2024-02-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Februar 2024,BK-00102
+PAY-0014,ebill,completed,2024-02-12,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Februar 2024 (subventioniert),BK-00098
+PAY-0015,standing_order,completed,2024-02-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Februar 2024,BK-00106
+PAY-0016,ebill,completed,2024-03-22,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie April 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00151
+PAY-0017,direct_debit,completed,2024-03-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile März 2024,BK-00131
+PAY-0018,ebill,completed,2024-03-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet März 2024,BK-00144
+PAY-0019,ebill,completed,2024-03-11,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag März 2024 (subventioniert),BK-00137
+PAY-0020,standing_order,completed,2024-03-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung März 2024,BK-00149
+PAY-0021,ebill,completed,2024-04-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Mai 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00204
+PAY-0022,direct_debit,completed,2024-04-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile April 2024,BK-00175
+PAY-0023,ebill,completed,2024-04-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet April 2024,BK-00187
+PAY-0024,ebill,completed,2024-04-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag April 2024 (subventioniert),BK-00182
+PAY-0025,standing_order,completed,2024-04-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung April 2024,BK-00195
+PAY-0026,ebill,completed,2024-05-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Juni 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00247
+PAY-0027,direct_debit,completed,2024-05-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Mai 2024,BK-00217
+PAY-0028,ebill,completed,2024-05-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Mai 2024,BK-00233
+PAY-0029,ebill,completed,2024-05-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Mai 2024 (subventioniert),BK-00228
+PAY-0030,standing_order,completed,2024-05-21,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Mai 2024,BK-00240
+PAY-0031,ebill,completed,2024-06-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Juli 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00289
+PAY-0032,direct_debit,completed,2024-06-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juni 2024,BK-00265
+PAY-0033,ebill,completed,2024-06-17,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juni 2024,BK-00278
+PAY-0034,ebill,completed,2024-06-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Juni 2024 (subventioniert),BK-00269
+PAY-0035,standing_order,completed,2024-06-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Juni 2024,BK-00281
+PAY-0036,ebill,completed,2024-07-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie August 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00338
+PAY-0037,direct_debit,completed,2024-07-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juli 2024,BK-00313
+PAY-0038,ebill,completed,2024-07-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juli 2024,BK-00324
+PAY-0039,ebill,completed,2024-07-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Juli 2024 (subventioniert),BK-00317
+PAY-0040,standing_order,completed,2024-07-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Juli 2024,BK-00332
+PAY-0041,ebill,completed,2024-08-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie September 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00379
+PAY-0042,direct_debit,completed,2024-08-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile August 2024,BK-00357
+PAY-0043,ebill,completed,2024-08-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet August 2024,BK-00365
+PAY-0044,ebill,completed,2024-08-12,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag August 2024 (subventioniert),BK-00362
+PAY-0045,standing_order,completed,2024-08-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung August 2024,BK-00372
+PAY-0046,ebill,completed,2024-09-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Oktober 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00422
+PAY-0047,direct_debit,completed,2024-09-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile September 2024,BK-00398
+PAY-0048,ebill,completed,2024-09-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet September 2024,BK-00411
+PAY-0049,ebill,completed,2024-09-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag September 2024 (subventioniert),BK-00403
+PAY-0050,standing_order,completed,2024-09-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung September 2024,BK-00417
+PAY-0051,ebill,completed,2024-10-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie November 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00461
+PAY-0052,direct_debit,completed,2024-10-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Oktober 2024,BK-00441
+PAY-0053,ebill,completed,2024-10-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Oktober 2024,BK-00449
+PAY-0054,ebill,completed,2024-10-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Oktober 2024 (subventioniert),BK-00445
+PAY-0055,standing_order,completed,2024-10-21,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Oktober 2024,BK-00454
+PAY-0056,ebill,completed,2024-11-22,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,241.3,CHF,241.3,"Prämie Dezember 2024 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00510
+PAY-0057,direct_debit,completed,2024-11-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile November 2024,BK-00479
+PAY-0058,ebill,completed,2024-11-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet November 2024,BK-00498
+PAY-0059,ebill,completed,2024-11-11,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag November 2024 (subventioniert),BK-00489
+PAY-0060,standing_order,completed,2024-11-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung November 2024,BK-00507
+PAY-0061,ebill,completed,2024-12-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Januar 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00560
+PAY-0062,direct_debit,completed,2024-12-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Dezember 2024,BK-00534
+PAY-0063,ebill,completed,2024-12-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Dezember 2024,BK-00549
+PAY-0064,ebill,completed,2024-12-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Dezember 2024 (subventioniert),BK-00540
+PAY-0065,standing_order,completed,2024-12-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Dezember 2024,BK-00553
+PAY-0066,ebill,completed,2025-01-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Februar 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00604
+PAY-0067,direct_debit,completed,2025-01-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Januar 2025,BK-00579
+PAY-0068,ebill,completed,2025-01-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Januar 2025,BK-00588
+PAY-0069,ebill,completed,2025-01-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Januar 2025 (subventioniert),BK-00583
+PAY-0070,standing_order,completed,2025-01-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Januar 2025,BK-00594
+PAY-0071,ebill,completed,2025-02-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie März 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00645
+PAY-0072,direct_debit,completed,2025-02-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Februar 2025,BK-00624
+PAY-0073,ebill,completed,2025-02-17,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Februar 2025,BK-00638
+PAY-0074,ebill,completed,2025-02-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Februar 2025 (subventioniert),BK-00629
+PAY-0075,standing_order,completed,2025-02-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Februar 2025,BK-00642
+PAY-0076,ebill,completed,2025-03-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie April 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00692
+PAY-0077,direct_debit,completed,2025-03-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile März 2025,BK-00662
+PAY-0078,ebill,completed,2025-03-17,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet März 2025,BK-00682
+PAY-0079,ebill,completed,2025-03-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag März 2025 (subventioniert),BK-00666
+PAY-0080,standing_order,completed,2025-03-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung März 2025,BK-00686
+PAY-0081,ebill,completed,2025-04-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Mai 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00744
+PAY-0082,direct_debit,completed,2025-04-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile April 2025,BK-00717
+PAY-0083,ebill,completed,2025-04-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet April 2025,BK-00731
+PAY-0084,ebill,completed,2025-04-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag April 2025 (subventioniert),BK-00728
+PAY-0085,standing_order,completed,2025-04-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung April 2025,BK-00738
+PAY-0086,ebill,completed,2025-05-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Juni 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00796
+PAY-0087,direct_debit,completed,2025-05-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Mai 2025,BK-00764
+PAY-0088,ebill,completed,2025-05-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Mai 2025,BK-00783
+PAY-0089,ebill,completed,2025-05-12,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Mai 2025 (subventioniert),BK-00776
+PAY-0090,standing_order,completed,2025-05-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Mai 2025,BK-00789
+PAY-0091,ebill,completed,2025-06-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Juli 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00848
+PAY-0092,direct_debit,completed,2025-06-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juni 2025,BK-00818
+PAY-0093,ebill,completed,2025-06-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juni 2025,BK-00834
+PAY-0094,ebill,completed,2025-06-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Juni 2025 (subventioniert),BK-00825
+PAY-0095,standing_order,completed,2025-06-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Juni 2025,BK-00840
+PAY-0096,ebill,completed,2025-07-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie August 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00894
+PAY-0097,direct_debit,completed,2025-07-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juli 2025,BK-00868
+PAY-0098,ebill,completed,2025-07-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juli 2025,BK-00882
+PAY-0099,ebill,completed,2025-07-10,ACC-PRIV,P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,486.0,CHF,486.0,Kita-Beitrag Juli 2025 (subventioniert),BK-00874
+PAY-0100,standing_order,completed,2025-07-21,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Juli 2025,BK-00888
+PAY-0101,ebill,completed,2025-08-22,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie September 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00941
+PAY-0102,direct_debit,completed,2025-08-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile August 2025,BK-00914
+PAY-0103,ebill,completed,2025-08-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet August 2025,BK-00931
+PAY-0104,qr_bill,completed,2025-08-11,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch August 2025,BK-00925
+PAY-0105,standing_order,completed,2025-08-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung August 2025,BK-00939
+PAY-0106,ebill,completed,2025-09-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Oktober 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-00993
+PAY-0107,direct_debit,completed,2025-09-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile September 2025,BK-00964
+PAY-0108,ebill,completed,2025-09-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet September 2025,BK-00973
+PAY-0109,qr_bill,completed,2025-09-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch September 2025,BK-00967
+PAY-0110,standing_order,completed,2025-09-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung September 2025,BK-00985
+PAY-0111,ebill,completed,2025-10-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie November 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01055
+PAY-0112,direct_debit,completed,2025-10-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Oktober 2025,BK-01014
+PAY-0113,ebill,completed,2025-10-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Oktober 2025,BK-01030
+PAY-0114,qr_bill,completed,2025-10-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Oktober 2025,BK-01021
+PAY-0115,standing_order,completed,2025-10-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Oktober 2025,BK-01037
+PAY-0116,ebill,completed,2025-11-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,258.7,CHF,258.7,"Prämie Dezember 2025 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01107
+PAY-0117,direct_debit,completed,2025-11-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile November 2025,BK-01080
+PAY-0118,ebill,completed,2025-11-17,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet November 2025,BK-01095
+PAY-0119,qr_bill,completed,2025-11-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch November 2025,BK-01085
+PAY-0120,standing_order,completed,2025-11-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung November 2025,BK-01101
+PAY-0121,ebill,completed,2025-12-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Januar 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01166
+PAY-0122,direct_debit,completed,2025-12-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Dezember 2025,BK-01132
+PAY-0123,ebill,completed,2025-12-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Dezember 2025,BK-01147
+PAY-0124,qr_bill,completed,2025-12-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Dezember 2025,BK-01137
+PAY-0125,standing_order,completed,2025-12-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,85.0,CHF,85.0,Steuern Vorauszahlung Dezember 2025,BK-01157
+PAY-0126,ebill,completed,2026-01-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Februar 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01230
+PAY-0127,direct_debit,completed,2026-01-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Januar 2026,BK-01193
+PAY-0128,ebill,completed,2026-01-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Januar 2026,BK-01210
+PAY-0129,qr_bill,completed,2026-01-12,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Januar 2026,BK-01202
+PAY-0130,standing_order,completed,2026-01-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Januar 2026,BK-01218
+PAY-0131,ebill,completed,2026-02-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie März 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01292
+PAY-0132,direct_debit,completed,2026-02-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Februar 2026,BK-01255
+PAY-0133,ebill,completed,2026-02-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Februar 2026,BK-01273
+PAY-0134,qr_bill,completed,2026-02-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Februar 2026,BK-01261
+PAY-0135,standing_order,completed,2026-02-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Februar 2026,BK-01281
+PAY-0136,ebill,completed,2026-03-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie April 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01350
+PAY-0137,direct_debit,completed,2026-03-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile März 2026,BK-01314
+PAY-0138,ebill,completed,2026-03-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet März 2026,BK-01335
+PAY-0139,qr_bill,completed,2026-03-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch März 2026,BK-01320
+PAY-0140,standing_order,completed,2026-03-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung März 2026,BK-01339
+PAY-0141,ebill,completed,2026-04-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Mai 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01415
+PAY-0142,direct_debit,completed,2026-04-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile April 2026,BK-01373
+PAY-0143,ebill,completed,2026-04-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet April 2026,BK-01392
+PAY-0144,qr_bill,completed,2026-04-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch April 2026,BK-01379
+PAY-0145,standing_order,completed,2026-04-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung April 2026,BK-01399
+PAY-0146,ebill,completed,2026-05-22,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Juni 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01470
+PAY-0147,direct_debit,completed,2026-05-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Mai 2026,BK-01435
+PAY-0148,ebill,completed,2026-05-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Mai 2026,BK-01454
+PAY-0149,qr_bill,completed,2026-05-11,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Mai 2026,BK-01445
+PAY-0150,standing_order,completed,2026-05-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Mai 2026,BK-01462
+PAY-0151,ebill,completed,2026-06-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Juli 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01530
+PAY-0152,direct_debit,completed,2026-06-08,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juni 2026,BK-01501
+PAY-0153,ebill,completed,2026-06-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juni 2026,BK-01511
+PAY-0154,qr_bill,completed,2026-06-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Juni 2026,BK-01505
+PAY-0155,standing_order,completed,2026-06-22,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Juni 2026,BK-01522
+PAY-0156,ebill,completed,2026-07-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie August 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01592
+PAY-0157,direct_debit,completed,2026-07-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Juli 2026,BK-01550
+PAY-0158,ebill,completed,2026-07-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Juli 2026,BK-01573
+PAY-0159,qr_bill,completed,2026-07-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,312.0,CHF,312.0,Hort und Mittagstisch Juli 2026,BK-01562
+PAY-0160,standing_order,completed,2026-07-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Juli 2026,BK-01584
+PAY-0161,ebill,completed,2026-08-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie September 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01654
+PAY-0162,direct_debit,completed,2026-08-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile August 2026,BK-01613
+PAY-0163,ebill,completed,2026-08-17,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet August 2026,BK-01638
+PAY-0164,qr_bill,completed,2026-08-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch August 2026,BK-01620
+PAY-0165,standing_order,completed,2026-08-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung August 2026,BK-01644
+PAY-0166,ebill,completed,2026-09-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Oktober 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01712
+PAY-0167,direct_debit,completed,2026-09-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile September 2026,BK-01678
+PAY-0168,ebill,completed,2026-09-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet September 2026,BK-01692
+PAY-0169,qr_bill,completed,2026-09-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch September 2026,BK-01684
+PAY-0170,standing_order,completed,2026-09-21,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung September 2026,BK-01702
+PAY-0171,ebill,completed,2026-10-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie November 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01785
+PAY-0172,direct_debit,completed,2026-10-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Oktober 2026,BK-01738
+PAY-0173,ebill,completed,2026-10-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Oktober 2026,BK-01767
+PAY-0174,qr_bill,completed,2026-10-12,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch Oktober 2026,BK-01753
+PAY-0175,standing_order,completed,2026-10-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung Oktober 2026,BK-01773
+PAY-0176,ebill,completed,2026-11-24,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,271.4,CHF,271.4,"Prämie Dezember 2026 (Daniela + Lina), abzgl. Prämienverbilligung",BK-01845
+PAY-0177,direct_debit,completed,2026-11-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile November 2026,BK-01806
+PAY-0178,ebill,completed,2026-11-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet November 2026,BK-01822
+PAY-0179,qr_bill,completed,2026-11-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch November 2026,BK-01815
+PAY-0180,standing_order,completed,2026-11-20,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,95.0,CHF,95.0,Steuern Vorauszahlung November 2026,BK-01831
+PAY-0181,ebill,completed,2024-02-19,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2024, Rate 1/4",BK-00105
+PAY-0182,ebill,completed,2024-05-21,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2024, Rate 2/4",BK-00242
+PAY-0183,ebill,completed,2024-08-19,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2024, Rate 3/4",BK-00371
+PAY-0184,ebill,completed,2024-11-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,83.0,CHF,83.0,"Haushaltabgabe Radio/TV 2024, Rate 4/4",BK-00506
+PAY-0185,ebill,completed,2024-03-12,ACC-PRIV,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH50 0900 0000 0005 8037 3,182.0,CHF,182.0,Hausrat- & Privathaftpflicht 2024,BK-00140
+PAY-0186,ebill,completed,2024-01-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,132.4,CHF,132.4,Strom/Wasser Q4 2023,BK-00067
+PAY-0187,ebill,completed,2024-04-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,118.6,CHF,118.6,Strom/Wasser Q1 2024,BK-00199
+PAY-0188,ebill,completed,2024-07-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,74.3,CHF,74.3,Strom/Wasser Q2 2024,BK-00333
+PAY-0189,ebill,completed,2024-10-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,96.8,CHF,96.8,Strom/Wasser Q3 2024,BK-00456
+PAY-0190,qr_bill,completed,2024-04-29,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,214.35,CHF,214.35,Schlussrechnung Steuern 2022,BK-00210
+PAY-0191,qr_bill,completed,2024-03-04,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Frühling 2024,BK-00128
+PAY-0192,qr_bill,completed,2024-09-02,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Herbst 2024,BK-00391
+PAY-0193,ebill,completed,2025-02-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2025, Rate 1/4",BK-00640
+PAY-0194,ebill,completed,2025-05-19,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2025, Rate 2/4",BK-00788
+PAY-0195,ebill,completed,2025-08-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2025, Rate 3/4",BK-00935
+PAY-0196,ebill,completed,2025-11-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,83.0,CHF,83.0,"Haushaltabgabe Radio/TV 2025, Rate 4/4",BK-01098
+PAY-0197,ebill,completed,2025-03-12,ACC-PRIV,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH50 0900 0000 0005 8037 3,186.4,CHF,186.4,Hausrat- & Privathaftpflicht 2025,BK-00671
+PAY-0198,ebill,completed,2025-01-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,137.7,CHF,137.7,Strom/Wasser Q4 2024,BK-00599
+PAY-0199,ebill,completed,2025-04-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,123.34,CHF,123.34,Strom/Wasser Q1 2025,BK-00741
+PAY-0200,ebill,completed,2025-07-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,77.27,CHF,77.27,Strom/Wasser Q2 2025,BK-00891
+PAY-0201,ebill,completed,2025-10-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,100.67,CHF,100.67,Strom/Wasser Q3 2025,BK-01048
+PAY-0202,qr_bill,completed,2025-03-03,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Frühling 2025,BK-00657
+PAY-0203,qr_bill,completed,2025-09-01,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Herbst 2025,BK-00954
+PAY-0204,ebill,completed,2026-02-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2026, Rate 1/4",BK-01278
+PAY-0205,ebill,completed,2026-05-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2026, Rate 2/4",BK-01458
+PAY-0206,ebill,completed,2026-08-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,84.0,CHF,84.0,"Haushaltabgabe Radio/TV 2026, Rate 3/4",BK-01642
+PAY-0207,ebill,completed,2026-11-18,ACC-PRIV,P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,83.0,CHF,83.0,"Haushaltabgabe Radio/TV 2026, Rate 4/4",BK-01827
+PAY-0208,ebill,completed,2026-03-12,ACC-PRIV,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH50 0900 0000 0005 8037 3,189.2,CHF,189.2,Hausrat- & Privathaftpflicht 2026,BK-01326
+PAY-0209,ebill,completed,2026-01-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,142.99,CHF,142.99,Strom/Wasser Q4 2025,BK-01224
+PAY-0210,ebill,completed,2026-04-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,128.09,CHF,128.09,Strom/Wasser Q1 2026,BK-01405
+PAY-0211,ebill,completed,2026-07-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,80.24,CHF,80.24,Strom/Wasser Q2 2026,BK-01588
+PAY-0212,ebill,completed,2026-10-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,104.54,CHF,104.54,Strom/Wasser Q3 2026,BK-01782
+PAY-0213,qr_bill,completed,2026-04-28,ACC-PRIV,P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,168.9,CHF,168.9,Schlussrechnung Steuern 2024,BK-01421
+PAY-0214,qr_bill,completed,2026-03-02,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Frühling 2026,BK-01303
+PAY-0215,qr_bill,completed,2026-09-01,ACC-PRIV,P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,180.0,CHF,180.0,Schwimmkurs Lina Herbst 2026,BK-01668
+PAY-0216,qr_bill,completed,2026-08-24,ACC-PRIV,P-TURN,Kinderturnen TV Töss,CH58 0630 0000 0010 5870 6,120.0,CHF,120.0,Jahresbeitrag Kinderturnen 2026/27,BK-01653
+PAY-0217,direct_debit,completed,2025-04-07,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 1/24",BK-00718
+PAY-0218,direct_debit,completed,2025-05-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 2/24",BK-00759
+PAY-0219,direct_debit,completed,2025-06-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 3/24",BK-00814
+PAY-0220,direct_debit,completed,2025-07-07,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 4/24",BK-00869
+PAY-0221,direct_debit,completed,2025-08-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 5/24",BK-00911
+PAY-0222,direct_debit,completed,2025-09-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 6/24",BK-00962
+PAY-0223,direct_debit,completed,2025-10-06,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 7/24",BK-01015
+PAY-0224,direct_debit,completed,2025-11-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 8/24",BK-01074
+PAY-0225,direct_debit,completed,2025-12-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 9/24",BK-01130
+PAY-0226,direct_debit,completed,2026-01-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 10/24",BK-01191
+PAY-0227,direct_debit,completed,2026-02-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 11/24",BK-01253
+PAY-0228,direct_debit,completed,2026-03-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 12/24",BK-01312
+PAY-0229,direct_debit,completed,2026-04-07,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 13/24",BK-01374
+PAY-0230,direct_debit,completed,2026-05-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 14/24",BK-01432
+PAY-0231,direct_debit,completed,2026-06-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 15/24",BK-01498
+PAY-0232,direct_debit,completed,2026-07-06,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 16/24",BK-01551
+PAY-0233,direct_debit,completed,2026-08-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 17/24",BK-01611
+PAY-0234,direct_debit,completed,2026-09-07,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 18/24",BK-01679
+PAY-0235,direct_debit,completed,2026-10-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 19/24",BK-01734
+PAY-0236,direct_debit,completed,2026-11-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 20/24",BK-01804
+PAY-0237,ebill,completed,2024-02-12,ACC-PRIV,P-ARZT,Kinderarztpraxis Rosenberg,CH27 0680 0000 0009 7063 2,94.3,CHF,94.3,Konsultation Lina,BK-00097
+PAY-0238,ebill,completed,2024-11-18,ACC-PRIV,P-ARZT,Kinderarztpraxis Rosenberg,CH27 0680 0000 0009 7063 2,128.6,CHF,128.6,Konsultation Lina,BK-00505
+PAY-0239,ebill,completed,2025-06-10,ACC-PRIV,P-ARZT,Kinderarztpraxis Rosenberg,CH27 0680 0000 0009 7063 2,76.4,CHF,76.4,Konsultation Lina,BK-00824
+PAY-0240,ebill,completed,2026-01-19,ACC-PRIV,P-ARZT,Kinderarztpraxis Rosenberg,CH27 0680 0000 0009 7063 2,142.1,CHF,142.1,Konsultation Lina,BK-01217
+PAY-0241,direct_debit,completed,2024-09-30,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH27 0900 0000 0008 0815 5,64.9,CHF,64.9,Zalando Kinderschuhe,BK-00430
+PAY-0242,direct_debit,completed,2025-09-29,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH27 0900 0000 0008 0815 5,79.8,CHF,79.8,Zalando Kinderschuhe + Regenjacke,BK-01001
+PAY-0243,direct_debit,completed,2026-09-28,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH27 0900 0000 0008 0815 5,89.7,CHF,89.7,Zalando Schulsachen,BK-01719
+PAY-0244,qr_bill,pending,2026-11-30,ACC-PRIV,P-ZAHN,Zahnarztpraxis Neuwiesen,CH97 3088 8000 0123 4567 8,440.0,CHF,440.0,"Rechnung Nr. 2026-0817 Lina (CHF 420.00) + Mahngebühr CHF 20.00 – 2. Mahnung, zahlbar bis 30.11.2026",
+PAY-0245,direct_debit,pending,2026-12-07,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 21/24",
+PAY-0246,direct_debit,pending,2027-01-05,ACC-PRIV,P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,77.8,CHF,77.8,"Ratenvertrag RW-2025-48817, Rate 22/24",
+PAY-0247,direct_debit,pending,2026-12-07,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Dezember 2026,
+PAY-0248,direct_debit,pending,2027-01-06,ACC-PRIV,P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,19.9,CHF,19.9,Abo Mobile Januar 2027,
+PAY-0249,qr_bill,pending,2026-12-10,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch Dezember 2026,
+PAY-0250,qr_bill,pending,2027-01-11,ACC-PRIV,P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,348.0,CHF,348.0,Hort und Mittagstisch Januar 2027,
+PAY-0251,ebill,pending,2026-12-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Dezember 2026,
+PAY-0252,ebill,pending,2027-01-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,39.9,CHF,39.9,Internet Januar 2027,
+PAY-0253,ebill,pending,2026-12-23,ACC-PRIV,P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,289.6,CHF,289.6,"Prämie Januar 2027 (Daniela + Lina), abzgl. Prämienverbilligung",
+PAY-0254,ebill,pending,2027-01-22,ACC-PRIV,P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,137.7,CHF,137.7,Strom/Wasser Q4 2026,

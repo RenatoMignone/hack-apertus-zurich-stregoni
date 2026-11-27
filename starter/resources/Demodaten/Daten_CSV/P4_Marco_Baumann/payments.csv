@@ -1,0 +1,208 @@
+payment_id,payment_type,status,execution_date,debit_account_id,payee_id,payee_name,payee_iban,amount,currency,amount_chf,message,booking_id
+PAY-0001,direct_debit,completed,2024-07-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 1/48",BK-00411
+PAY-0002,direct_debit,completed,2024-08-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 2/48",BK-00480
+PAY-0003,direct_debit,completed,2024-09-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 3/48",BK-00540
+PAY-0004,direct_debit,completed,2024-10-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 4/48",BK-00593
+PAY-0005,direct_debit,completed,2024-11-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 5/48",BK-00651
+PAY-0006,direct_debit,completed,2024-12-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 6/48",BK-00703
+PAY-0007,direct_debit,completed,2025-01-03,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 7/48",BK-00759
+PAY-0008,direct_debit,completed,2025-02-03,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 8/48",BK-00812
+PAY-0009,direct_debit,completed,2025-03-03,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 9/48",BK-00861
+PAY-0010,direct_debit,completed,2025-04-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 10/48",BK-00921
+PAY-0011,direct_debit,completed,2025-05-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 11/48",BK-00978
+PAY-0012,direct_debit,completed,2025-06-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 12/48",BK-01028
+PAY-0013,direct_debit,completed,2025-07-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 13/48",BK-01088
+PAY-0014,direct_debit,completed,2025-08-04,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 14/48",BK-01161
+PAY-0015,direct_debit,completed,2025-09-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 15/48",BK-01210
+PAY-0016,direct_debit,completed,2025-10-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 16/48",BK-01259
+PAY-0017,direct_debit,completed,2025-11-03,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 17/48",BK-01324
+PAY-0018,direct_debit,completed,2025-12-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 18/48",BK-01368
+PAY-0019,direct_debit,completed,2026-01-05,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 19/48",BK-01441
+PAY-0020,direct_debit,completed,2026-02-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 20/48",BK-01499
+PAY-0021,direct_debit,completed,2026-03-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 21/48",BK-01560
+PAY-0022,direct_debit,completed,2026-04-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 22/48",BK-01612
+PAY-0023,direct_debit,completed,2026-05-04,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 23/48",BK-01669
+PAY-0024,direct_debit,completed,2026-06-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 24/48",BK-01719
+PAY-0025,direct_debit,completed,2026-07-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 25/48",BK-01763
+PAY-0026,direct_debit,completed,2026-08-03,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 26/48",BK-01831
+PAY-0027,direct_debit,completed,2026-09-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 27/48",BK-01882
+PAY-0028,direct_debit,completed,2026-10-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 28/48",BK-01943
+PAY-0029,direct_debit,completed,2026-11-02,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 29/48",BK-01994
+PAY-0030,qr_bill,completed,2024-06-24,ACC-SAV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,7500.0,CHF,7500.0,Sonderzahlung Leasing Skoda Enyaq (Vertrag SAL-24-07731),BK-00390
+PAY-0031,ebill,completed,2024-02-09,ACC-PRIV,P-AXA,AXA Versicherungen AG,CH15 0079 0000 0002 9058 1,1068.4,CHF,1068.4,Motorfahrzeugversicherung VW Touran 2024,BK-00130
+PAY-0032,ebill,completed,2024-07-03,ACC-PRIV,P-AXA,AXA Versicherungen AG,CH15 0079 0000 0002 9058 1,1312.8,CHF,1312.8,"Motorfahrzeugversicherung Skoda Enyaq 07/2024–06/2025 (Vollkasko, Leasingauflage)",BK-00416
+PAY-0033,ebill,completed,2025-07-03,ACC-PRIV,P-AXA,AXA Versicherungen AG,CH15 0079 0000 0002 9058 1,1338.6,CHF,1338.6,"Motorfahrzeugversicherung Skoda Enyaq 07/2025–06/2026 (Vollkasko, Leasingauflage)",BK-01093
+PAY-0034,ebill,completed,2026-07-03,ACC-PRIV,P-AXA,AXA Versicherungen AG,CH15 0079 0000 0002 9058 1,1361.2,CHF,1361.2,"Motorfahrzeugversicherung Skoda Enyaq 07/2026–06/2027 (Vollkasko, Leasingauflage)",BK-01767
+PAY-0035,qr_bill,completed,2024-04-15,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,168.0,CHF,168.0,Radwechsel VW Touran,BK-00253
+PAY-0036,qr_bill,completed,2024-11-04,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,214.0,CHF,214.0,Radwechsel Skoda Enyaq,BK-00656
+PAY-0037,qr_bill,completed,2025-04-07,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,214.0,CHF,214.0,Radwechsel,BK-00931
+PAY-0038,qr_bill,completed,2025-07-14,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,386.5,CHF,386.5,Service Skoda Enyaq 1 Jahr,BK-01110
+PAY-0039,qr_bill,completed,2025-11-03,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,224.0,CHF,224.0,Radwechsel,BK-01325
+PAY-0040,qr_bill,completed,2026-04-13,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,224.0,CHF,224.0,Radwechsel,BK-01630
+PAY-0041,qr_bill,completed,2026-07-13,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,412.8,CHF,412.8,Service Skoda Enyaq 2 Jahre,BK-01783
+PAY-0042,qr_bill,completed,2026-11-02,ACC-PRIV,P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,228.0,CHF,228.0,Radwechsel,BK-01995
+PAY-0043,ebill,completed,2024-01-15,ACC-HOUSE,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH97 0076 9000 0002 3835 7,598.4,CHF,598.4,Hausrat- & Privathaftpflicht 2024 (EFH),BK-00086
+PAY-0044,qr_bill,completed,2024-02-12,ACC-HOUSE,P-GVZ,Gebäudeversicherung Kanton Zürich,CH73 0680 0000 0001 8177 6,371.25,CHF,371.25,"Gebäudeversicherungsprämie 2024, Vers.-Nr. 142-8820-0414",BK-00132
+PAY-0045,qr_bill,completed,2024-04-22,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,842.6,CHF,842.6,"Wasser, Abwasser, Kehricht Grundgebühren 2024",BK-00271
+PAY-0046,qr_bill,completed,2024-10-08,ACC-HOUSE,P-HAUSTECH,Zürichsee Haustechnik AG,CH40 0070 0000 0005 7069 3,395.0,CHF,395.0,Wartung Wärmepumpe 2024,BK-00604
+PAY-0047,qr_bill,completed,2024-05-13,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,640.0,CHF,640.0,Gartenpflege Frühling 2024,BK-00314
+PAY-0048,qr_bill,completed,2024-10-28,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,520.0,CHF,520.0,"Gartenpflege Herbst, Hecke 2024",BK-00643
+PAY-0049,ebill,completed,2024-04-22,ACC-PRIV,P-SERAFE,Serafe AG,CH07 0070 0000 0003 0880 5,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2024,BK-00279
+PAY-0050,ebill,completed,2024-01-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,612.4,CHF,612.4,Strom Q4 2023 (inkl. Wärmepumpe),BK-00092
+PAY-0051,ebill,completed,2024-04-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,548.9,CHF,548.9,Strom Q1 2024 (inkl. Wärmepumpe),BK-00263
+PAY-0052,ebill,completed,2024-07-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,318.6,CHF,318.6,Strom Q2 2024 (inkl. Wärmepumpe),BK-00436
+PAY-0053,ebill,completed,2024-10-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,450.58,CHF,450.58,Strom Q3 2024 (inkl. Wärmepumpe),BK-00621
+PAY-0054,qr_bill,completed,2024-03-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,163.96,CHF,163.96,Wasser/Abwasser Verbrauch Q1 2024,BK-00191
+PAY-0055,qr_bill,completed,2024-06-17,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,135.51,CHF,135.51,Wasser/Abwasser Verbrauch Q2 2024,BK-00374
+PAY-0056,qr_bill,completed,2024-09-16,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,141.22,CHF,141.22,Wasser/Abwasser Verbrauch Q3 2024,BK-00562
+PAY-0057,qr_bill,completed,2024-12-16,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,141.77,CHF,141.77,Wasser/Abwasser Verbrauch Q4 2024,BK-00719
+PAY-0058,ebill,completed,2025-01-15,ACC-HOUSE,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH97 0076 9000 0002 3835 7,612.7,CHF,612.7,Hausrat- & Privathaftpflicht 2025 (EFH),BK-00774
+PAY-0059,qr_bill,completed,2025-02-12,ACC-HOUSE,P-GVZ,Gebäudeversicherung Kanton Zürich,CH73 0680 0000 0001 8177 6,371.25,CHF,371.25,"Gebäudeversicherungsprämie 2025, Vers.-Nr. 142-8820-0414",BK-00823
+PAY-0060,qr_bill,completed,2025-04-22,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,868.3,CHF,868.3,"Wasser, Abwasser, Kehricht Grundgebühren 2025",BK-00954
+PAY-0061,qr_bill,completed,2025-10-08,ACC-HOUSE,P-HAUSTECH,Zürichsee Haustechnik AG,CH40 0070 0000 0005 7069 3,410.0,CHF,410.0,Wartung Wärmepumpe 2025,BK-01268
+PAY-0062,qr_bill,completed,2025-05-12,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,685.0,CHF,685.0,Gartenpflege Frühling 2025,BK-00989
+PAY-0063,qr_bill,completed,2025-10-27,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,545.0,CHF,545.0,"Gartenpflege Herbst, Hecke 2025",BK-01309
+PAY-0064,ebill,completed,2025-04-22,ACC-PRIV,P-SERAFE,Serafe AG,CH07 0070 0000 0003 0880 5,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2025,BK-00959
+PAY-0065,ebill,completed,2025-01-20,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,704.26,CHF,704.26,Strom Q4 2024 (inkl. Wärmepumpe),BK-00783
+PAY-0066,ebill,completed,2025-04-22,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,631.24,CHF,631.24,Strom Q1 2025 (inkl. Wärmepumpe),BK-00958
+PAY-0067,ebill,completed,2025-07-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,366.39,CHF,366.39,Strom Q2 2025 (inkl. Wärmepumpe),BK-01118
+PAY-0068,ebill,completed,2025-10-20,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,462.65,CHF,462.65,Strom Q3 2025 (inkl. Wärmepumpe),BK-01292
+PAY-0069,qr_bill,completed,2025-03-17,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,120.77,CHF,120.77,Wasser/Abwasser Verbrauch Q1 2025,BK-00881
+PAY-0070,qr_bill,completed,2025-06-16,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,136.25,CHF,136.25,Wasser/Abwasser Verbrauch Q2 2025,BK-01050
+PAY-0071,qr_bill,completed,2025-09-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,130.1,CHF,130.1,Wasser/Abwasser Verbrauch Q3 2025,BK-01226
+PAY-0072,qr_bill,completed,2025-12-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,162.36,CHF,162.36,Wasser/Abwasser Verbrauch Q4 2025,BK-01393
+PAY-0073,ebill,completed,2026-01-15,ACC-HOUSE,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH97 0076 9000 0002 3835 7,624.1,CHF,624.1,Hausrat- & Privathaftpflicht 2026 (EFH),BK-01460
+PAY-0074,qr_bill,completed,2026-02-12,ACC-HOUSE,P-GVZ,Gebäudeversicherung Kanton Zürich,CH73 0680 0000 0001 8177 6,389.8,CHF,389.8,"Gebäudeversicherungsprämie 2026, Vers.-Nr. 142-8820-0414",BK-01520
+PAY-0075,qr_bill,completed,2026-04-22,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,881.9,CHF,881.9,"Wasser, Abwasser, Kehricht Grundgebühren 2026",BK-01648
+PAY-0076,qr_bill,completed,2026-10-08,ACC-HOUSE,P-HAUSTECH,Zürichsee Haustechnik AG,CH40 0070 0000 0005 7069 3,418.0,CHF,418.0,Wartung Wärmepumpe 2026,BK-01951
+PAY-0077,qr_bill,completed,2026-05-12,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,710.0,CHF,710.0,Gartenpflege Frühling 2026,BK-01685
+PAY-0078,qr_bill,completed,2026-10-27,ACC-HOUSE,P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,560.0,CHF,560.0,"Gartenpflege Herbst, Hecke 2026",BK-01986
+PAY-0079,ebill,completed,2026-04-20,ACC-PRIV,P-SERAFE,Serafe AG,CH07 0070 0000 0003 0880 5,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2026,BK-01645
+PAY-0080,ebill,completed,2026-01-19,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,722.63,CHF,722.63,Strom Q4 2025 (inkl. Wärmepumpe),BK-01466
+PAY-0081,ebill,completed,2026-04-20,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,647.7,CHF,647.7,Strom Q1 2026 (inkl. Wärmepumpe),BK-01644
+PAY-0082,ebill,completed,2026-07-20,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,375.95,CHF,375.95,Strom Q2 2026 (inkl. Wärmepumpe),BK-01799
+PAY-0083,ebill,completed,2026-10-19,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,474.71,CHF,474.71,Strom Q3 2026 (inkl. Wärmepumpe),BK-01968
+PAY-0084,qr_bill,completed,2026-03-16,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,155.67,CHF,155.67,Wasser/Abwasser Verbrauch Q1 2026,BK-01579
+PAY-0085,qr_bill,completed,2026-06-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,163.8,CHF,163.8,Wasser/Abwasser Verbrauch Q2 2026,BK-01734
+PAY-0086,qr_bill,completed,2026-09-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,121.94,CHF,121.94,Wasser/Abwasser Verbrauch Q3 2026,BK-01903
+PAY-0087,qr_bill,completed,2024-03-19,ACC-HOUSE,P-HAUSTECH,Zürichsee Haustechnik AG,CH40 0070 0000 0005 7069 3,1268.4,CHF,1268.4,"Reparatur Boiler, Ersatz Anode und Heizstab",BK-00197
+PAY-0088,qr_bill,completed,2026-06-15,ACC-HOUSE,P-MALER,Malerei Hürlimann AG,CH72 0900 0000 0006 6029 3,8000.0,CHF,8000.0,"Fassadenrenovation, Akontozahlung 1 (Offerte 2026-117)",BK-01733
+PAY-0089,qr_bill,completed,2026-08-31,ACC-HOUSE,P-MALER,Malerei Hürlimann AG,CH72 0900 0000 0006 6029 3,10640.0,CHF,10640.0,"Fassadenrenovation, Schlussrechnung 2026-117",BK-01881
+PAY-0090,ebill,completed,2023-12-22,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Januar 2024, Familie Baumann (4 Personen)",BK-00039
+PAY-0091,ebill,completed,2023-12-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Dezember 2023",BK-00019
+PAY-0092,ebill,completed,2024-01-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Februar 2024, Familie Baumann (4 Personen)",BK-00101
+PAY-0093,ebill,completed,2024-01-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Januar 2024",BK-00083
+PAY-0094,ebill,completed,2024-02-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie März 2024, Familie Baumann (4 Personen)",BK-00155
+PAY-0095,ebill,completed,2024-02-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Februar 2024",BK-00139
+PAY-0096,ebill,completed,2024-03-22,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie April 2024, Familie Baumann (4 Personen)",BK-00203
+PAY-0097,ebill,completed,2024-03-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile März 2024",BK-00185
+PAY-0098,ebill,completed,2024-04-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Mai 2024, Familie Baumann (4 Personen)",BK-00284
+PAY-0099,ebill,completed,2024-04-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile April 2024",BK-00247
+PAY-0100,ebill,completed,2024-05-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Juni 2024, Familie Baumann (4 Personen)",BK-00335
+PAY-0101,ebill,completed,2024-05-13,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Mai 2024",BK-00315
+PAY-0102,ebill,completed,2024-06-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Juli 2024, Familie Baumann (4 Personen)",BK-00389
+PAY-0103,ebill,completed,2024-06-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Juni 2024",BK-00367
+PAY-0104,ebill,completed,2024-07-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie August 2024, Familie Baumann (4 Personen)",BK-00451
+PAY-0105,ebill,completed,2024-07-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Juli 2024",BK-00431
+PAY-0106,ebill,completed,2024-08-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie September 2024, Familie Baumann (4 Personen)",BK-00518
+PAY-0107,ebill,completed,2024-08-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile August 2024",BK-00503
+PAY-0108,ebill,completed,2024-09-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Oktober 2024, Familie Baumann (4 Personen)",BK-00573
+PAY-0109,ebill,completed,2024-09-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile September 2024",BK-00554
+PAY-0110,ebill,completed,2024-10-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie November 2024, Familie Baumann (4 Personen)",BK-00633
+PAY-0111,ebill,completed,2024-10-14,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Oktober 2024",BK-00616
+PAY-0112,ebill,completed,2024-11-22,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1086.4,CHF,1086.4,"Prämie Dezember 2024, Familie Baumann (4 Personen)",BK-00680
+PAY-0113,ebill,completed,2024-11-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile November 2024",BK-00665
+PAY-0114,ebill,completed,2024-12-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Januar 2025, Familie Baumann (4 Personen)",BK-00732
+PAY-0115,ebill,completed,2024-12-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Dezember 2024",BK-00716
+PAY-0116,ebill,completed,2025-01-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Februar 2025, Familie Baumann (4 Personen)",BK-00786
+PAY-0117,ebill,completed,2025-01-13,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Januar 2025",BK-00772
+PAY-0118,ebill,completed,2025-02-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie März 2025, Familie Baumann (4 Personen)",BK-00844
+PAY-0119,ebill,completed,2025-02-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile Februar 2025",BK-00825
+PAY-0120,ebill,completed,2025-03-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie April 2025, Familie Baumann (4 Personen)",BK-00897
+PAY-0121,ebill,completed,2025-03-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,159.0,CHF,159.0,"blue Internet, TV, 3× Mobile März 2025",BK-00876
+PAY-0122,ebill,completed,2025-04-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Mai 2025, Familie Baumann (4 Personen)",BK-00964
+PAY-0123,ebill,completed,2025-04-14,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile April 2025",BK-00942
+PAY-0124,ebill,completed,2025-05-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Juni 2025, Familie Baumann (4 Personen)",BK-01006
+PAY-0125,ebill,completed,2025-05-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Mai 2025",BK-00992
+PAY-0126,ebill,completed,2025-06-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Juli 2025, Familie Baumann (4 Personen)",BK-01064
+PAY-0127,ebill,completed,2025-06-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Juni 2025",BK-01047
+PAY-0128,ebill,completed,2025-07-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie August 2025, Familie Baumann (4 Personen)",BK-01132
+PAY-0129,ebill,completed,2025-07-14,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Juli 2025",BK-01111
+PAY-0130,ebill,completed,2025-08-22,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie September 2025, Familie Baumann (4 Personen)",BK-01192
+PAY-0131,ebill,completed,2025-08-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile August 2025",BK-01179
+PAY-0132,ebill,completed,2025-09-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Oktober 2025, Familie Baumann (4 Personen)",BK-01240
+PAY-0133,ebill,completed,2025-09-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile September 2025",BK-01223
+PAY-0134,ebill,completed,2025-10-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie November 2025, Familie Baumann (4 Personen)",BK-01303
+PAY-0135,ebill,completed,2025-10-13,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Oktober 2025",BK-01280
+PAY-0136,ebill,completed,2025-11-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1142.8,CHF,1142.8,"Prämie Dezember 2025, Familie Baumann (4 Personen)",BK-01354
+PAY-0137,ebill,completed,2025-11-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile November 2025",BK-01338
+PAY-0138,ebill,completed,2025-12-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Januar 2026, Familie Baumann (4 Personen)",BK-01410
+PAY-0139,ebill,completed,2025-12-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Dezember 2025",BK-01391
+PAY-0140,ebill,completed,2026-01-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Februar 2026, Familie Baumann (4 Personen)",BK-01479
+PAY-0141,ebill,completed,2026-01-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Januar 2026",BK-01458
+PAY-0142,ebill,completed,2026-02-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie März 2026, Familie Baumann (4 Personen)",BK-01539
+PAY-0143,ebill,completed,2026-02-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Februar 2026",BK-01521
+PAY-0144,ebill,completed,2026-03-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie April 2026, Familie Baumann (4 Personen)",BK-01595
+PAY-0145,ebill,completed,2026-03-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile März 2026",BK-01577
+PAY-0146,ebill,completed,2026-04-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Mai 2026, Familie Baumann (4 Personen)",BK-01654
+PAY-0147,ebill,completed,2026-04-13,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile April 2026",BK-01631
+PAY-0148,ebill,completed,2026-05-22,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Juni 2026, Familie Baumann (4 Personen)",BK-01700
+PAY-0149,ebill,completed,2026-05-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Mai 2026",BK-01687
+PAY-0150,ebill,completed,2026-06-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Juli 2026, Familie Baumann (4 Personen)",BK-01745
+PAY-0151,ebill,completed,2026-06-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Juni 2026",BK-01731
+PAY-0152,ebill,completed,2026-07-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie August 2026, Familie Baumann (4 Personen)",BK-01809
+PAY-0153,ebill,completed,2026-07-13,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Juli 2026",BK-01784
+PAY-0154,ebill,completed,2026-08-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie September 2026, Familie Baumann (4 Personen)",BK-01864
+PAY-0155,ebill,completed,2026-08-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile August 2026",BK-01849
+PAY-0156,ebill,completed,2026-09-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Oktober 2026, Familie Baumann (4 Personen)",BK-01919
+PAY-0157,ebill,completed,2026-09-14,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile September 2026",BK-01902
+PAY-0158,ebill,completed,2026-10-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie November 2026, Familie Baumann (4 Personen)",BK-01981
+PAY-0159,ebill,completed,2026-10-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Oktober 2026",BK-01958
+PAY-0160,ebill,completed,2026-11-24,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1198.6,CHF,1198.6,"Prämie Dezember 2026, Familie Baumann (4 Personen)",BK-02022
+PAY-0161,ebill,completed,2026-11-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile November 2026",BK-02004
+PAY-0162,qr_bill,completed,2024-01-30,ACC-PRIV,P-STEUER,Steueramt Wädenswil,CH86 0680 0000 0003 3063 1,2140.0,CHF,2140.0,Schlussrechnung Staats- und Gemeindesteuern 2022,BK-00115
+PAY-0163,qr_bill,completed,2024-04-02,ACC-PRIV,P-BUND,"Kantonales Steueramt Zürich, Direkte Bundessteuer",CH97 0680 0000 0003 7650 8,3184.0,CHF,3184.0,Direkte Bundessteuer 2023,BK-00227
+PAY-0164,qr_bill,completed,2024-02-12,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,690.0,CHF,690.0,"Musikschule Noah (Gitarre), Semester FS 2024",BK-00138
+PAY-0165,qr_bill,completed,2024-02-12,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,620.0,CHF,620.0,"Musikschule Mia (Blockflöte/Klavier), Semester FS 2024",BK-00137
+PAY-0166,qr_bill,completed,2024-08-12,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,690.0,CHF,690.0,"Musikschule Noah (Gitarre), Semester HS 2024",BK-00502
+PAY-0167,qr_bill,completed,2024-08-12,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,620.0,CHF,620.0,"Musikschule Mia (Blockflöte/Klavier), Semester HS 2024",BK-00501
+PAY-0168,qr_bill,completed,2024-09-05,ACC-PRIV,P-FCW,"FC Wädenswil, Junioren",CH37 0680 0000 0007 1291 7,280.0,CHF,280.0,Mitgliederbeitrag Junioren Noah 2024/25,BK-00544
+PAY-0169,qr_bill,completed,2024-01-08,ACC-PRIV,P-SCHULE,Schule Wädenswil,CH52 0023 5000 0007 3447 4,160.0,CHF,160.0,Skilager Schule 2024,BK-00074
+PAY-0170,qr_bill,completed,2024-06-10,ACC-PRIV,P-ZAHN,Zahnarztpraxis am See,CH22 0023 3000 0007 4054 6,605.04,CHF,605.04,Kontrollen Familie 2024,BK-00366
+PAY-0171,qr_bill,completed,2025-01-30,ACC-PRIV,P-STEUER,Steueramt Wädenswil,CH86 0680 0000 0003 3063 1,1386.5,CHF,1386.5,Schlussrechnung Staats- und Gemeindesteuern 2023,BK-00803
+PAY-0172,qr_bill,completed,2025-03-31,ACC-PRIV,P-BUND,"Kantonales Steueramt Zürich, Direkte Bundessteuer",CH97 0680 0000 0003 7650 8,3266.0,CHF,3266.0,Direkte Bundessteuer 2024,BK-00919
+PAY-0173,qr_bill,completed,2025-02-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,690.0,CHF,690.0,"Musikschule Noah (Gitarre), Semester FS 2025",BK-00821
+PAY-0174,qr_bill,completed,2025-02-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,620.0,CHF,620.0,"Musikschule Mia (Blockflöte/Klavier), Semester FS 2025",BK-00820
+PAY-0175,qr_bill,completed,2025-08-11,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,690.0,CHF,690.0,"Musikschule Noah (Gitarre), Semester HS 2025",BK-01177
+PAY-0176,qr_bill,completed,2025-08-11,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,620.0,CHF,620.0,"Musikschule Mia (Blockflöte/Klavier), Semester HS 2025",BK-01176
+PAY-0177,qr_bill,completed,2025-09-05,ACC-PRIV,P-FCW,"FC Wädenswil, Junioren",CH37 0680 0000 0007 1291 7,280.0,CHF,280.0,Mitgliederbeitrag Junioren Noah 2025/26,BK-01217
+PAY-0178,qr_bill,completed,2025-01-08,ACC-PRIV,P-SCHULE,Schule Wädenswil,CH52 0023 5000 0007 3447 4,160.0,CHF,160.0,Skilager Schule 2025,BK-00764
+PAY-0179,qr_bill,completed,2025-06-10,ACC-PRIV,P-ZAHN,Zahnarztpraxis am See,CH22 0023 3000 0007 4054 6,446.4,CHF,446.4,Kontrollen Familie 2025,BK-01043
+PAY-0180,qr_bill,completed,2026-01-30,ACC-PRIV,P-STEUER,Steueramt Wädenswil,CH86 0680 0000 0003 3063 1,912.2,CHF,912.2,Schlussrechnung Staats- und Gemeindesteuern 2024,BK-01496
+PAY-0181,qr_bill,completed,2026-03-31,ACC-PRIV,P-BUND,"Kantonales Steueramt Zürich, Direkte Bundessteuer",CH97 0680 0000 0003 7650 8,3029.0,CHF,3029.0,Direkte Bundessteuer 2025,BK-01611
+PAY-0182,qr_bill,completed,2026-02-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,715.0,CHF,715.0,"Musikschule Noah (Gitarre), Semester FS 2026",BK-01517
+PAY-0183,qr_bill,completed,2026-02-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,640.0,CHF,640.0,"Musikschule Mia (Blockflöte/Klavier), Semester FS 2026",BK-01516
+PAY-0184,qr_bill,completed,2026-08-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,715.0,CHF,715.0,"Musikschule Noah (Gitarre), Semester HS 2026",BK-01847
+PAY-0185,qr_bill,completed,2026-08-10,ACC-PRIV,P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,640.0,CHF,640.0,"Musikschule Mia (Blockflöte/Klavier), Semester HS 2026",BK-01846
+PAY-0186,qr_bill,completed,2026-09-07,ACC-PRIV,P-FCW,"FC Wädenswil, Junioren",CH37 0680 0000 0007 1291 7,280.0,CHF,280.0,Mitgliederbeitrag Junioren Noah 2026/27,BK-01894
+PAY-0187,qr_bill,completed,2026-01-08,ACC-PRIV,P-SCHULE,Schule Wädenswil,CH52 0023 5000 0007 3447 4,320.0,CHF,320.0,Skilager Schule 2026,BK-01448
+PAY-0188,qr_bill,completed,2026-06-09,ACC-PRIV,P-ZAHN,Zahnarztpraxis am See,CH22 0023 3000 0007 4054 6,579.45,CHF,579.45,Kontrollen Familie 2026,BK-01729
+PAY-0189,qr_bill,completed,2025-04-10,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,980.0,CHF,980.0,Kieferorthopädische Behandlung Noah,BK-00937
+PAY-0190,qr_bill,completed,2025-07-10,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01103
+PAY-0191,qr_bill,completed,2025-10-10,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01273
+PAY-0192,qr_bill,completed,2026-01-12,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01457
+PAY-0193,qr_bill,completed,2026-04-10,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01626
+PAY-0194,qr_bill,completed,2026-07-10,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01779
+PAY-0195,qr_bill,completed,2026-10-12,ACC-PRIV,P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,545.0,CHF,545.0,Kieferorthopädische Behandlung Noah,BK-01957
+PAY-0196,domestic,completed,2024-01-08,ACC-SAV,P-FEWO,"Ferienwohnung Lenzerheide, Familie Caduff",CH87 0079 0000 0008 6216 7,1650.0,CHF,1650.0,Ferienwohnung Sportferien 2024,BK-00075
+PAY-0197,domestic,completed,2025-01-06,ACC-SAV,P-FEWO,"Ferienwohnung Lenzerheide, Familie Caduff",CH87 0079 0000 0008 6216 7,1720.0,CHF,1720.0,Ferienwohnung Sportferien 2025,BK-00761
+PAY-0198,domestic,completed,2026-01-05,ACC-SAV,P-FEWO,"Ferienwohnung Lenzerheide, Familie Caduff",CH87 0079 0000 0008 6216 7,1780.0,CHF,1780.0,Ferienwohnung Sportferien 2026,BK-01442
+PAY-0199,direct_debit,pending,2026-12-01,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 30/48",
+PAY-0200,direct_debit,pending,2027-01-04,ACC-PRIV,P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,489.0,CHF,489.0,"Leasingvertrag SAL-24-07731 Skoda Enyaq, Rate 31/48",
+PAY-0201,ebill,pending,2026-12-14,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Dezember 2026",
+PAY-0202,ebill,pending,2027-01-12,ACC-PRIV,P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,164.0,CHF,164.0,"blue Internet, TV, 3× Mobile Januar 2027",
+PAY-0203,ebill,pending,2026-12-23,ACC-PRIV,P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,1262.3,CHF,1262.3,"Prämie Januar 2027, Familie Baumann (4 Personen)",
+PAY-0204,ebill,pending,2027-01-15,ACC-HOUSE,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH97 0076 9000 0002 3835 7,631.4,CHF,631.4,Hausrat- & Privathaftpflicht 2027 (EFH),
+PAY-0205,qr_bill,pending,2026-12-15,ACC-HOUSE,P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,142.7,CHF,142.7,Wasser/Abwasser Verbrauch Q4 2026,
+PAY-0206,ebill,pending,2027-01-18,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,778.2,CHF,778.2,Strom Q4 2026 (inkl. Wärmepumpe),
+PAY-0207,qr_bill,pending,2027-01-08,ACC-PRIV,P-SCHULE,Schule Wädenswil,CH52 0023 5000 0007 3447 4,320.0,CHF,320.0,Skilager Schule 2027,

@@ -1,0 +1,39 @@
+.shell {
+  --current-sidebar-width: var(--sidebar-width);
+}
+
+.collapsed {
+  --current-sidebar-width: var(--sidebar-width-collapsed);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: var(--current-sidebar-width);
+}
+
+.content {
+  flex: 1;
+  padding: var(--content-padding);
+}
+
+.footer {
+  padding: 16px var(--content-padding);
+  font-size: 12px;
+}
+
+.reset {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
+  margin-left: 12px;
+  color: var(--color-error);
+}

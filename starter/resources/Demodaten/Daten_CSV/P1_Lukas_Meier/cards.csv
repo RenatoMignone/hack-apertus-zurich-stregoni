@@ -1,0 +1,3 @@
+card_id,type,product,masked_number,linked_account,holder,valid_until,status,monthly_limit_chf,billing
+CARD-DEBIT,debit,Debit Mastercard,5349 •••• •••• 2716,ACC-PRIV,Lukas Meier,2028-09,active,5000,direkt über Privatkonto
+CARD-VISA,credit,Visa Gold,4532 •••• •••• 1847,ACC-PRIV,Lukas Meier,2027-11,active,15000,"Monatsabrechnung per Monatsende, Belastung per LSV um den 20. des Folgemonats"

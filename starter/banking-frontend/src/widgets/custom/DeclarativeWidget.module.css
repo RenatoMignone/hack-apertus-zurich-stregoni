@@ -1,0 +1,60 @@
+.subtitle {
+  margin: 0 0 12px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.footnote {
+  margin: 12px 0 0;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.kpiValue {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.kpiDelta {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.up {
+  color: var(--color-credit);
+}
+
+.down {
+  color: var(--color-error);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table tfoot td {
+  border-bottom: 0;
+  font-weight: 700;
+}
+
+.table .right {
+  text-align: right;
+}
+
+.table .center {
+  text-align: center;
+}

@@ -1,0 +1,2 @@
+card_id,type,product,masked_number,linked_account,holder,valid_until,status,monthly_limit_chf,billing
+CARD-DEBIT,debit,Debit Mastercard,5349 •••• •••• 3307,ACC-PRIV,Daniela Rüegg,2027-06,active,2000,direkt über Privatkonto

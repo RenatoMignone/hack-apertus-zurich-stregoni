@@ -1,0 +1,16 @@
+due_date,debit_account_id,type,payee_name,amount,currency,description,source_id
+2026-11-27,ACC-PRIV,standing_order,Wohnbaugenossenschaft Talgut,1640.0,CHF,Miete Dezember 2026,SO-RENT
+2026-11-30,ACC-PRIV,qr_bill,Zahnarztpraxis Neuwiesen,440.0,CHF,"Rechnung Nr. 2026-0817 Lina (CHF 420.00) + Mahngebühr CHF 20.00 – 2. Mahnung, zahlbar bis 30.11.2026",PAY-0244
+2026-12-07,ACC-PRIV,direct_debit,Ratenwerk Finanz AG,77.8,CHF,"Ratenvertrag RW-2025-48817, Rate 21/24",PAY-0245
+2026-12-07,ACC-PRIV,direct_debit,Lebara Schweiz,19.9,CHF,Abo Mobile Dezember 2026,PAY-0247
+2026-12-10,ACC-PRIV,qr_bill,"Stadt Winterthur, Betreuung Schule",348.0,CHF,Hort und Mittagstisch Dezember 2026,PAY-0249
+2026-12-15,ACC-PRIV,ebill,Sunrise GmbH,39.9,CHF,Internet Dezember 2026,PAY-0251
+2026-12-21,ACC-PRIV,standing_order,Steueramt Winterthur,95.0,CHF,Steuern Vorauszahlung Dezember 2026,SO-STEUER
+2026-12-23,ACC-PRIV,ebill,Assura-Basis SA,289.6,CHF,"Prämie Januar 2027 (Daniela + Lina), abzgl. Prämienverbilligung",PAY-0253
+2026-12-28,ACC-PRIV,standing_order,Wohnbaugenossenschaft Talgut,1640.0,CHF,Miete Januar 2027,SO-RENT
+2027-01-05,ACC-PRIV,direct_debit,Ratenwerk Finanz AG,77.8,CHF,"Ratenvertrag RW-2025-48817, Rate 22/24",PAY-0246
+2027-01-06,ACC-PRIV,direct_debit,Lebara Schweiz,19.9,CHF,Abo Mobile Januar 2027,PAY-0248
+2027-01-11,ACC-PRIV,qr_bill,"Stadt Winterthur, Betreuung Schule",348.0,CHF,Hort und Mittagstisch Januar 2027,PAY-0250
+2027-01-15,ACC-PRIV,ebill,Sunrise GmbH,39.9,CHF,Internet Januar 2027,PAY-0252
+2027-01-20,ACC-PRIV,standing_order,Steueramt Winterthur,95.0,CHF,Steuern Vorauszahlung Januar 2027,SO-STEUER
+2027-01-22,ACC-PRIV,ebill,Stadtwerk Winterthur,137.7,CHF,Strom/Wasser Q4 2026,PAY-0254

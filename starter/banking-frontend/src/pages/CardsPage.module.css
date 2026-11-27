@@ -1,0 +1,135 @@
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tile {
+  display: flex;
+  gap: 16px;
+  flex: 1 1 300px;
+  max-width: 480px;
+  padding: 16px;
+  border: 2px solid transparent;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.tile {
+  transition:
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+.tile:hover {
+  box-shadow: var(--shadow-hover);
+}
+.tileSelected,
+.tileSelected:hover {
+  border-color: var(--color-primary);
+}
+.tileBody {
+  min-width: 0;
+}
+
+.cardImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 136px;
+  height: 86px;
+  padding: 10px;
+  background: linear-gradient(135deg, #3f6fb3 0%, #4a97b8 100%);
+  color: #fff;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.18);
+}
+.cardKind {
+  text-transform: uppercase;
+  font-size: 9px;
+}
+.cardNumber {
+  font-size: 10px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.cardImageBlocked {
+  filter: grayscale(1);
+}
+
+.tileName {
+  font-size: 17px;
+  font-weight: 600;
+}
+.tileMeta {
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+.status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fde3b8;
+  text-transform: capitalize;
+}
+.statusActive {
+  background: #d6ecd9;
+}
+
+.hint {
+  margin-top: 24px;
+  color: var(--color-text-muted);
+}
+
+.detail {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+.table tfoot td {
+  font-weight: 700;
+  border-bottom: 0;
+}
+.right {
+  text-align: right !important;
+}
+.selectable {
+  cursor: pointer;
+}
+.selectable:hover,
+.rowSelected {
+  background: var(--color-primary-soft);
+}
+.muted {
+  color: var(--color-text-muted);
+}
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.fxNote {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}

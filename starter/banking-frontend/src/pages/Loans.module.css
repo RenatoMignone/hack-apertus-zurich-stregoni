@@ -1,0 +1,82 @@
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 8px 0 32px;
+}
+.factLabel {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+.factValue {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+.table tfoot td {
+  font-weight: 700;
+  border-bottom: 0;
+}
+.right {
+  text-align: right !important;
+}
+.muted {
+  color: var(--color-text-muted);
+}
+.sub {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.hint {
+  margin-top: 24px;
+  color: var(--color-text-muted);
+}
+.notice {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.terms {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 48px;
+  margin: 0;
+}
+.terms div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.terms dt {
+  color: var(--color-text-muted);
+}
+.terms dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}

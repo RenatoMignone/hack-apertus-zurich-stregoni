@@ -1,0 +1,51 @@
+services:
+  banking-api:
+    image: ghcr.io/tiziano-schacht-ti8m/trustroom-banking-api:latest
+    ports:
+      - "8000:8000"
+    environment:
+      DEMO_TODAY: "2026-11-27"
+
+  banking-frontend:
+    build: banking-frontend
+    image: trustroom-banking-frontend
+    ports:
+      - "8090:8090"
+    environment:
+      # Must be reachable from the browser (and from the TrustRoom iframe), so not the compose service name.
+      API_URL: "http://localhost:8000/api"
+      # URL of your TrustRoom solution, e.g. http://localhost:3000. Empty = placeholder.
+      TRUSTROOM_URL: "${TRUSTROOM_URL:-}"
+    depends_on:
+      - banking-api
+
+  mcp-server:
+    build: ./example-mcp
+    image: ghcr.io/tiziano-schacht-ti8m/trustroom-mcp-server:latest
+    ports:
+      - "8001:8001"
+
+  example-trustroom:
+    build: ./example-trustroom
+    image: ghcr.io/tiziano-schacht-ti8m/trustroom-example:latest
+    # Not started by a plain `docker compose up`, so it doesn't take port 3000 from your own TrustRoom.
+    # Start it by name: docker compose up example-trustroom
+    profiles: [example]
+    ports:
+      - "3000:3000"
+    # LLM_BASE_URL, LLM_API_KEY, LLM_NAME (see example-trustroom/.env.example)
+    env_file:
+      - path: example-trustroom/.env
+        required: false
+    environment:
+      # Seen from inside the container, so the compose service names, not localhost.
+      BANKING_API_URL: "http://banking-api:8000/api"
+      MCP_URL: "http://mcp-server:8001/mcp"
+    depends_on:
+      - banking-api
+      - mcp-server
+
+  ocr:
+    image: ghcr.io/tiziano-schacht-ti8m/trustroom-ocr:latest
+    ports:
+      - "8002:8002"

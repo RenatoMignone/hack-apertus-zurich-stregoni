@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(220px, auto);
+  gap: var(--grid-gap);
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tile > section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.sourceLink {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bigValue {
+  font-size: 32px;
+  font-weight: 700;
+}
+.muted {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+.rowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rowItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.rowItem:last-child {
+  border-bottom: 0;
+}
+.rowText {
+  min-width: 0;
+}
+.rowText > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.credit {
+  color: var(--color-credit);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.debit {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.rowAmount {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.emptyCell {
+  border: 2px dashed var(--color-border-strong);
+  min-height: 220px;
+}
+
+.editOverlay {
+  position: absolute;
+  inset: 0;
+  border: 2px dashed var(--color-primary);
+  background: rgb(46 107 102 / 0.06);
+  cursor: grab;
+}
+
+.removeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  padding: 6px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.refreshNote {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.contactName {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contactPhone {
+  margin: 4px 0 20px;
+  color: var(--color-text-muted);
+}

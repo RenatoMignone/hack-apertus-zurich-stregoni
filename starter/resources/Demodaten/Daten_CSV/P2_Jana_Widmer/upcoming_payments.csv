@@ -1,0 +1,18 @@
+due_date,debit_account_id,type,payee_name,amount,currency,description,source_id
+2026-11-27,ACC-PRIV,standing_order,Immobilien Aareblick AG,1390.0,CHF,Miete Dezember 2026,SO-RENT
+2026-11-30,ACC-PRIV,qr_bill,Steuerverwaltung des Kantons Bern,1180.0,CHF,"Steuern 2026, 3. Rate (provisorisch)",PAY-0131
+2026-12-01,ACC-PRIV,direct_debit,Activ Fitness AG,79.0,CHF,Abo Dezember 2026,PAY-0133
+2026-12-07,ACC-PRIV,direct_debit,Wingo (Swisscom Schweiz AG),34.95,CHF,Abo Mobile Dezember 2026,PAY-0135
+2026-12-14,ACC-PRIV,ebill,Sunrise GmbH,49.9,CHF,Internet Dezember 2026,PAY-0137
+2026-12-23,ACC-PRIV,ebill,KPT Krankenkasse AG,421.6,CHF,Prämie Januar 2027,PAY-0132
+2026-12-28,ACC-PRIV,standing_order,Immobilien Aareblick AG,1390.0,CHF,Miete Januar 2027,SO-RENT
+2026-12-28,ACC-PRIV,standing_order,Andrea Widmer,150.0,CHF,Rückzahlung Darlehen,SO-MAMA
+2026-12-28,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,300.0,CHF,Einzahlung Säule 3a,SO-3A
+2026-12-28,ACC-PRIV,standing_order,Sparkonto,250.0,CHF,Notgroschen,SO-SAV
+2027-01-04,ACC-PRIV,direct_debit,Activ Fitness AG,79.0,CHF,Abo Januar 2027,PAY-0134
+2027-01-05,ACC-PRIV,direct_debit,Wingo (Swisscom Schweiz AG),34.95,CHF,Abo Mobile Januar 2027,PAY-0136
+2027-01-14,ACC-PRIV,ebill,Sunrise GmbH,49.9,CHF,Internet Januar 2027,PAY-0138
+2027-01-20,ACC-PRIV,ebill,Energie Wasser Bern,64.8,CHF,Strom Q4 2026,PAY-0139
+2027-01-26,ACC-PRIV,standing_order,Andrea Widmer,150.0,CHF,Rückzahlung Darlehen,SO-MAMA
+2027-01-26,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,300.0,CHF,Einzahlung Säule 3a,SO-3A
+2027-01-26,ACC-PRIV,standing_order,Sparkonto,250.0,CHF,Notgroschen,SO-SAV

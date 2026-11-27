@@ -1,0 +1,5 @@
+standing_order_id,debit_account_id,payee_id,credit_account_id,payee_name,amount,frequency,day,start_date,end_date,next_execution_date,message,status
+SO-HOUSE,ACC-PRIV,,ACC-HOUSE,Sparkonto Haus,900.0,monthly,27,2019-04-27,,2026-11-27,Rücklage Haus,active
+SO-SAV,ACC-PRIV,,ACC-SAV,Sparkonto Familie,1500.0,monthly,27,2015-01-27,,2026-11-27,Sparen Familie,active
+SO-3A,ACC-PRIV,,ACC-3A,Vorsorgekonto Säule 3a,600.0,monthly,27,2012-01-27,,2026-11-27,Einzahlung Säule 3a,active
+SO-TAX,ACC-PRIV,P-STEUER,,Steueramt Wädenswil,1450.0,monthly,20,2019-05-20,,2026-12-21,Vorauszahlung Steuern,active

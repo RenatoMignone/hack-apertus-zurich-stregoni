@@ -1,0 +1,22 @@
+payee_id,name,iban,city,country,first_payment_date,last_payment_date,payments_count,is_new_payee_last_90_days
+P-HELSANA,Helsana Versicherungen AG,CH58 0079 0000 0001 0696 2,Dübendorf,CH,2023-12-22,2026-11-24,36,false
+P-SWISSCOM,Swisscom (Schweiz) AG,CH77 0023 3000 0001 3029 9,Bern,CH,2023-12-12,2026-11-12,36,false
+P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH09 0023 3000 0001 6479 4,Zürich,CH,2024-01-18,2026-10-19,12,false
+P-STADT,"Stadt Wädenswil, Werke und Gebühren",CH54 0630 0000 0001 7617 5,Wädenswil,CH,2024-03-15,2026-09-15,14,false
+P-GVZ,Gebäudeversicherung Kanton Zürich,CH73 0680 0000 0001 8177 6,Zürich,CH,2024-02-12,2026-02-12,3,false
+P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH97 0076 9000 0002 3835 7,Bern,CH,2024-01-15,2026-01-15,3,false
+P-AXA,AXA Versicherungen AG,CH15 0079 0000 0002 9058 1,Winterthur,CH,2024-02-09,2026-07-03,4,false
+P-SERAFE,Serafe AG,CH07 0070 0000 0003 0880 5,Fehraltorf,CH,2024-04-22,2026-04-20,3,false
+P-STEUER,Steueramt Wädenswil,CH86 0680 0000 0003 3063 1,Wädenswil,CH,2023-12-20,2026-11-20,39,false
+P-BUND,"Kantonales Steueramt Zürich, Direkte Bundessteuer",CH97 0680 0000 0003 7650 8,Zürich,CH,2024-04-02,2026-03-31,3,false
+P-LEASING,Seeblick Auto-Leasing AG,CH55 0070 0000 0004 2298 3,Zug,CH,2024-07-01,2026-11-02,29,false
+P-GARAGE,Garage Zimmerberg AG,CH42 0076 9000 0004 8660 0,Horgen,CH,2024-04-15,2026-11-02,9,false
+P-HAUSTECH,Zürichsee Haustechnik AG,CH40 0070 0000 0005 7069 3,Richterswil,CH,2024-03-19,2026-10-08,4,false
+P-GARTEN,Gartenbau Grünau GmbH,CH95 0680 0000 0006 2108 1,Wädenswil,CH,2024-05-13,2026-10-27,6,false
+P-MALER,Malerei Hürlimann AG,CH72 0900 0000 0006 6029 3,Wädenswil,CH,2026-06-15,2026-08-31,2,false
+P-MUSIK,Musikschule Wädenswil-Richterswil,CH79 0070 0000 0006 6844 6,Wädenswil,CH,2024-02-12,2026-08-10,12,false
+P-FCW,"FC Wädenswil, Junioren",CH37 0680 0000 0007 1291 7,Wädenswil,CH,2024-09-05,2026-09-07,3,false
+P-SCHULE,Schule Wädenswil,CH52 0023 5000 0007 3447 4,Wädenswil,CH,2024-01-08,2026-01-08,3,false
+P-ZAHN,Zahnarztpraxis am See,CH22 0023 3000 0007 4054 6,Wädenswil,CH,2024-06-10,2026-06-09,3,false
+P-KIEFER,Kieferorthopädie Zimmerberg,CH30 0680 0000 0008 2459 3,Horgen,CH,2025-04-10,2026-10-12,7,false
+P-FEWO,"Ferienwohnung Lenzerheide, Familie Caduff",CH87 0079 0000 0008 6216 7,Lenzerheide,CH,2024-01-08,2026-01-05,3,false

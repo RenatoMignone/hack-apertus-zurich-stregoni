@@ -1,0 +1,6 @@
+standing_order_id,debit_account_id,payee_id,credit_account_id,payee_name,amount,frequency,day,start_date,end_date,next_execution_date,message,status
+SO-RENT,ACC-PRIV,P-RENT,,Immobilien Aareblick AG,1390.0,monthly,28,2025-10-28,,2026-11-27,Miete Wohnung Moserstrasse 22 für Folgemonat,active
+SO-MAMA,ACC-PRIV,P-MAMA,,Andrea Widmer,150.0,monthly,26,2026-01-26,2027-08-26,2026-12-28,Rückzahlung Darlehen (Rest nach 11/2026: CHF 1'350),active
+SO-3A,ACC-PRIV,,ACC-3A,Vorsorgekonto Säule 3a,300.0,monthly,26,2026-01-26,,2026-12-28,Einzahlung Säule 3a,active
+SO-SAV,ACC-PRIV,,ACC-SAV,Sparkonto,250.0,monthly,26,2026-01-26,,2026-12-28,Notgroschen,active
+SO-WG,ACC-PRIV,P-WG,,Florian Hug,690.0,monthly,28,2020-09-28,2025-09-26,,"WG-Zimmer Länggasse, Miete für Folgemonat",ended

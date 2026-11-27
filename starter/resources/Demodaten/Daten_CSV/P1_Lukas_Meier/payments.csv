@@ -1,0 +1,237 @@
+payment_id,payment_type,status,execution_date,debit_account_id,payee_id,payee_name,payee_iban,amount,currency,amount_chf,message,booking_id
+PAY-0001,ebill,completed,2023-12-22,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Januar 2024,BK-00043
+PAY-0002,ebill,completed,2023-12-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Dezember 2023,BK-00022
+PAY-0003,direct_debit,completed,2023-12-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Dezember 2023,BK-00008
+PAY-0004,direct_debit,completed,2023-12-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Dezember 2023,BK-00002
+PAY-0005,ebill,completed,2024-01-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Februar 2024,BK-00117
+PAY-0006,ebill,completed,2024-01-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Januar 2024,BK-00097
+PAY-0007,direct_debit,completed,2024-01-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Januar 2024,BK-00079
+PAY-0008,direct_debit,completed,2024-01-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Januar 2024,BK-00078
+PAY-0009,ebill,completed,2024-02-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie März 2024,BK-00177
+PAY-0010,ebill,completed,2024-02-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Februar 2024,BK-00156
+PAY-0011,direct_debit,completed,2024-02-05,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Februar 2024,BK-00147
+PAY-0012,direct_debit,completed,2024-02-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Februar 2024,BK-00138
+PAY-0013,ebill,completed,2024-03-22,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie April 2024,BK-00229
+PAY-0014,ebill,completed,2024-03-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home März 2024,BK-00213
+PAY-0015,direct_debit,completed,2024-03-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile März 2024,BK-00203
+PAY-0016,direct_debit,completed,2024-03-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft März 2024,BK-00197
+PAY-0017,ebill,completed,2024-04-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Mai 2024,BK-00304
+PAY-0018,ebill,completed,2024-04-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home April 2024,BK-00281
+PAY-0019,direct_debit,completed,2024-04-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile April 2024,BK-00266
+PAY-0020,direct_debit,completed,2024-04-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft April 2024,BK-00262
+PAY-0021,ebill,completed,2024-05-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Juni 2024,BK-00372
+PAY-0022,ebill,completed,2024-05-13,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Mai 2024,BK-00345
+PAY-0023,direct_debit,completed,2024-05-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Mai 2024,BK-00333
+PAY-0024,direct_debit,completed,2024-05-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Mai 2024,BK-00331
+PAY-0025,ebill,completed,2024-06-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Juli 2024,BK-00437
+PAY-0026,ebill,completed,2024-06-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Juni 2024,BK-00413
+PAY-0027,direct_debit,completed,2024-06-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juni 2024,BK-00395
+PAY-0028,direct_debit,completed,2024-06-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Juni 2024,BK-00394
+PAY-0029,ebill,completed,2024-07-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie August 2024,BK-00513
+PAY-0030,ebill,completed,2024-07-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Juli 2024,BK-00488
+PAY-0031,direct_debit,completed,2024-07-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juli 2024,BK-00466
+PAY-0032,direct_debit,completed,2024-07-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Juli 2024,BK-00462
+PAY-0033,ebill,completed,2024-08-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie September 2024,BK-00560
+PAY-0034,ebill,completed,2024-08-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home August 2024,BK-00547
+PAY-0035,direct_debit,completed,2024-08-05,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile August 2024,BK-00542
+PAY-0036,direct_debit,completed,2024-08-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft August 2024,BK-00536
+PAY-0037,ebill,completed,2024-09-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Oktober 2024,BK-00634
+PAY-0038,ebill,completed,2024-09-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home September 2024,BK-00616
+PAY-0039,direct_debit,completed,2024-09-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile September 2024,BK-00591
+PAY-0040,direct_debit,completed,2024-09-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft September 2024,BK-00587
+PAY-0041,ebill,completed,2024-10-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie November 2024,BK-00703
+PAY-0042,ebill,completed,2024-10-14,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Oktober 2024,BK-00688
+PAY-0043,direct_debit,completed,2024-10-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Oktober 2024,BK-00663
+PAY-0044,direct_debit,completed,2024-10-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Oktober 2024,BK-00659
+PAY-0045,ebill,completed,2024-11-22,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,432.8,CHF,432.8,Prämie Dezember 2024,BK-00763
+PAY-0046,ebill,completed,2024-11-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home November 2024,BK-00741
+PAY-0047,direct_debit,completed,2024-11-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile November 2024,BK-00729
+PAY-0048,direct_debit,completed,2024-11-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft November 2024,BK-00727
+PAY-0049,ebill,completed,2024-12-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Januar 2025,BK-00837
+PAY-0050,ebill,completed,2024-12-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,85.0,CHF,85.0,Rechnung inOne home Dezember 2024,BK-00813
+PAY-0051,direct_debit,completed,2024-12-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Dezember 2024,BK-00795
+PAY-0052,direct_debit,completed,2024-12-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,99.0,CHF,99.0,Mitgliedschaft Dezember 2024,BK-00793
+PAY-0053,ebill,completed,2025-01-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Februar 2025,BK-00916
+PAY-0054,ebill,completed,2025-01-13,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Januar 2025,BK-00891
+PAY-0055,direct_debit,completed,2025-01-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Januar 2025,BK-00871
+PAY-0056,direct_debit,completed,2025-01-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Januar 2025,BK-00870
+PAY-0057,ebill,completed,2025-02-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie März 2025,BK-00990
+PAY-0058,ebill,completed,2025-02-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Februar 2025,BK-00962
+PAY-0059,direct_debit,completed,2025-02-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Februar 2025,BK-00946
+PAY-0060,direct_debit,completed,2025-02-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Februar 2025,BK-00945
+PAY-0061,ebill,completed,2025-03-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie April 2025,BK-01047
+PAY-0062,ebill,completed,2025-03-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home März 2025,BK-01028
+PAY-0063,direct_debit,completed,2025-03-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile März 2025,BK-01009
+PAY-0064,direct_debit,completed,2025-03-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft März 2025,BK-01008
+PAY-0065,ebill,completed,2025-04-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Mai 2025,BK-01100
+PAY-0066,ebill,completed,2025-04-14,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home April 2025,BK-01092
+PAY-0067,direct_debit,completed,2025-04-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile April 2025,BK-01080
+PAY-0068,direct_debit,completed,2025-04-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft April 2025,BK-01073
+PAY-0069,ebill,completed,2025-05-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Juni 2025,BK-01165
+PAY-0070,ebill,completed,2025-05-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Mai 2025,BK-01141
+PAY-0071,direct_debit,completed,2025-05-05,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Mai 2025,BK-01131
+PAY-0072,direct_debit,completed,2025-05-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Mai 2025,BK-01122
+PAY-0073,ebill,completed,2025-06-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Juli 2025,BK-01238
+PAY-0074,ebill,completed,2025-06-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Juni 2025,BK-01218
+PAY-0075,direct_debit,completed,2025-06-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juni 2025,BK-01196
+PAY-0076,direct_debit,completed,2025-06-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Juni 2025,BK-01194
+PAY-0077,ebill,completed,2025-07-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie August 2025,BK-01297
+PAY-0078,ebill,completed,2025-07-14,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Juli 2025,BK-01278
+PAY-0079,direct_debit,completed,2025-07-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juli 2025,BK-01261
+PAY-0080,direct_debit,completed,2025-07-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Juli 2025,BK-01257
+PAY-0081,ebill,completed,2025-08-22,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie September 2025,BK-01353
+PAY-0082,ebill,completed,2025-08-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home August 2025,BK-01339
+PAY-0083,direct_debit,completed,2025-08-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile August 2025,BK-01326
+PAY-0084,direct_debit,completed,2025-08-04,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft August 2025,BK-01325
+PAY-0085,ebill,completed,2025-09-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Oktober 2025,BK-01405
+PAY-0086,ebill,completed,2025-09-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home September 2025,BK-01391
+PAY-0087,direct_debit,completed,2025-09-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile September 2025,BK-01382
+PAY-0088,direct_debit,completed,2025-09-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft September 2025,BK-01378
+PAY-0089,ebill,completed,2025-10-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie November 2025,BK-01471
+PAY-0090,ebill,completed,2025-10-13,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Oktober 2025,BK-01448
+PAY-0091,direct_debit,completed,2025-10-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Oktober 2025,BK-01429
+PAY-0092,direct_debit,completed,2025-10-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Oktober 2025,BK-01425
+PAY-0093,ebill,completed,2025-11-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,451.2,CHF,451.2,Prämie Dezember 2025,BK-01539
+PAY-0094,ebill,completed,2025-11-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home November 2025,BK-01520
+PAY-0095,direct_debit,completed,2025-11-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile November 2025,BK-01503
+PAY-0096,direct_debit,completed,2025-11-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft November 2025,BK-01502
+PAY-0097,ebill,completed,2025-12-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Januar 2026,BK-01611
+PAY-0098,ebill,completed,2025-12-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Dezember 2025,BK-01579
+PAY-0099,direct_debit,completed,2025-12-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Dezember 2025,BK-01567
+PAY-0100,direct_debit,completed,2025-12-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Dezember 2025,BK-01562
+PAY-0101,ebill,completed,2026-01-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Februar 2026,BK-01683
+PAY-0102,ebill,completed,2026-01-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Januar 2026,BK-01656
+PAY-0103,direct_debit,completed,2026-01-05,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Januar 2026,BK-01644
+PAY-0104,direct_debit,completed,2026-01-05,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Januar 2026,BK-01643
+PAY-0105,ebill,completed,2026-02-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie März 2026,BK-01753
+PAY-0106,ebill,completed,2026-02-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home Februar 2026,BK-01732
+PAY-0107,direct_debit,completed,2026-02-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Februar 2026,BK-01714
+PAY-0108,direct_debit,completed,2026-02-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Februar 2026,BK-01711
+PAY-0109,ebill,completed,2026-03-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie April 2026,BK-01816
+PAY-0110,ebill,completed,2026-03-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home März 2026,BK-01793
+PAY-0111,direct_debit,completed,2026-03-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile März 2026,BK-01777
+PAY-0112,direct_debit,completed,2026-03-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft März 2026,BK-01773
+PAY-0113,ebill,completed,2026-04-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Mai 2026,BK-01894
+PAY-0114,ebill,completed,2026-04-13,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,89.0,CHF,89.0,Rechnung inOne home April 2026,BK-01878
+PAY-0115,direct_debit,completed,2026-04-07,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile April 2026,BK-01863
+PAY-0116,direct_debit,completed,2026-04-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft April 2026,BK-01852
+PAY-0117,ebill,completed,2026-05-22,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Juni 2026,BK-01944
+PAY-0118,ebill,completed,2026-05-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Mai 2026,BK-01930
+PAY-0119,direct_debit,completed,2026-05-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Mai 2026,BK-01919
+PAY-0120,direct_debit,completed,2026-05-04,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,109.0,CHF,109.0,Mitgliedschaft Mai 2026,BK-01918
+PAY-0121,ebill,completed,2026-06-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Juli 2026,BK-02008
+PAY-0122,ebill,completed,2026-06-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Juni 2026,BK-01989
+PAY-0123,direct_debit,completed,2026-06-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juni 2026,BK-01980
+PAY-0124,direct_debit,completed,2026-06-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft Juni 2026,BK-01974
+PAY-0125,ebill,completed,2026-07-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie August 2026,BK-02071
+PAY-0126,ebill,completed,2026-07-13,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Juli 2026,BK-02053
+PAY-0127,direct_debit,completed,2026-07-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Juli 2026,BK-02037
+PAY-0128,direct_debit,completed,2026-07-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft Juli 2026,BK-02033
+PAY-0129,ebill,completed,2026-08-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie September 2026,BK-02124
+PAY-0130,ebill,completed,2026-08-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home August 2026,BK-02109
+PAY-0131,direct_debit,completed,2026-08-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile August 2026,BK-02091
+PAY-0132,direct_debit,completed,2026-08-03,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft August 2026,BK-02090
+PAY-0133,ebill,completed,2026-09-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Oktober 2026,BK-02198
+PAY-0134,ebill,completed,2026-09-14,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home September 2026,BK-02176
+PAY-0135,direct_debit,completed,2026-09-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile September 2026,BK-02158
+PAY-0136,direct_debit,completed,2026-09-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft September 2026,BK-02155
+PAY-0137,ebill,completed,2026-10-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie November 2026,BK-02256
+PAY-0138,ebill,completed,2026-10-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Oktober 2026,BK-02235
+PAY-0139,direct_debit,completed,2026-10-05,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Oktober 2026,BK-02225
+PAY-0140,direct_debit,completed,2026-10-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft Oktober 2026,BK-02221
+PAY-0141,ebill,completed,2026-11-24,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,467.4,CHF,467.4,Prämie Dezember 2026,BK-02329
+PAY-0142,ebill,completed,2026-11-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home November 2026,BK-02304
+PAY-0143,direct_debit,completed,2026-11-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile November 2026,BK-02285
+PAY-0144,direct_debit,completed,2026-11-02,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft November 2026,BK-02284
+PAY-0145,ebill,completed,2024-01-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,198.2,CHF,198.2,Strom Q4 2023,BK-00104
+PAY-0146,ebill,completed,2024-04-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,181.35,CHF,181.35,Strom Q1 2024,BK-00287
+PAY-0147,ebill,completed,2024-07-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,124.9,CHF,124.9,Strom Q2 2024,BK-00498
+PAY-0148,ebill,completed,2024-10-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,146.8,CHF,146.8,Strom Q3 2024,BK-00689
+PAY-0149,ebill,completed,2025-01-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,192.65,CHF,192.65,Strom Q4 2024,BK-00896
+PAY-0150,ebill,completed,2025-04-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,176.4,CHF,176.4,Strom Q1 2025,BK-01094
+PAY-0151,ebill,completed,2025-07-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,121.1,CHF,121.1,Strom Q2 2025,BK-01281
+PAY-0152,ebill,completed,2025-10-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,139.95,CHF,139.95,Strom Q3 2025,BK-01451
+PAY-0153,ebill,completed,2026-01-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,186.4,CHF,186.4,Strom Q4 2025,BK-01667
+PAY-0154,ebill,completed,2026-04-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,172.1,CHF,172.1,Strom Q1 2026,BK-01882
+PAY-0155,ebill,completed,2026-07-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,118.55,CHF,118.55,Strom Q2 2026,BK-02057
+PAY-0156,ebill,completed,2026-10-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,141.3,CHF,141.3,Strom Q3 2026,BK-02243
+PAY-0157,qr_bill,completed,2024-01-22,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,1420.0,CHF,1420.0,Schlussrechnung Staats- und Gemeindesteuern 2022,BK-00115
+PAY-0158,qr_bill,completed,2024-03-27,ACC-TAX,P-ESTV,Kantonales Steueramt Zürich (Direkte Bundessteuer),CH65 0023 3000 0006 0465 1,3480.0,CHF,3480.0,Direkte Bundessteuer 2023,BK-00251
+PAY-0159,qr_bill,completed,2024-05-29,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,5900.0,CHF,5900.0,"Staats- und Gemeindesteuern 2024, 1. Rate",BK-00390
+PAY-0160,qr_bill,completed,2024-09-30,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,5900.0,CHF,5900.0,"Staats- und Gemeindesteuern 2024, 2. Rate",BK-00656
+PAY-0161,qr_bill,completed,2025-01-20,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,2110.0,CHF,2110.0,Schlussrechnung Staats- und Gemeindesteuern 2023,BK-00908
+PAY-0162,qr_bill,completed,2025-03-27,ACC-TAX,P-ESTV,Kantonales Steueramt Zürich (Direkte Bundessteuer),CH65 0023 3000 0006 0465 1,3720.0,CHF,3720.0,Direkte Bundessteuer 2024,BK-01063
+PAY-0163,qr_bill,completed,2025-05-30,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,6200.0,CHF,6200.0,"Staats- und Gemeindesteuern 2025, 1. Rate",BK-01189
+PAY-0164,qr_bill,completed,2025-09-30,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,6200.0,CHF,6200.0,"Staats- und Gemeindesteuern 2025, 2. Rate",BK-01422
+PAY-0165,qr_bill,completed,2026-01-20,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,1850.0,CHF,1850.0,Schlussrechnung Staats- und Gemeindesteuern 2024,BK-01676
+PAY-0166,qr_bill,completed,2026-03-27,ACC-TAX,P-ESTV,Kantonales Steueramt Zürich (Direkte Bundessteuer),CH65 0023 3000 0006 0465 1,3950.0,CHF,3950.0,Direkte Bundessteuer 2025,BK-01836
+PAY-0167,qr_bill,completed,2026-05-29,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,6500.0,CHF,6500.0,"Staats- und Gemeindesteuern 2026, 1. Rate",BK-01966
+PAY-0168,qr_bill,completed,2026-09-30,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,6500.0,CHF,6500.0,"Staats- und Gemeindesteuern 2026, 2. Rate",BK-02218
+PAY-0169,ebill,completed,2024-01-12,ACC-RES,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH52 0023 3000 0006 3844 7,398.4,CHF,398.4,Hausrat- & Privathaftpflicht 2024,BK-00098
+PAY-0170,ebill,completed,2025-01-13,ACC-RES,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH52 0023 3000 0006 3844 7,412.2,CHF,412.2,Hausrat- & Privathaftpflicht 2025,BK-00892
+PAY-0171,ebill,completed,2026-01-12,ACC-RES,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH52 0023 3000 0006 3844 7,418.6,CHF,418.6,Hausrat- & Privathaftpflicht 2026,BK-01657
+PAY-0172,ebill,completed,2024-02-16,ACC-RES,P-AXA,AXA Versicherungen AG (Motorfahrzeug),CH06 0900 0000 0006 8320 9,1152.7,CHF,1152.7,"Motorfahrzeugversicherung 2024, ZH 482 113",BK-00165
+PAY-0173,ebill,completed,2025-02-17,ACC-RES,P-AXA,AXA Versicherungen AG (Motorfahrzeug),CH06 0900 0000 0006 8320 9,1168.9,CHF,1168.9,"Motorfahrzeugversicherung 2025, ZH 482 113",BK-00972
+PAY-0174,ebill,completed,2026-02-16,ACC-RES,P-AXA,AXA Versicherungen AG (Motorfahrzeug),CH06 0900 0000 0006 8320 9,1184.3,CHF,1184.3,"Motorfahrzeugversicherung 2026, ZH 482 113",BK-01738
+PAY-0175,qr_bill,completed,2024-03-18,ACC-RES,P-STVA,Strassenverkehrsamt Kanton Zürich,CH28 0070 0000 0007 6326 0,412.0,CHF,412.0,"Verkehrsabgaben 2024, ZH 482 113",BK-00226
+PAY-0176,qr_bill,completed,2025-03-17,ACC-RES,P-STVA,Strassenverkehrsamt Kanton Zürich,CH28 0070 0000 0007 6326 0,412.0,CHF,412.0,"Verkehrsabgaben 2025, ZH 482 113",BK-01035
+PAY-0177,qr_bill,completed,2026-03-16,ACC-RES,P-STVA,Strassenverkehrsamt Kanton Zürich,CH28 0070 0000 0007 6326 0,412.0,CHF,412.0,"Verkehrsabgaben 2026, ZH 482 113",BK-01798
+PAY-0178,ebill,completed,2024-04-22,ACC-RES,P-SERAFE,Serafe AG,CH82 0023 3000 0006 2704 3,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2024,BK-00299
+PAY-0179,ebill,completed,2025-04-22,ACC-RES,P-SERAFE,Serafe AG,CH82 0023 3000 0006 2704 3,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2025,BK-01097
+PAY-0180,ebill,completed,2026-04-20,ACC-RES,P-SERAFE,Serafe AG,CH82 0023 3000 0006 2704 3,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2026,BK-01886
+PAY-0181,qr_bill,completed,2024-04-08,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,118.0,CHF,118.0,Radwechsel auf Sommerräder 2024,BK-00274
+PAY-0182,qr_bill,completed,2025-04-08,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,124.0,CHF,124.0,Radwechsel auf Sommerräder 2025,BK-01086
+PAY-0183,qr_bill,completed,2026-04-08,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,124.0,CHF,124.0,Radwechsel auf Sommerräder 2026,BK-01868
+PAY-0184,qr_bill,completed,2024-06-11,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,640.2,CHF,640.2,Jahresservice VW Golf 2024,BK-00410
+PAY-0185,qr_bill,completed,2025-06-11,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,1120.8,CHF,1120.8,Jahresservice VW Golf 2025,BK-01215
+PAY-0186,qr_bill,completed,2026-06-11,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,862.45,CHF,862.45,Jahresservice VW Golf 2026,BK-01987
+PAY-0187,qr_bill,completed,2024-09-24,ACC-RES,P-DENT,Zahnarztpraxis Dr. M. Huber,CH13 0023 3000 0009 0745 1,280.0,CHF,280.0,Dentalhygiene / Kontrolle 2024,BK-00635
+PAY-0188,qr_bill,completed,2025-09-24,ACC-RES,P-DENT,Zahnarztpraxis Dr. M. Huber,CH13 0023 3000 0009 0745 1,395.0,CHF,395.0,Dentalhygiene / Kontrolle 2025,BK-01406
+PAY-0189,qr_bill,completed,2026-09-24,ACC-RES,P-DENT,Zahnarztpraxis Dr. M. Huber,CH13 0023 3000 0009 0745 1,640.0,CHF,640.0,Dentalhygiene / Kontrolle 2026,BK-02199
+PAY-0190,qr_bill,completed,2024-11-11,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,238.0,CHF,238.0,Radwechsel + Einlagerung Sommerräder 2024,BK-00740
+PAY-0191,qr_bill,completed,2025-11-10,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,248.0,CHF,248.0,Radwechsel + Einlagerung Sommerräder 2025,BK-01515
+PAY-0192,qr_bill,completed,2026-11-09,ACC-RES,P-GARAGE,Garage Sihltal AG,CH29 0023 3000 0008 4527 7,248.0,CHF,248.0,Radwechsel + Einlagerung Sommerräder 2026,BK-02298
+PAY-0193,ebill,completed,2024-01-22,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,165.4,CHF,165.4,Konsultation 03.01.2024,BK-00114
+PAY-0194,ebill,completed,2024-06-10,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,212.7,CHF,212.7,Konsultation 22.05.2024,BK-00407
+PAY-0195,ebill,completed,2024-10-14,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,98.3,CHF,98.3,Konsultation 25.09.2024,BK-00687
+PAY-0196,ebill,completed,2025-03-17,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,175.2,CHF,175.2,Konsultation 26.02.2025,BK-01034
+PAY-0197,ebill,completed,2025-11-24,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,132.6,CHF,132.6,Konsultation 05.11.2025,BK-01540
+PAY-0198,ebill,completed,2026-02-23,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,180.35,CHF,180.35,Konsultation 04.02.2026,BK-01752
+PAY-0199,ebill,completed,2026-06-15,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,245.8,CHF,245.8,Konsultation 27.05.2026,BK-01994
+PAY-0200,ebill,completed,2026-09-14,ACC-PRIV,P-DOC,Praxis Dr. med. S. Brunner,CH36 0630 0000 0009 0293 2,96.4,CHF,96.4,Konsultation 26.08.2026,BK-02175
+PAY-0201,qr_bill,completed,2024-04-08,ACC-PRIV,P-PHYSIO,Physiotherapie Wiedikon,CH19 0076 9000 0009 4359 3,312.0,CHF,312.0,"Physiotherapie Knie, Serie",BK-00273
+PAY-0202,qr_bill,completed,2024-05-13,ACC-PRIV,P-PHYSIO,Physiotherapie Wiedikon,CH19 0076 9000 0009 4359 3,312.0,CHF,312.0,"Physiotherapie Knie, Serie",BK-00344
+PAY-0203,qr_bill,completed,2024-06-17,ACC-PRIV,P-PHYSIO,Physiotherapie Wiedikon,CH19 0076 9000 0009 4359 3,208.0,CHF,208.0,"Physiotherapie Knie, Serie",BK-00421
+PAY-0204,domestic,completed,2023-12-15,ACC-PRIV,P-GLUECK,Glückskette,CH86 0630 0000 0009 7546 1,200.0,CHF,200.0,Spende Weihnachten 2023,BK-00025
+PAY-0205,domestic,completed,2024-12-16,ACC-PRIV,P-GLUECK,Glückskette,CH86 0630 0000 0009 7546 1,200.0,CHF,200.0,Spende Weihnachten 2024,BK-00822
+PAY-0206,domestic,completed,2025-12-15,ACC-PRIV,P-GLUECK,Glückskette,CH86 0630 0000 0009 7546 1,200.0,CHF,200.0,Spende Weihnachten 2025,BK-01583
+PAY-0207,domestic,completed,2024-02-20,ACC-PRIV,P-BERGH,Schweizer Berghilfe,CH93 0630 0000 0010 1888 8,100.0,CHF,100.0,Spende 2024,BK-00172
+PAY-0208,domestic,completed,2025-02-20,ACC-PRIV,P-BERGH,Schweizer Berghilfe,CH93 0630 0000 0010 1888 8,100.0,CHF,100.0,Spende 2025,BK-00981
+PAY-0209,domestic,completed,2026-02-20,ACC-PRIV,P-BERGH,Schweizer Berghilfe,CH93 0630 0000 0010 1888 8,100.0,CHF,100.0,Spende 2026,BK-01748
+PAY-0210,qr_bill,completed,2025-10-06,ACC-PRIV,P-CLIMB,Kletterhalle Minimum AG,CH64 0839 0000 0011 4994 1,690.0,CHF,690.0,Jahresabo Okt 2025 – Sep 2026,BK-01436
+PAY-0211,qr_bill,completed,2026-10-05,ACC-PRIV,P-CLIMB,Kletterhalle Minimum AG,CH64 0839 0000 0011 4994 1,720.0,CHF,720.0,Jahresabo Okt 2026 – Sep 2027,BK-02226
+PAY-0212,qr_bill,completed,2024-03-14,ACC-PRIV,P-VELO,Velo Kurier Wiedikon GmbH,CH34 0076 9000 0010 6205 1,195.0,CHF,195.0,Veloservice Rechnung 2024-0311,BK-00216
+PAY-0213,domestic,completed,2024-06-21,ACC-PRIV,P-WEDD24,Lea Baumann & Simon Graf,CH04 0023 5000 0010 7930 0,250.0,CHF,250.0,Hochzeitsgeschenk – alles Gute!,BK-00432
+PAY-0214,qr_bill,completed,2025-05-22,ACC-PRIV,P-SEGEL,Zürcher Ferienkurse Segeln GmbH,CH22 0076 9000 0011 5761 8,1450.0,CHF,1450.0,Segelkurs D-Schein Thalwil,BK-01159
+PAY-0215,qr_bill,completed,2026-01-14,ACC-PRIV,P-VELO,Velo Kurier Wiedikon GmbH,CH34 0076 9000 0010 6205 1,285.0,CHF,285.0,Veloservice Rechnung 2026-0114,BK-01662
+PAY-0216,qr_bill,completed,2026-03-12,ACC-PRIV,P-ELEK,Elektro Brunner AG,CH75 0076 9000 0010 6596 9,412.5,CHF,412.5,Montage Deckenleuchten Wohnzimmer,BK-01792
+PAY-0217,domestic,completed,2026-05-08,ACC-PRIV,P-WEDD,Anna Müller & Marco Rossi,CH33 0070 0000 0010 8909 0,300.0,CHF,300.0,Hochzeitsgeschenk – alles Liebe!,BK-01925
+PAY-0218,qr_bill,completed,2026-06-30,ACC-PRIV,P-LINGUA,Sprachschule Lingua Zürich GmbH,CH95 0023 3000 0011 6758 4,690.0,CHF,690.0,Italienisch A2 Intensivkurs Juli,BK-02030
+PAY-0219,qr_bill,completed,2026-09-22,ACC-PRIV,P-FCW,FC Wiedikon Senioren,CH35 0023 3000 0011 8146 8,180.0,CHF,180.0,Mitgliederbeitrag 2026/27,BK-02192
+PAY-0220,qr_bill,completed,2026-10-09,ACC-PRIV,P-FOTO,Lena Graf Fotografie,CH86 0023 5000 0012 6736 2,350.0,CHF,350.0,Fotoshooting Geburtstag Sara,BK-02233
+PAY-0221,qr_bill,completed,2026-10-30,ACC-PRIV,P-SCHREIN,Schreinerei Holzwerk Binz GmbH,CH67 0630 0000 0012 7213 8,1240.0,CHF,1240.0,Massanfertigung Wandregal Eiche,BK-02278
+PAY-0222,qr_bill,completed,2026-11-12,ACC-PRIV,P-MUSIK,Musikschule Zürich Kreis 3,CH67 0900 0000 0013 0329 9,520.0,CHF,520.0,Gitarrenunterricht Semester HS 2026,BK-02303
+PAY-0223,qr_bill,completed,2026-11-18,ACC-PRIV,P-STEUERB,Keller & Partner Steuerberatung,CH07 0023 3000 0013 0943 0,380.0,CHF,380.0,Steuererklärung 2025,BK-02318
+PAY-0224,international,completed,2026-05-13,ACC-PRIV,P-MASS,Masseria Ulivo S.r.l.,IT48 X030 6904 0004 4711 0000 012,400.0,EUR,377.96,Anzahlung Buchung 18.07.–01.08.2026,BK-01931
+PAY-0225,ebill,pending,2026-12-23,ACC-PRIV,P-CSS,Mythen Krankenversicherung AG,CH14 0839 0000 0002 3981 7,489.9,CHF,489.9,Prämie Januar 2027,
+PAY-0226,ebill,pending,2026-12-14,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Dezember 2026,
+PAY-0227,ebill,pending,2027-01-12,ACC-PRIV,P-SWC,Swisscom (Schweiz) AG,CH25 0070 0000 0003 1818 1,94.0,CHF,94.0,Rechnung inOne home Januar 2027,
+PAY-0228,direct_debit,pending,2026-12-03,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Dezember 2026,
+PAY-0229,direct_debit,pending,2027-01-04,ACC-PRIV,P-SALT,Salt Mobile SA,CH94 0023 5000 0003 9441 2,39.95,CHF,39.95,Abo Mobile Januar 2027,
+PAY-0230,direct_debit,pending,2026-12-01,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft Dezember 2026,
+PAY-0231,direct_debit,pending,2027-01-04,ACC-PRIV,P-FIT,Fitnesspark Zürich Stadelhofen,CH83 0630 0000 0005 4958 8,119.0,CHF,119.0,Mitgliedschaft Januar 2027,
+PAY-0232,ebill,pending,2027-01-15,ACC-PRIV,P-EKZ,EKZ Elektrizitätswerke des Kantons Zürich,CH17 0070 0000 0004 7711 4,168.25,CHF,168.25,Strom Q4 2026,
+PAY-0233,qr_bill,pending,2026-12-10,ACC-PRIV,P-ENGADIN,Ferienwohnungen Engadin AG,CH85 0630 0000 0013 5086 9,600.0,CHF,600.0,Anzahlung Ferienwohnung 02.–09.01.2027,
+PAY-0234,domestic,pending,2026-12-15,ACC-PRIV,P-GLUECK,Glückskette,CH86 0630 0000 0009 7546 1,200.0,CHF,200.0,Spende Weihnachten 2026,
+PAY-0235,ebill,pending,2027-01-12,ACC-RES,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH52 0023 3000 0006 3844 7,424.8,CHF,424.8,Hausrat- & Privathaftpflicht 2027,
+PAY-0236,qr_bill,pending,2027-01-20,ACC-TAX,P-STZH,Steueramt der Stadt Zürich,CH77 0076 9000 0005 6415 2,1980.0,CHF,1980.0,Schlussrechnung Staats- und Gemeindesteuern 2025,

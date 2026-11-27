@@ -1,0 +1,7 @@
+standing_order_id,debit_account_id,payee_id,credit_account_id,payee_name,amount,frequency,day,start_date,end_date,next_execution_date,message,status
+SO-RENT,ACC-PRIV,P-RENT,,Wohnbau Sihlfeld AG Liegenschaftsverwaltung,2800.0,monthly,28,2021-03-28,,2026-11-27,"Miete inkl. NK Zurlindenstrasse 87, 3.5 Zi., für Folgemonat (seit 04/2024 CHF 2'800, vorher 2'720)",active
+SO-TAX,ACC-PRIV,,ACC-TAX,Sparkonto Steuern,1400.0,monthly,26,2023-01-26,,2026-12-28,Rücklage Steuern,active
+SO-RES,ACC-PRIV,,ACC-RES,Sparkonto Rücklagen,600.0,monthly,26,2023-01-26,,2026-12-28,Rücklage Jahreskosten,active
+SO-LT,ACC-PRIV,,ACC-LT,Sparkonto Langfristig,500.0,monthly,26,2022-06-26,,2026-12-28,Sparen langfristig / Japanreise,active
+SO-3A,ACC-PRIV,,ACC-3A,Vorsorgekonto Säule 3a,600.0,monthly,26,2019-01-26,,2026-12-28,Einzahlung Säule 3a,active
+SO-ETF,ACC-PRIV,,DEPOT-01,Depot 0418-2210.01,600.0,monthly,5,2024-02-05,,2026-12-07,ETF-Sparplan (MSCI World / SPI / EM),active

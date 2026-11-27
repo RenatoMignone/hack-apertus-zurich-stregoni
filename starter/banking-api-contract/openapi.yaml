@@ -1,0 +1,2185 @@
+openapi: 3.1.0
+info:
+  title: TrustRoom Mock E-Banking API
+  version: 0.1.0
+  summary: Mock retail e-banking API for the Hack Apertus «TrustRoom» challenge.
+  description: |
+    REST/JSON API of the mock ti&m e-banking. The e-banking frontend reads **exclusively** through this
+    API, and the teams' TrustRoom solutions use the same endpoints, so the UI and the solutions always
+    see identical numbers.
+
+    **Conventions**
+    - Four demo retail customers (personas), each with their own data. Log in with
+      `POST /auth/login` and send the returned token as `Authorization: Bearer <token>` with every
+      other request; the token selects the customer. Without a valid token the API returns 401.
+      Only `/system/info`, `/auth/login` and `/admin/reset` are public.
+      Demo users: `lukas` / `lukas2026` (Lukas Meier), `jana` / `jana2026` (Jana Widmer),
+      `daniela` / `daniela2026` (Daniela Rüegg), `marco` / `marco2026` (Marco Baumann). Tokens are fixed per user, so they survive restarts.
+    - All amounts are JSON numbers with two decimals. Booking amounts are always in CHF:
+      positive = credit, negative = debit. Foreign-currency originals are in `original_amount` /
+      `original_currency`.
+    - Dates are ISO 8601 (`YYYY-MM-DD`). "Today" of the demo environment is configurable
+      (default `2026-11-27`) and exposed via `GET /system/info`.
+    - IBANs are accepted with or without spaces and returned in grouped format (`CH06 0888 ...`).
+    - Nothing is ever executed: payments and standing orders are captures/proposals only (sandbox).
+    - There are deliberately **no categories** on bookings, card transactions, payees or standing
+      orders. Categorization is the teams' task.
+    - List endpoints return an envelope `{ items, total, limit, offset }` where paginated.
+    - Errors use the `Error` body. Unknown IDs in the path or in the `account`/`loan` filters return 404; unknown IDs inside a request body
+      (e.g. a debit account) return 422 `validation_error`.
+    - `POST /admin/reset` restores all data of all customers to the CSV seed state.
+security:
+  - bearerAuth: []
+servers:
+  - url: http://localhost:8000/api
+    description: Local mock API
+tags:
+  - name: System
+  - name: Auth
+  - name: Customer
+  - name: Accounts
+  - name: Bookings
+  - name: Payments
+  - name: Standing orders
+  - name: Cards
+  - name: Portfolio
+  - name: Loans
+  - name: FX
+  - name: Dashboards
+  - name: Documents
+
+paths:
+  /system/info:
+    get:
+      tags: [System]
+      operationId: getSystemInfo
+      summary: Environment info, including the demo "today"
+      security: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SystemInfo' }
+
+  /admin/reset:
+    post:
+      tags: [System]
+      operationId: resetDemoData
+      summary: Reset all data to the seed state
+      description: Reloads the CSV seed data of all customers and discards all changes (payments, standing orders, profile edits, dashboards, uploaded documents).
+      security: []
+      responses:
+        '200':
+          description: Data reset
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status, reset_at]
+                properties:
+                  status: { type: string, const: ok }
+                  reset_at: { type: string, format: date-time }
+
+  /auth/login:
+    post:
+      tags: [Auth]
+      operationId: login
+      summary: Log in as a demo customer
+      description: |
+        Checks username and password and returns the customer's token. Send it as
+        `Authorization: Bearer <token>` with every other request. Tokens are fixed per user (no expiry,
+        no logout on the server): this is a mock, not real security.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginRequest' }
+            example: { username: lukas, password: lukas2026 }
+      responses:
+        '200':
+          description: Logged in
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/LoginResponse' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /customer:
+    get:
+      tags: [Customer]
+      operationId: getCustomer
+      summary: Customer profile, contact data and personal advisor
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Customer' }
+    patch:
+      tags: [Customer]
+      operationId: updateCustomer
+      summary: Update editable profile fields
+      description: Only contact data and address are editable. Name and all other fields are fixed.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CustomerUpdate' }
+      responses:
+        '200':
+          description: Updated profile
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Customer' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /asset-overview:
+    get:
+      tags: [Accounts]
+      operationId: getAssetOverview
+      summary: Total assets and total liquidity in CHF
+      description: Aggregates all accounts (including pillar 3a) and the securities depot. Foreign currencies are converted at the FX rate of the balance month. Used by the "Total assets" widget and the account overview summary box.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AssetOverview' }
+
+  /accounts:
+    get:
+      tags: [Accounts]
+      operationId: listAccounts
+      summary: List all accounts with balances
+      parameters:
+        - name: type
+          in: query
+          schema: { $ref: '#/components/schemas/AccountType' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, total_liquidity_chf, as_of]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Account' }
+                  total_liquidity_chf:
+                    type: number
+                    description: Sum of all current and savings account balances in CHF (excluding pillar 3a), same as `total_liquidity_chf` in `/asset-overview`.
+                  as_of: { type: string, format: date }
+
+  /accounts/{accountId}:
+    get:
+      tags: [Accounts]
+      operationId: getAccount
+      summary: Get one account
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Account' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /accounts/{accountId}/balance-preview:
+    get:
+      tags: [Accounts]
+      operationId: getBalancePreview
+      summary: Projected balance including upcoming debits
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - name: to
+          in: query
+          description: End of the preview horizon (default today + 60 days).
+          schema: { type: string, format: date }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/BalancePreview' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /accounts/{accountId}/bookings:
+    get:
+      tags: [Bookings]
+      operationId: listAccountBookings
+      summary: Bookings of one account
+      description: Same filters as `GET /bookings`. `balance_after` is meaningful in this per-account view.
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - $ref: '#/components/parameters/AmountMin'
+        - $ref: '#/components/parameters/AmountMax'
+        - $ref: '#/components/parameters/Query'
+        - $ref: '#/components/parameters/Direction'
+        - $ref: '#/components/parameters/BookingIds'
+        - $ref: '#/components/parameters/CardFilter'
+        - $ref: '#/components/parameters/TransactionType'
+        - $ref: '#/components/parameters/BookingSort'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/BookingPage' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /bookings:
+    get:
+      tags: [Bookings]
+      operationId: listBookings
+      summary: Bookings across all accounts (filterable)
+      description: |
+        Query parameters mirror the frontend deep-link parameters of `/movements`, e.g.
+        `/movements?account=CH06...&from=2026-08-01&to=2026-10-31&q=migros` or `/movements?ids=BK-00101,BK-00102`.
+        A TrustRoom solution can therefore link to exactly the bookings a result is based on.
+      parameters:
+        - name: account
+          in: query
+          description: Filter by account ID (e.g. `ACC-PRIV`) or IBAN. Repeatable or comma-separated.
+          schema:
+            type: array
+            items: { type: string }
+          style: form
+          explode: false
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - $ref: '#/components/parameters/AmountMin'
+        - $ref: '#/components/parameters/AmountMax'
+        - $ref: '#/components/parameters/Query'
+        - $ref: '#/components/parameters/Direction'
+        - $ref: '#/components/parameters/BookingIds'
+        - $ref: '#/components/parameters/CardFilter'
+        - $ref: '#/components/parameters/TransactionType'
+        - $ref: '#/components/parameters/BookingSort'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/BookingPage' }
+
+  /bookings/{bookingId}:
+    get:
+      tags: [Bookings]
+      operationId: getBooking
+      summary: Get one booking
+      parameters:
+        - name: bookingId
+          in: path
+          required: true
+          schema: { type: string, examples: [BK-00601] }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Booking' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /payments:
+    get:
+      tags: [Payments]
+      operationId: listPayments
+      summary: List payment orders (pending and completed)
+      parameters:
+        - name: status
+          in: query
+          schema: { $ref: '#/components/schemas/PaymentStatus' }
+        - name: account
+          in: query
+          description: Debit account ID or IBAN.
+          schema: { type: string }
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - $ref: '#/components/parameters/Query'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/PageMeta'
+                  - type: object
+                    required: [items, sum_chf]
+                    properties:
+                      items:
+                        type: array
+                        items: { $ref: '#/components/schemas/Payment' }
+                      sum_chf:
+                        type: number
+                        description: Sum of `amount_chf` over all matches (not only the current page), e.g. "Total pending payments" with `status=pending`.
+    post:
+      tags: [Payments]
+      operationId: createPayment
+      summary: Capture a payment (no real execution)
+      description: |
+        Creates a payment order with status `pending`. It is never executed: the customer sees it as a
+        pending payment in the e-banking.
+        For an account transfer set `payment_type: account_transfer` and `credit_account_id`.
+        To save as a standing order instead, use `POST /standing-orders`.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PaymentCreate' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Payment' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /payments/{paymentId}:
+    parameters:
+      - name: paymentId
+        in: path
+        required: true
+        schema: { type: string, examples: [PAY-0079] }
+    get:
+      tags: [Payments]
+      operationId: getPayment
+      summary: Get one payment
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Payment' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      tags: [Payments]
+      operationId: updatePayment
+      summary: Modify a pending payment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PaymentUpdate' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Payment' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    delete:
+      tags: [Payments]
+      operationId: deletePayment
+      summary: Delete a pending payment
+      responses:
+        '204': { description: Deleted }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+
+  /upcoming-payments:
+    get:
+      tags: [Payments]
+      operationId: listUpcomingPayments
+      summary: All upcoming debits (derived view)
+      description: |
+        Derived from active standing orders, pending payments, open credit-card statements and the next
+        interest and amortisation debits of the loans, plus a planned pillar 3a top-up to the yearly
+        maximum (`source_id` `MANUAL-3A`).
+        Default window is today to today + 60 days. Card statement amounts are provisional while the
+        billing period is still open.
+      parameters:
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - name: account
+          in: query
+          description: Debit account ID (exact match, no IBAN).
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, total_chf]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/UpcomingPayment' }
+                  total_chf: { type: number }
+
+  /payees:
+    get:
+      tags: [Payments]
+      operationId: listPayees
+      summary: Known payees (for the "Last payments" tab and recipient search)
+      parameters:
+        - $ref: '#/components/parameters/Query'
+        - name: new_last_90_days
+          in: query
+          schema: { type: boolean }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Payee' }
+
+  /standing-orders:
+    get:
+      tags: [Standing orders]
+      operationId: listStandingOrders
+      summary: List standing orders
+      parameters:
+        - name: status
+          in: query
+          schema: { $ref: '#/components/schemas/StandingOrderStatus' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/StandingOrder' }
+    post:
+      tags: [Standing orders]
+      operationId: createStandingOrder
+      summary: Create a standing order (no real execution)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/StandingOrderCreate' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/StandingOrder' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /standing-orders/{standingOrderId}:
+    parameters:
+      - name: standingOrderId
+        in: path
+        required: true
+        schema: { type: string, examples: [SO-RENT] }
+    get:
+      tags: [Standing orders]
+      operationId: getStandingOrder
+      summary: Get one standing order
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/StandingOrder' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      tags: [Standing orders]
+      operationId: updateStandingOrder
+      summary: Modify a standing order
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/StandingOrderUpdate' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/StandingOrder' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    delete:
+      tags: [Standing orders]
+      operationId: deleteStandingOrder
+      summary: Delete a standing order
+      responses:
+        '204': { description: Deleted }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /cards:
+    get:
+      tags: [Cards]
+      operationId: listCards
+      summary: List cards (read-only)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Card' }
+
+  /cards/{cardId}:
+    get:
+      tags: [Cards]
+      operationId: getCard
+      summary: Get one card
+      parameters:
+        - $ref: '#/components/parameters/CardId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Card' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /cards/{cardId}/statements:
+    get:
+      tags: [Cards]
+      operationId: listCardStatements
+      summary: Monthly statements of a credit card
+      description: Only credit cards have statements; debit cards return an empty list. The account only shows the statement total as one `card_settlement` booking (`reference` = `statement_id`).
+      parameters:
+        - $ref: '#/components/parameters/CardId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/CardStatement' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /cards/{cardId}/transactions:
+    get:
+      tags: [Cards]
+      operationId: listCardTransactions
+      summary: Individual credit-card transactions
+      description: |
+        Individual purchases of a credit card, optionally per statement. Debit-card payments are
+        regular account bookings; use `GET /bookings?card=CARD-DEBIT` for those.
+      parameters:
+        - $ref: '#/components/parameters/CardId'
+        - name: statement
+          in: query
+          description: Statement ID, e.g. `STMT-2026-10`.
+          schema: { type: string }
+        - name: ids
+          in: query
+          description: Comma-separated card transaction IDs.
+          schema:
+            type: array
+            items: { type: string }
+          style: form
+          explode: false
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - $ref: '#/components/parameters/AmountMin'
+        - $ref: '#/components/parameters/AmountMax'
+        - $ref: '#/components/parameters/Query'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/PageMeta'
+                  - type: object
+                    required: [items, sum_chf]
+                    properties:
+                      items:
+                        type: array
+                        items: { $ref: '#/components/schemas/CardTransaction' }
+                      sum_chf:
+                        type: number
+                        description: Sum of `amount_chf` over all matches (not only the current page).
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /portfolio:
+    get:
+      tags: [Portfolio]
+      operationId: getPortfolio
+      summary: Depot header, total value and asset allocation (read-only)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Portfolio' }
+
+  /portfolio/positions:
+    get:
+      tags: [Portfolio]
+      operationId: listPortfolioPositions
+      summary: Depot positions
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, total_value_chf, as_of]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Position' }
+                  total_value_chf: { type: number }
+                  as_of: { type: string, format: date }
+
+  /portfolio/performance:
+    get:
+      tags: [Portfolio]
+      operationId: getPortfolioPerformance
+      summary: Depot value over time
+      description: Month-end valuations. Seed data covers 36 months (Dec 2023 to Nov 2026), so `3y` returns all available data points.
+      parameters:
+        - name: period
+          in: query
+          schema:
+            type: string
+            enum: [ytd, 1y, 3y]
+            default: 1y
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PortfolioPerformance' }
+
+  /portfolio/transactions:
+    get:
+      tags: [Portfolio]
+      operationId: listPortfolioTransactions
+      summary: Securities trades (savings plan and one-off purchases)
+      parameters:
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - name: isin
+          in: query
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/PortfolioTransaction' }
+
+  /loans:
+    get:
+      tags: [Loans]
+      operationId: listLoans
+      summary: Loans at our bank (read-only)
+      description: |
+        One item per loan tranche, e.g. the three tranches of a mortgage. Interest and amortisation are
+        debited to `debit_account_id`; each debit is a booking with `transaction_type` `loan_interest` or
+        `loan_amortisation`. Loans from other lenders (car leasing, instalment contracts) are deliberately
+        not listed: they only show up as direct debits in the bookings. Customers without loans get an
+        empty list.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, total_balance_chf, annual_interest_chf, loan_to_value_pct]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Loan' }
+                  total_balance_chf: { type: number, description: Sum of `balance` over all loans. }
+                  annual_interest_chf:
+                    type: number
+                    description: Sum of `annual_interest_chf` over all loans (at today's rates and balances).
+                  loan_to_value_pct:
+                    type: [number, 'null']
+                    description: Total mortgage balance in percent of the lending value of the financed properties. Null without mortgages.
+
+  /loans/{loanId}:
+    get:
+      tags: [Loans]
+      operationId: getLoan
+      summary: Get one loan tranche
+      parameters:
+        - $ref: '#/components/parameters/LoanId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Loan' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /loan-transactions:
+    get:
+      tags: [Loans]
+      operationId: listLoanTransactions
+      summary: Interest and amortisation debits of the loans
+      description: |
+        Every interest and amortisation charge, newest first. `booking_id` links each one to its debit
+        booking on the account (`GET /bookings/{bookingId}`, or `/movements?ids=…` in the e-banking).
+        Interest charged at the end of a quarter belongs to the period `period_from`–`period_to`.
+      parameters:
+        - name: loan
+          in: query
+          description: Loan ID, e.g. `LOAN-02`.
+          schema: { type: string }
+        - name: type
+          in: query
+          schema: { $ref: '#/components/schemas/LoanTransactionType' }
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, sum_chf]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/LoanTransaction' }
+                  sum_chf: { type: number, description: Sum of `amount` over all matches. }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /fx-rates:
+    get:
+      tags: [FX]
+      operationId: listFxRates
+      summary: Monthly FX rates (CHF per 1 unit of foreign currency)
+      parameters:
+        - name: month
+          in: query
+          description: Month `YYYY-MM`. Omit for all months.
+          schema: { type: string, pattern: '^\d{4}-\d{2}$' }
+        - name: currency
+          in: query
+          schema: { $ref: '#/components/schemas/Currency' }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [base, items]
+                properties:
+                  base: { type: string, const: CHF }
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/FxRate' }
+
+  /dashboards:
+    get:
+      tags: [Dashboards]
+      operationId: listDashboards
+      summary: List dashboards with their widgets
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Dashboard' }
+    post:
+      tags: [Dashboards]
+      operationId: createDashboard
+      summary: Create a dashboard
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/DashboardCreate' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Dashboard' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /dashboards/{dashboardId}:
+    parameters:
+      - $ref: '#/components/parameters/DashboardId'
+    get:
+      tags: [Dashboards]
+      operationId: getDashboard
+      summary: Get one dashboard
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Dashboard' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      tags: [Dashboards]
+      operationId: updateDashboard
+      summary: Rename a dashboard and/or save its layout
+      description: |
+        `widgets` (if given) replaces the full widget list; this is what "Save" in edit mode sends.
+        Widgets missing from the list are removed; widgets without `id` are created.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/DashboardUpdate' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Dashboard' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    delete:
+      tags: [Dashboards]
+      operationId: deleteDashboard
+      summary: Delete a dashboard
+      description: The last remaining dashboard cannot be deleted.
+      responses:
+        '204': { description: Deleted }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+
+  /dashboards/{dashboardId}/widgets:
+    parameters:
+      - $ref: '#/components/parameters/DashboardId'
+    get:
+      tags: [Dashboards]
+      operationId: listWidgets
+      summary: Widgets of a dashboard
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Widget' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    post:
+      tags: [Dashboards]
+      operationId: createWidget
+      summary: Add a widget (standard or custom widget)
+      description: |
+        Main integration point for TrustRoom solutions. Example: "Create a widget listing payments
+        due in the next 30 days" → the team's solution posts a `custom` widget, which then appears on the dashboard.
+        If `position` is omitted, the widget is appended at the end of the grid.
+        Widgets are stored here, so any client can create them. An open e-banking dashboard shows the
+        new widget after it reloads; a TrustRoom iframe triggers that by sending `widgets-changed`
+        (docs/custom-widgets.md).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/WidgetCreate' }
+            examples:
+              declarativeTable:
+                summary: Declarative table widget
+                value:
+                  type: custom
+                  title: Payments due in the next 30 days
+                  custom:
+                    format: declarative
+                    spec:
+                      type: table
+                      title: Payments due in the next 30 days
+                      columns:
+                        - { key: due_date, label: Due date, format: date }
+                        - { key: payee, label: Payee }
+                        - { key: amount, label: Amount, format: currency, align: right }
+                      rows:
+                        - { due_date: '2026-11-27', payee: Wohnbau Sihlfeld AG, amount: 2800.0 }
+                        - { due_date: '2026-11-30', payee: CSS Kranken-Versicherung AG, amount: 467.4 }
+                      footer: { payee: Total, amount: 3267.4 }
+                    prompt: Create a widget listing payments due in the next 30 days.
+                    refresh: { mode: static }
+              declarativeBar:
+                summary: Declarative bar chart with traceability
+                value:
+                  type: custom
+                  title: Monthly spending
+                  custom:
+                    format: declarative
+                    spec:
+                      type: bar
+                      title: Monthly spending (CHF)
+                      currency: CHF
+                      data:
+                        - { label: '2026-09', value: 17179.58 }
+                        - { label: '2026-10', value: 9752.52 }
+                    source:
+                      booking_ids: [BK-00601, BK-00667]
+                    prompt: Show my monthly spending over the last 6 months as a chart.
+              html:
+                summary: Free HTML widget (sandboxed iframe)
+                value:
+                  type: custom
+                  title: Rent check
+                  custom:
+                    format: html
+                    html: '<div style="font:14px sans-serif">Rent paid in Aug, Sep, Oct ✔</div>'
+                    height: 160
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Widget' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /dashboards/{dashboardId}/widgets/{widgetId}:
+    parameters:
+      - $ref: '#/components/parameters/DashboardId'
+      - name: widgetId
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Dashboards]
+      operationId: getWidget
+      summary: Get one widget
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Widget' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      tags: [Dashboards]
+      operationId: updateWidget
+      summary: Update a widget (title, position, config, custom content)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/WidgetUpdate' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Widget' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    delete:
+      tags: [Dashboards]
+      operationId: deleteWidget
+      summary: Remove a widget
+      responses:
+        '204': { description: Deleted }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /widget-catalog:
+    get:
+      tags: [Dashboards]
+      operationId: getWidgetCatalog
+      summary: Widgets available in the "Add widget" dialog
+      description: Standard widget types grouped by tab, plus all custom widgets created so far (tab `trustroom`), so they can be added to other dashboards.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/CatalogEntry' }
+
+  /documents:
+    get:
+      tags: [Documents]
+      operationId: listDocuments
+      summary: List documents uploaded by the customer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Document' }
+    post:
+      tags: [Documents]
+      operationId: uploadDocument
+      summary: Upload a document (stored locally, never leaves the environment)
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  format: binary
+                description:
+                  type: string
+      responses:
+        '201':
+          description: Uploaded
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Document' }
+        '413':
+          description: File too large
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+
+  /documents/{documentId}:
+    parameters:
+      - $ref: '#/components/parameters/DocumentId'
+    get:
+      tags: [Documents]
+      operationId: getDocument
+      summary: Document metadata
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Document' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    delete:
+      tags: [Documents]
+      operationId: deleteDocument
+      summary: Delete a document
+      responses:
+        '204': { description: Deleted }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /documents/{documentId}/content:
+    parameters:
+      - $ref: '#/components/parameters/DocumentId'
+    get:
+      tags: [Documents]
+      operationId: downloadDocument
+      summary: Download the original file
+      responses:
+        '200':
+          description: File content
+          content:
+            application/octet-stream:
+              schema: { type: string, format: binary }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+components:
+  parameters:
+    AccountId:
+      name: accountId
+      in: path
+      required: true
+      description: Account ID (e.g. `ACC-PRIV`) or IBAN.
+      schema: { type: string, examples: [ACC-PRIV] }
+    CardId:
+      name: cardId
+      in: path
+      required: true
+      schema: { type: string, examples: [CARD-VISA] }
+    LoanId:
+      name: loanId
+      in: path
+      required: true
+      schema: { type: string, examples: [LOAN-02] }
+    DashboardId:
+      name: dashboardId
+      in: path
+      required: true
+      schema: { type: string }
+    DocumentId:
+      name: documentId
+      in: path
+      required: true
+      schema: { type: string }
+    From:
+      name: from
+      in: query
+      description: Start date (inclusive).
+      schema: { type: string, format: date }
+    To:
+      name: to
+      in: query
+      description: End date (inclusive).
+      schema: { type: string, format: date }
+    AmountMin:
+      name: amount_min
+      in: query
+      description: Minimum absolute amount in CHF.
+      schema: { type: number, minimum: 0 }
+    AmountMax:
+      name: amount_max
+      in: query
+      description: Maximum absolute amount in CHF.
+      schema: { type: number, minimum: 0 }
+    Query:
+      name: q
+      in: query
+      description: Case-insensitive free-text search over text, counterparty/merchant name, IBAN and reference.
+      schema: { type: string }
+    Direction:
+      name: direction
+      in: query
+      schema:
+        type: string
+        enum: [credit, debit]
+    BookingIds:
+      name: ids
+      in: query
+      description: Comma-separated booking IDs. Returns exactly these bookings (other filters still apply).
+      schema:
+        type: array
+        items: { type: string }
+      style: form
+      explode: false
+      example: [BK-00601, BK-00667, BK-00741]
+    CardFilter:
+      name: card
+      in: query
+      description: Card ID, e.g. `CARD-DEBIT`.
+      schema: { type: string }
+    TransactionType:
+      name: transaction_type
+      in: query
+      schema:
+        type: array
+        items: { $ref: '#/components/schemas/TransactionType' }
+      style: form
+      explode: false
+    BookingSort:
+      name: sort
+      in: query
+      description: Sort field, prefix `-` for descending.
+      schema:
+        type: string
+        enum: [booking_date, -booking_date, amount, -amount]
+        default: -booking_date
+    Limit:
+      name: limit
+      in: query
+      schema: { type: integer, minimum: 1, maximum: 1000, default: 100 }
+    Offset:
+      name: offset
+      in: query
+      schema: { type: integer, minimum: 0, default: 0 }
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Token from `POST /auth/login`, sent as `Authorization: Bearer <token>`.'
+
+  responses:
+    Unauthorized:
+      description: Missing or invalid token, or wrong username/password on login
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    Conflict:
+      description: Operation not allowed in the current state (e.g. payment already completed)
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+    ValidationError:
+      description: Invalid input
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+
+  schemas:
+    LoginRequest:
+      type: object
+      required: [username, password]
+      additionalProperties: false
+      properties:
+        username: { type: string, examples: [lukas] }
+        password: { type: string, examples: [lukas2026] }
+
+    LoginResponse:
+      type: object
+      required: [token, customer_id, first_name, last_name]
+      properties:
+        token: { type: string, description: Fixed per user. }
+        customer_id: { type: string, examples: [CUST-001] }
+        first_name: { type: string }
+        last_name: { type: string }
+
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string, examples: [not_found, validation_error, conflict, unauthorized, payload_too_large] }
+        message: { type: string }
+        details:
+          type: array
+          items:
+            type: object
+            properties:
+              field: { type: string }
+              message: { type: string }
+
+    PageMeta:
+      type: object
+      required: [total, limit, offset]
+      properties:
+        total: { type: integer, description: Number of matches across all pages. }
+        limit: { type: integer }
+        offset: { type: integer }
+
+    Currency:
+      type: string
+      enum: [CHF, EUR, USD, GBP]
+
+    SystemInfo:
+      type: object
+      required: [today, api_version]
+      properties:
+        today:
+          type: string
+          format: date
+          description: Reference date of the demo environment (default 2026-11-27).
+        data_from: { type: string, format: date, examples: ['2023-12-01'] }
+        data_to: { type: string, format: date, examples: ['2026-11-26'] }
+        api_version: { type: string }
+
+    Address:
+      type: object
+      required: [street, zip, city, country]
+      properties:
+        street: { type: string }
+        zip: { type: string }
+        city: { type: string }
+        country: { type: string, description: ISO 3166-1 alpha-2, examples: [CH] }
+
+    Advisor:
+      type: object
+      required: [name, phone]
+      properties:
+        name: { type: string, examples: [Nadine Frei] }
+        phone: { type: string, examples: ['+41 44 555 01 23'] }
+        email: { type: string, format: email }
+
+    Customer:
+      type: object
+      required: [customer_id, first_name, last_name, address, email, mobile, language, advisor]
+      properties:
+        customer_id: { type: string, examples: [CUST-001] }
+        first_name: { type: string }
+        last_name: { type: string }
+        birth_date: { type: string, format: date }
+        address: { $ref: '#/components/schemas/Address' }
+        email: { type: string, format: email }
+        mobile: { type: string }
+        language:
+          type: string
+          enum: [de, fr, it, en]
+          description: Correspondence language (display only; UI stays English).
+        nationality: { type: string }
+        civil_status: { type: string }
+        partner_name: { type: string }
+        occupation: { type: string }
+        employer: { type: string }
+        gross_salary_chf: { type: number }
+        salary_payments_per_year: { type: integer }
+        health_insurance: { type: string }
+        savings_goal: { type: string }
+        risk_profile: { type: string }
+        customer_since: { type: string, format: date }
+        children:
+          type: string
+          description: Children, as free text (only some customers have this field).
+        property:
+          type: string
+          description: Owned home, as free text (only some customers have this field).
+        last_login_at:
+          type: string
+          format: date-time
+          description: Shown in the greeting ("your last login was on …").
+        advisor: { $ref: '#/components/schemas/Advisor' }
+
+    CustomerUpdate:
+      type: object
+      minProperties: 1
+      additionalProperties: false
+      properties:
+        email: { type: string, format: email }
+        mobile: { type: string }
+        address: { $ref: '#/components/schemas/Address' }
+
+    AccountType:
+      type: string
+      enum: [current, savings, pillar3a]
+
+    Account:
+      type: object
+      required: [account_id, name, type, iban, currency, current_balance, current_balance_chf, balance_date]
+      properties:
+        account_id: { type: string, examples: [ACC-PRIV] }
+        name: { type: string, examples: [Privatkonto] }
+        type: { $ref: '#/components/schemas/AccountType' }
+        iban: { type: string, examples: ['CH06 0888 8000 0044 1002 0'] }
+        currency: { $ref: '#/components/schemas/Currency' }
+        opening_date: { type: string, format: date }
+        opening_balance: { type: number }
+        current_balance: { type: number }
+        current_balance_chf: { type: number }
+        balance_date: { type: string, format: date }
+        interest_rate: { type: number, description: Percent p.a. }
+        purpose: { type: string }
+        savings_goal: { type: [string, 'null'] }
+
+    AssetOverview:
+      type: object
+      required: [as_of, total_assets_chf, total_liquidity_chf, groups]
+      properties:
+        as_of: { type: string, format: date }
+        total_assets_chf: { type: number, description: Accounts + pillar 3a + depot. }
+        total_liquidity_chf: { type: number, description: All current and savings accounts (excluding pillar 3a and depot). }
+        groups:
+          type: array
+          items:
+            type: object
+            required: [group, value_chf, items]
+            properties:
+              group:
+                type: string
+                enum: [accounts, pension, investments]
+              value_chf: { type: number }
+              items:
+                type: array
+                items:
+                  type: object
+                  required: [id, name, value_chf]
+                  properties:
+                    id: { type: string, examples: [ACC-3A, DEPOT-01] }
+                    name: { type: string }
+                    iban: { type: [string, 'null'] }
+                    value_chf: { type: number }
+
+    BalancePreview:
+      type: object
+      required: [account_id, current_balance, points]
+      properties:
+        account_id: { type: string }
+        current_balance: { type: number }
+        points:
+          type: array
+          description: Projected balance after each upcoming debit/credit.
+          items:
+            type: object
+            required: [date, amount, balance, description]
+            properties:
+              date: { type: string, format: date }
+              amount: { type: number }
+              balance: { type: number }
+              description: { type: string }
+              source_id: { type: string }
+
+    TransactionType:
+      type: string
+      enum: [salary, incoming_transfer, standing_order, account_transfer, ebill, qr_bill, domestic, international,
+             direct_debit, debit_card, atm, twint_p2p, twint_merchant, card_settlement, securities_buy, dividend,
+             interest, fee, loan_interest, loan_amortisation]
+
+    Booking:
+      type: object
+      required: [booking_id, account_id, booking_date, value_date, amount, currency, balance_after, booking_text, transaction_type]
+      properties:
+        booking_id: { type: string, examples: [BK-00601] }
+        account_id: { type: string }
+        account_name: { type: string, description: Convenience field for the all-accounts view. }
+        booking_date: { type: string, format: date }
+        value_date: { type: string, format: date }
+        amount: { type: number, description: 'CHF, positive = credit, negative = debit.' }
+        currency: { type: string, const: CHF }
+        balance_after: { type: number, description: Account balance after this booking. }
+        booking_text: { type: string }
+        counterparty_name: { type: [string, 'null'] }
+        counterparty_iban: { type: [string, 'null'] }
+        transaction_type: { $ref: '#/components/schemas/TransactionType' }
+        reference:
+          type: [string, 'null']
+          description: Reference/message. For credit-card settlements this is the `statement_id`.
+        card_id: { type: [string, 'null'] }
+        original_amount: { type: [number, 'null'] }
+        original_currency: { oneOf: [{ $ref: '#/components/schemas/Currency' }, { type: 'null' }] }
+        payee_id: { type: [string, 'null'] }
+        standing_order_id: { type: [string, 'null'] }
+        payment_id: { type: [string, 'null'] }
+
+    BookingPage:
+      allOf:
+        - $ref: '#/components/schemas/PageMeta'
+        - type: object
+          required: [items, sum_credit, sum_debit]
+          properties:
+            items:
+              type: array
+              items: { $ref: '#/components/schemas/Booking' }
+            sum_credit: { type: number, description: Sum of credits over all matches. }
+            sum_debit: { type: number, description: Sum of debits over all matches (negative). }
+
+    PaymentStatus:
+      type: string
+      enum: [pending, completed]
+
+    PaymentType:
+      type: string
+      enum: [domestic, qr_bill, international, account_transfer, ebill, direct_debit, standing_order]
+      description: '`ebill`, `direct_debit` and `standing_order` exist in seed data only and cannot be created via POST.'
+
+    Payment:
+      type: object
+      required: [payment_id, payment_type, status, execution_date, debit_account_id, amount, currency]
+      properties:
+        payment_id: { type: string, examples: [PAY-0079] }
+        payment_type: { $ref: '#/components/schemas/PaymentType' }
+        status: { $ref: '#/components/schemas/PaymentStatus' }
+        execution_date: { type: string, format: date }
+        debit_account_id: { type: string }
+        credit_account_id: { type: [string, 'null'], description: Only for account transfers. }
+        payee_id: { type: [string, 'null'] }
+        payee_name: { type: [string, 'null'] }
+        payee_iban: { type: [string, 'null'] }
+        payee_address: { oneOf: [{ $ref: '#/components/schemas/Address' }, { type: 'null' }] }
+        amount: { type: number }
+        currency: { $ref: '#/components/schemas/Currency' }
+        amount_chf: { type: number }
+        message: { type: [string, 'null'] }
+        reference: { type: [string, 'null'], description: QR/structured reference. }
+        booking_id: { type: [string, 'null'], description: Set once completed. }
+        created_at: { type: string, format: date-time }
+        origin:
+          type: string
+          enum: [seed, user]
+
+    PaymentCreate:
+      type: object
+      required: [payment_type, debit_account_id, amount, currency, execution_date]
+      properties:
+        payment_type:
+          type: string
+          enum: [domestic, qr_bill, international, account_transfer]
+        debit_account_id: { type: string }
+        credit_account_id: { type: string, description: Required for `account_transfer`. }
+        payee_name: { type: string, description: Required unless `account_transfer`. }
+        payee_iban: { type: string, description: Required unless `account_transfer`. }
+        payee_address: { $ref: '#/components/schemas/Address' }
+        amount: { type: number, exclusiveMinimum: 0 }
+        currency: { $ref: '#/components/schemas/Currency' }
+        execution_date: { type: string, format: date, description: Must be today or later. }
+        message: { type: string, maxLength: 140 }
+        reference: { type: string }
+
+    PaymentUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        debit_account_id: { type: string }
+        credit_account_id: { type: string }
+        payee_name: { type: string }
+        payee_iban: { type: string }
+        payee_address: { $ref: '#/components/schemas/Address' }
+        amount: { type: number, exclusiveMinimum: 0 }
+        currency: { $ref: '#/components/schemas/Currency' }
+        execution_date: { type: string, format: date }
+        message: { type: string, maxLength: 140 }
+        reference: { type: string }
+
+    UpcomingPayment:
+      type: object
+      required: [due_date, debit_account_id, type, payee_name, amount, currency, source_id]
+      properties:
+        due_date: { type: string, format: date }
+        debit_account_id: { type: string }
+        type:
+          type: string
+          enum: [standing_order, account_transfer, ebill, qr_bill, domestic, international, direct_debit, card_statement,
+                 loan_interest, loan_amortisation]
+        payee_name: { type: string }
+        amount: { type: number }
+        currency: { $ref: '#/components/schemas/Currency' }
+        amount_chf: { type: number }
+        description: { type: string }
+        source_id:
+          type: string
+          description: ID of the underlying standing order, payment, card statement or loan, or `MANUAL-3A` for the planned pillar 3a top-up.
+          examples: [SO-RENT, PAY-0079, STMT-2026-11, LOAN-03]
+        provisional:
+          type: boolean
+          description: True for card statements whose billing period is still open, and for SARON interest (the rate is fixed at the end of the quarter).
+
+    Payee:
+      type: object
+      required: [payee_id, name]
+      properties:
+        payee_id: { type: string, examples: [P-RENT] }
+        name: { type: string }
+        iban: { type: [string, 'null'] }
+        city: { type: [string, 'null'] }
+        country: { type: [string, 'null'] }
+        first_payment_date: { type: [string, 'null'], format: date }
+        last_payment_date: { type: [string, 'null'], format: date }
+        payments_count: { type: integer }
+        is_new_payee_last_90_days: { type: boolean }
+
+    StandingOrderFrequency:
+      type: string
+      enum: [weekly, monthly, quarterly, semiannually, annually]
+
+    StandingOrderStatus:
+      type: string
+      enum: [active, ended]
+
+    StandingOrder:
+      type: object
+      required: [standing_order_id, debit_account_id, payee_name, amount, currency, frequency, start_date, next_execution_date, status]
+      properties:
+        standing_order_id: { type: string, examples: [SO-RENT] }
+        debit_account_id: { type: string }
+        credit_account_id: { type: [string, 'null'], description: Set for transfers to own accounts. }
+        payee_id: { type: [string, 'null'] }
+        payee_name: { type: string }
+        payee_iban: { type: [string, 'null'] }
+        amount: { type: number }
+        currency: { $ref: '#/components/schemas/Currency' }
+        frequency: { $ref: '#/components/schemas/StandingOrderFrequency' }
+        day: { type: integer, minimum: 1, maximum: 31, description: Day of month for execution. }
+        start_date: { type: string, format: date }
+        end_date: { type: [string, 'null'], format: date }
+        next_execution_date: { type: [string, 'null'], format: date, description: '`null` for ended standing orders.' }
+        message: { type: [string, 'null'] }
+        status: { $ref: '#/components/schemas/StandingOrderStatus' }
+
+    StandingOrderCreate:
+      type: object
+      required: [debit_account_id, amount, currency, frequency, start_date]
+      description: Provide either `credit_account_id` (own account) or `payee_name` + `payee_iban`.
+      properties:
+        debit_account_id: { type: string }
+        credit_account_id: { type: string }
+        payee_name: { type: string }
+        payee_iban: { type: string }
+        amount: { type: number, exclusiveMinimum: 0 }
+        currency: { $ref: '#/components/schemas/Currency' }
+        frequency: { $ref: '#/components/schemas/StandingOrderFrequency' }
+        day: { type: integer, minimum: 1, maximum: 31 }
+        start_date: { type: string, format: date }
+        end_date: { type: string, format: date }
+        message: { type: string, maxLength: 140 }
+
+    StandingOrderUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        payee_name: { type: string }
+        payee_iban: { type: string }
+        amount: { type: number, exclusiveMinimum: 0 }
+        frequency: { $ref: '#/components/schemas/StandingOrderFrequency' }
+        day: { type: integer, minimum: 1, maximum: 31 }
+        end_date: { type: [string, 'null'], format: date }
+        message: { type: string, maxLength: 140 }
+
+    Card:
+      type: object
+      required: [card_id, type, product, masked_number, linked_account, status]
+      properties:
+        card_id: { type: string, examples: [CARD-VISA] }
+        type:
+          type: string
+          enum: [debit, credit]
+        product: { type: string, examples: [Visa Gold] }
+        masked_number: { type: string, examples: ['4532 •••• •••• 1847'] }
+        linked_account: { type: string, examples: [ACC-PRIV] }
+        holder: { type: string }
+        valid_until: { type: string, pattern: '^\d{4}-\d{2}$', examples: ['2027-11'] }
+        status:
+          type: string
+          enum: [active, blocked, expired]
+        monthly_limit_chf: { type: number }
+        billing: { type: string }
+
+    CardStatement:
+      type: object
+      required: [statement_id, card_id, period_from, period_to, total_chf, debit_date, status, transactions_count]
+      properties:
+        statement_id: { type: string, examples: [STMT-2026-10] }
+        card_id: { type: string }
+        period_from: { type: string, format: date }
+        period_to: { type: string, format: date }
+        total_chf: { type: number, description: Provisional while `status` is `open`. }
+        debit_date: { type: string, format: date }
+        status:
+          type: string
+          enum: [open, closed, settled]
+        transactions_count: { type: integer }
+        booking_id: { type: [string, 'null'], description: 'Settlement booking on the linked account, once debited.' }
+
+    Loan:
+      type: object
+      required: [loan_id, loan_type, product, number, currency, original_amount, balance, balance_date, start_date,
+                 maturity_date, rate_type, interest_rate, annual_interest_chf, interest_frequency, next_interest_date,
+                 amortisation_type, debit_account_id, status]
+      properties:
+        loan_id: { type: string, examples: [LOAN-02] }
+        facility_id: { type: string, description: Framework agreement the tranche belongs to., examples: [FAC-01] }
+        facility_name: { type: string, examples: [Hypothekar-Rahmenvertrag HY-8820-0414] }
+        property_name: { type: string, examples: [EFH Rebhaldenstrasse 14] }
+        property_address: { type: string }
+        lending_value_chf: { type: number, description: Lending value of the financed property. }
+        lender: { type: string }
+        loan_type:
+          type: string
+          enum: [mortgage]
+        product: { type: string, examples: [Festhypothek 8 Jahre] }
+        number: { type: string, description: Contract number of the tranche., examples: ['0880-4471.02'] }
+        currency: { $ref: '#/components/schemas/Currency' }
+        rank: { type: string, examples: [1. Hypothek] }
+        original_amount: { type: number }
+        balance: { type: number, description: Outstanding amount on `balance_date`. }
+        balance_date: { type: string, format: date }
+        start_date: { type: string, format: date }
+        maturity_date: { type: string, format: date, description: End of the fixed term (SARON - end of the framework term). }
+        rate_type:
+          type: string
+          enum: [fixed, saron]
+        interest_rate: { type: number, description: 'Current rate in percent p.a. (SARON - reference rate floored at `rate_floor`, plus `margin`).' }
+        reference_rate: { type: [string, 'null'], examples: [SARON compounded 3M] }
+        margin: { type: [number, 'null'], description: Margin in percent (SARON only). }
+        rate_floor: { type: [number, 'null'], description: Floor of the reference rate in percent (SARON only). }
+        annual_interest_chf: { type: number, description: '`balance` × `interest_rate` for one year (today''s rate, no amortisation).' }
+        interest_frequency:
+          type: string
+          enum: [quarterly]
+        next_interest_date: { type: string, format: date }
+        amortisation_type:
+          type: string
+          enum: [none, direct, indirect]
+        amortisation_amount: { type: number, description: Amount per amortisation date (0 without amortisation). }
+        amortisation_frequency: { type: [string, 'null'], enum: [quarterly, null] }
+        debit_account_id: { type: string, examples: [ACC-PRIV] }
+        collateral: { type: string }
+        status:
+          type: string
+          enum: [active, repaid]
+        remarks: { type: [string, 'null'] }
+
+    LoanTransactionType:
+      type: string
+      enum: [interest, amortisation]
+
+    LoanTransaction:
+      type: object
+      required: [loan_tx_id, loan_id, value_date, type, base_balance, amount, balance_after, debit_account_id, booking_id]
+      properties:
+        loan_tx_id: { type: string, examples: [LTX-0001] }
+        loan_id: { type: string }
+        value_date: { type: string, format: date }
+        type: { $ref: '#/components/schemas/LoanTransactionType' }
+        period_from: { type: [string, 'null'], format: date, description: Interest period (interest only). }
+        period_to: { type: [string, 'null'], format: date }
+        base_balance: { type: number, description: Loan balance the charge is based on. }
+        interest_rate: { type: [number, 'null'], description: Rate in percent p.a. (interest only). }
+        amount: { type: number, description: Charged amount in CHF (positive). }
+        balance_after: { type: number, description: Loan balance after the charge (lower after an amortisation). }
+        debit_account_id: { type: string }
+        booking_id: { type: string, description: The debit booking on the account., examples: [BK-00055] }
+
+    CardTransaction:
+      type: object
+      required: [card_transaction_id, card_id, transaction_date, merchant_text, amount_chf, statement_id]
+      properties:
+        card_transaction_id: { type: string, examples: [CTX-00001] }
+        card_id: { type: string }
+        transaction_date: { type: string, format: date }
+        booking_date: { type: string, format: date }
+        merchant_text: { type: string, description: Raw merchant text as on the statement. }
+        merchant_name: { type: string }
+        channel:
+          type: string
+          enum: [pos, online, fee]
+        country: { type: string }
+        original_amount: { type: number }
+        original_currency: { $ref: '#/components/schemas/Currency' }
+        fx_rate: { type: [number, 'null'] }
+        fx_fee_chf: { type: number }
+        amount_chf: { type: number, description: 'Positive = charge, negative = refund.' }
+        statement_id: { type: string }
+
+    AllocationSlice:
+      type: object
+      required: [label, value_chf, weight_pct]
+      properties:
+        label: { type: string }
+        value_chf: { type: number }
+        weight_pct: { type: number }
+
+    Portfolio:
+      type: object
+      required: [depot_id, depot_name, total_value_chf, as_of, allocation]
+      properties:
+        depot_id: { type: string, examples: [DEPOT-01] }
+        depot_name: { type: string, examples: [Depot 0418-2210.01] }
+        total_value_chf: { type: number }
+        invested_chf: { type: number, description: Sum of all purchases in the data period (without the opening position). }
+        as_of: { type: string, format: date }
+        allocation:
+          type: object
+          required: [asset_class, currency, region]
+          properties:
+            asset_class:
+              type: array
+              items: { $ref: '#/components/schemas/AllocationSlice' }
+            currency:
+              type: array
+              items: { $ref: '#/components/schemas/AllocationSlice' }
+            region:
+              type: array
+              items: { $ref: '#/components/schemas/AllocationSlice' }
+
+    Position:
+      type: object
+      required: [isin, name, asset_class, currency, quantity, price, market_value_chf, weight_pct]
+      properties:
+        depot_id: { type: string, examples: [DEPOT-01] }
+        depot_name: { type: string }
+        isin: { type: string, examples: [IE00B4L5Y983] }
+        name: { type: string }
+        asset_class: { type: string }
+        region: { type: string }
+        sector: { type: string }
+        currency: { $ref: '#/components/schemas/Currency' }
+        quantity: { type: number }
+        price: { type: number, description: Price in position currency. }
+        price_date: { type: string, format: date }
+        fx_rate: { type: [number, 'null'] }
+        market_value_chf: { type: number }
+        weight_pct: { type: number }
+        cost_value_chf: { type: number }
+        performance_pct: { type: number, description: Unrealized performance vs. cost value. }
+
+    PortfolioPerformance:
+      type: object
+      required: [period, points]
+      properties:
+        period:
+          type: string
+          enum: [ytd, 1y, 3y]
+        start_value_chf: { type: number }
+        end_value_chf: { type: number }
+        net_contributions_chf: { type: number }
+        performance_pct: { type: number }
+        points:
+          type: array
+          items:
+            type: object
+            required: [date, value_chf]
+            properties:
+              date: { type: string, format: date }
+              value_chf: { type: number }
+
+    PortfolioTransaction:
+      type: object
+      required: [trade_date, isin, name, side, quantity, price, currency, amount_chf]
+      properties:
+        trade_date: { type: string, format: date }
+        isin: { type: string }
+        name: { type: string }
+        side:
+          type: string
+          enum: [opening, buy, sell]
+          description: "`opening` is the depot's starting position at the start of the data period, valued at that day's price. It has no booking and is not a purchase."
+        quantity: { type: number }
+        price: { type: number }
+        currency: { $ref: '#/components/schemas/Currency' }
+        fx_rate: { type: [number, 'null'] }
+        amount_chf: { type: number }
+        fees_chf: { type: number }
+        booking_id: { type: [string, 'null'] }
+
+    FxRate:
+      type: object
+      required: [month, currency, rate]
+      properties:
+        month: { type: string, pattern: '^\d{4}-\d{2}$', examples: ['2026-10'] }
+        currency: { $ref: '#/components/schemas/Currency' }
+        rate: { type: number, description: CHF per 1 unit of `currency`. }
+
+    Dashboard:
+      type: object
+      required: [id, name, is_default, widgets]
+      properties:
+        id: { type: string }
+        name: { type: string, examples: [Dashboard, Payments] }
+        is_default: { type: boolean }
+        widgets:
+          type: array
+          items: { $ref: '#/components/schemas/Widget' }
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+
+    DashboardCreate:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string, minLength: 1, maxLength: 60 }
+        widgets:
+          type: array
+          items: { $ref: '#/components/schemas/WidgetCreate' }
+
+    DashboardUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        name: { type: string, minLength: 1, maxLength: 60 }
+        is_default: { type: boolean }
+        widgets:
+          type: array
+          description: Full replacement of the widget list (edit-mode save).
+          items:
+            allOf:
+              - $ref: '#/components/schemas/WidgetCreate'
+              - type: object
+                properties:
+                  id: { type: string, description: Existing widget ID; omit for new widgets. }
+
+    WidgetType:
+      type: string
+      enum: [total_assets, account_balances, recent_movements, new_payment, account_transfer, pending_payments,
+             portfolio, personal_contact, loans, custom]
+
+    WidgetPosition:
+      type: object
+      description: Position on the 3-column grid.
+      required: [col, row]
+      properties:
+        col: { type: integer, minimum: 0, maximum: 2 }
+        row: { type: integer, minimum: 0 }
+        width: { type: integer, minimum: 1, maximum: 3, default: 1, description: Column span. }
+        height: { type: integer, minimum: 1, default: 1, description: Row span. }
+
+    Widget:
+      type: object
+      required: [id, type, position]
+      properties:
+        id: { type: string }
+        type: { $ref: '#/components/schemas/WidgetType' }
+        title: { type: string }
+        position: { $ref: '#/components/schemas/WidgetPosition' }
+        config:
+          type: object
+          description: 'Type-specific settings of standard widgets, e.g. `{ "limit": 5 }` for recent_movements or `{ "account_id": "ACC-PRIV" }`.'
+          additionalProperties: true
+        custom:
+          $ref: '#/components/schemas/CustomWidget'
+        created_at: { type: string, format: date-time }
+
+    WidgetCreate:
+      type: object
+      required: [type]
+      description: '`custom` is required when `type` is `custom`.'
+      properties:
+        type: { $ref: '#/components/schemas/WidgetType' }
+        title: { type: string }
+        position: { $ref: '#/components/schemas/WidgetPosition' }
+        config:
+          type: object
+          additionalProperties: true
+        custom:
+          $ref: '#/components/schemas/CustomWidget'
+
+    WidgetUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        title: { type: string }
+        position: { $ref: '#/components/schemas/WidgetPosition' }
+        config:
+          type: object
+          additionalProperties: true
+        custom:
+          $ref: '#/components/schemas/CustomWidget'
+
+    CustomWidget:
+      description: Custom widget content in one of two formats.
+      oneOf:
+        - $ref: '#/components/schemas/DeclarativeCustomWidget'
+        - $ref: '#/components/schemas/HtmlCustomWidget'
+      discriminator:
+        propertyName: format
+        mapping:
+          declarative: '#/components/schemas/DeclarativeCustomWidget'
+          html: '#/components/schemas/HtmlCustomWidget'
+
+    CustomWidgetCommon:
+      type: object
+      properties:
+        source: { $ref: '#/components/schemas/WidgetSource' }
+        prompt:
+          type: string
+          description: Original user request that produced the widget.
+        refresh: { $ref: '#/components/schemas/WidgetRefresh' }
+        created_by:
+          type: string
+          description: Free label of the producing solution, e.g. the team name.
+
+    DeclarativeCustomWidget:
+      allOf:
+        - $ref: '#/components/schemas/CustomWidgetCommon'
+        - type: object
+          required: [format, spec]
+          properties:
+            format: { type: string, const: declarative }
+            spec: { $ref: '#/components/schemas/DeclarativeSpec' }
+
+    HtmlCustomWidget:
+      allOf:
+        - $ref: '#/components/schemas/CustomWidgetCommon'
+        - type: object
+          required: [format, html]
+          properties:
+            format: { type: string, const: html }
+            html:
+              type: string
+              description: |
+                Self-contained HTML/JS document or fragment. Rendered in an iframe with
+                `sandbox="allow-scripts"` (no same-origin access, no session/cookies, no top navigation).
+                External resources should be inlined, since the environment may run air-gapped.
+              maxLength: 500000
+            height:
+              type: integer
+              minimum: 80
+              maximum: 1200
+              default: 300
+              description: Iframe height in px.
+
+    WidgetSource:
+      type: object
+      description: Traceability. Lets the dashboard show a "Show underlying transactions" link.
+      properties:
+        booking_ids:
+          type: array
+          items: { type: string }
+          description: Linked to `/movements?ids=…`.
+        card_transaction_ids:
+          type: array
+          items: { type: string }
+        movements_query:
+          type: string
+          description: Alternative to explicit IDs, a movements deep-link query string, e.g. `account=ACC-PRIV&from=2026-10-01&to=2026-10-31&q=migros`.
+
+    WidgetRefresh:
+      type: object
+      required: [mode]
+      properties:
+        mode:
+          type: string
+          enum: [static, endpoint]
+          default: static
+        url:
+          type: string
+          format: uri
+          description: 'For `endpoint`, a team endpoint returning a fresh `CustomWidget` JSON (GET). The browser fetches it cross-origin, so it must send CORS headers (e.g. `Access-Control-Allow-Origin: *`).'
+        interval_seconds:
+          type: integer
+          minimum: 30
+          description: Optional polling interval; otherwise refreshed on dashboard load.
+
+    DeclarativeSpec:
+      description: Simple chart/table spec rendered by the e-banking with its own ti&m-styled components.
+      oneOf:
+        - $ref: '#/components/schemas/KpiSpec'
+        - $ref: '#/components/schemas/TableSpec'
+        - $ref: '#/components/schemas/ChartSpec'
+      discriminator:
+        propertyName: type
+        mapping:
+          kpi: '#/components/schemas/KpiSpec'
+          table: '#/components/schemas/TableSpec'
+          bar: '#/components/schemas/ChartSpec'
+          line: '#/components/schemas/ChartSpec'
+          donut: '#/components/schemas/ChartSpec'
+
+    SpecCommon:
+      type: object
+      properties:
+        title: { type: string }
+        subtitle: { type: string }
+        currency:
+          type: string
+          description: If set, numeric values are formatted as amounts in this currency.
+        footnote: { type: string }
+
+    KpiSpec:
+      allOf:
+        - $ref: '#/components/schemas/SpecCommon'
+        - type: object
+          required: [type, value]
+          properties:
+            type: { type: string, const: kpi }
+            value: { type: number }
+            unit: { type: string, description: E.g. `%`; ignored when `currency` is set. }
+            delta:
+              type: number
+              description: Optional change vs. comparison value (shown with arrow).
+            delta_label: { type: string, examples: [vs. last month] }
+
+    TableSpec:
+      allOf:
+        - $ref: '#/components/schemas/SpecCommon'
+        - type: object
+          required: [type, columns, rows]
+          properties:
+            type: { type: string, const: table }
+            columns:
+              type: array
+              items:
+                type: object
+                required: [key, label]
+                properties:
+                  key: { type: string }
+                  label: { type: string }
+                  format:
+                    type: string
+                    enum: [text, number, currency, date, percent]
+                    default: text
+                  align:
+                    type: string
+                    enum: [left, right, center]
+            rows:
+              type: array
+              items:
+                type: object
+                additionalProperties: true
+                properties:
+                  _booking_ids:
+                    type: array
+                    items: { type: string }
+                    description: Optional per-row traceability link.
+            footer:
+              type: object
+              additionalProperties: true
+              description: Optional totals row keyed like `rows`.
+
+    ChartSpec:
+      allOf:
+        - $ref: '#/components/schemas/SpecCommon'
+        - type: object
+          required: [type, data]
+          properties:
+            type:
+              type: string
+              enum: [bar, line, donut]
+            data:
+              type: array
+              description: |
+                Data points. For multi-series bar/line charts set `series` on each point.
+                Donuts use `label` + `value` only.
+              items:
+                type: object
+                required: [label, value]
+                properties:
+                  label: { type: string, description: X-axis label or donut slice name. }
+                  value: { type: number }
+                  series: { type: string }
+                  booking_ids:
+                    type: array
+                    items: { type: string }
+            x_label: { type: string }
+            y_label: { type: string }
+            stacked: { type: boolean, default: false }
+
+    CatalogEntry:
+      type: object
+      required: [tab, type, title]
+      properties:
+        tab:
+          type: string
+          enum: [payments, accounts, investments, trustroom]
+        type: { $ref: '#/components/schemas/WidgetType' }
+        title: { type: string }
+        description: { type: string }
+        template:
+          $ref: '#/components/schemas/WidgetCreate'
+          description: Body to POST to `/dashboards/{id}/widgets` when the entry is added.
+
+    Document:
+      type: object
+      required: [id, filename, content_type, size_bytes, uploaded_at]
+      properties:
+        id: { type: string }
+        filename: { type: string }
+        content_type: { type: string, examples: [application/pdf] }
+        size_bytes: { type: integer }
+        description: { type: [string, 'null'] }
+        uploaded_at: { type: string, format: date-time }
+        sha256: { type: string }

@@ -1,0 +1,5 @@
+account_id,name,type,iban,currency,opening_date,opening_balance,current_balance,balance_date,interest_rate,purpose,savings_goal
+ACC-PRIV,Privatkonto,current,CH14 0888 8000 0077 4008 0,CHF,2023-12-01,12400.0,18338.26,2026-11-26,0.0,"Lohn- und Familienkonto, Hypothekarzinsen, alle Rechnungen",
+ACC-HOUSE,Sparkonto Haus,savings,CH22 0888 8000 0077 4119 7,CHF,2023-12-01,21500.0,19350.3,2026-11-26,0.25,Rücklage für Unterhalt und Nebenkosten des Hauses,Rücklage mind. CHF 20'000 (ca. 1.5 % des Hauswerts)
+ACC-SAV,Sparkonto Familie,savings,CH30 0888 8000 0077 4231 4,CHF,2023-12-01,26400.0,64134.6,2026-11-26,0.25,"Ferien, Reserve, Ausbildung Kinder",
+ACC-3A,Vorsorgekonto Säule 3a,pillar3a,CH38 0888 8000 0077 4343 1,CHF,2023-12-01,48300.0,70107.25,2026-11-26,0.75,Gebundene Vorsorge 3a (Marco),

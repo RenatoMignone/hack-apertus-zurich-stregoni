@@ -1,0 +1,140 @@
+payment_id,payment_type,status,execution_date,debit_account_id,payee_id,payee_name,payee_iban,amount,currency,amount_chf,message,booking_id
+PAY-0001,ebill,completed,2025-10-15,ACC-PRIV,P-KAUTION,KautionPlus AG,CH09 0023 3000 0002 3822 3,239.0,CHF,239.0,Mietkautionsversicherung 11/2025–10/2026,BK-01230
+PAY-0002,ebill,completed,2026-10-15,ACC-PRIV,P-KAUTION,KautionPlus AG,CH09 0023 3000 0002 3822 3,239.0,CHF,239.0,Mietkautionsversicherung 11/2026–10/2027,BK-02131
+PAY-0003,qr_bill,completed,2025-10-31,ACC-PRIV,P-UMZUG,Zügelhilfe Bern GmbH,CH13 0079 0000 0007 3148 2,480.0,CHF,480.0,"Umzug Länggasse – Breitenrain, 3 Std. mit Bus",BK-01263
+PAY-0004,ebill,completed,2025-11-10,ACC-PRIV,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH68 0079 0000 0004 1145 9,148.0,CHF,148.0,Hausrat young 11/2025–10/2026,BK-01294
+PAY-0005,ebill,completed,2026-11-10,ACC-PRIV,P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH68 0079 0000 0004 1145 9,152.0,CHF,152.0,Hausrat young 11/2026–10/2027,BK-02201
+PAY-0006,ebill,completed,2026-01-20,ACC-PRIV,P-EWB,Energie Wasser Bern,CH35 0023 5000 0003 6511 3,61.3,CHF,61.3,Strom Nov/Dez 2025,BK-01467
+PAY-0007,ebill,completed,2026-04-20,ACC-PRIV,P-EWB,Energie Wasser Bern,CH35 0023 5000 0003 6511 3,88.4,CHF,88.4,Strom Q1 2026,BK-01682
+PAY-0008,ebill,completed,2026-07-20,ACC-PRIV,P-EWB,Energie Wasser Bern,CH35 0023 5000 0003 6511 3,57.9,CHF,57.9,Strom Q2 2026,BK-01913
+PAY-0009,ebill,completed,2026-10-20,ACC-PRIV,P-EWB,Energie Wasser Bern,CH35 0023 5000 0003 6511 3,63.15,CHF,63.15,Strom Q3 2026,BK-02145
+PAY-0010,ebill,completed,2026-04-20,ACC-PRIV,P-SERAFE,Serafe AG,CH90 0839 0000 0003 8336 7,335.0,CHF,335.0,Haushaltabgabe Radio/TV 2026,BK-01683
+PAY-0011,ebill,completed,2023-12-22,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Januar 2024,BK-00041
+PAY-0012,direct_debit,completed,2023-12-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Dezember 2023,BK-00012
+PAY-0013,ebill,completed,2024-01-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Februar 2024,BK-00099
+PAY-0014,direct_debit,completed,2024-01-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Januar 2024,BK-00066
+PAY-0015,ebill,completed,2024-02-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie März 2024,BK-00149
+PAY-0016,direct_debit,completed,2024-02-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Februar 2024,BK-00116
+PAY-0017,ebill,completed,2024-03-22,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie April 2024,BK-00195
+PAY-0018,direct_debit,completed,2024-03-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile März 2024,BK-00165
+PAY-0019,ebill,completed,2024-04-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Mai 2024,BK-00252
+PAY-0020,direct_debit,completed,2024-04-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile April 2024,BK-00224
+PAY-0021,ebill,completed,2024-05-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Juni 2024,BK-00305
+PAY-0022,direct_debit,completed,2024-05-06,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Mai 2024,BK-00280
+PAY-0023,ebill,completed,2024-06-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Juli 2024,BK-00367
+PAY-0024,direct_debit,completed,2024-06-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juni 2024,BK-00328
+PAY-0025,ebill,completed,2024-07-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie August 2024,BK-00413
+PAY-0026,direct_debit,completed,2024-07-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juli 2024,BK-00389
+PAY-0027,ebill,completed,2024-08-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie September 2024,BK-00463
+PAY-0028,direct_debit,completed,2024-08-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile August 2024,BK-00433
+PAY-0029,ebill,completed,2024-09-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Oktober 2024,BK-00514
+PAY-0030,direct_debit,completed,2024-09-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile September 2024,BK-00483
+PAY-0031,ebill,completed,2024-10-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie November 2024,BK-00567
+PAY-0032,direct_debit,completed,2024-10-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Oktober 2024,BK-00539
+PAY-0033,ebill,completed,2024-11-22,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,281.3,CHF,281.3,Prämie Dezember 2024,BK-00616
+PAY-0034,direct_debit,completed,2024-11-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile November 2024,BK-00589
+PAY-0035,ebill,completed,2024-12-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Januar 2025,BK-00666
+PAY-0036,direct_debit,completed,2024-12-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Dezember 2024,BK-00644
+PAY-0037,ebill,completed,2025-01-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Februar 2025,BK-00723
+PAY-0038,direct_debit,completed,2025-01-06,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Januar 2025,BK-00690
+PAY-0039,ebill,completed,2025-02-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie März 2025,BK-00779
+PAY-0040,direct_debit,completed,2025-02-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Februar 2025,BK-00748
+PAY-0041,ebill,completed,2025-03-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie April 2025,BK-00834
+PAY-0042,direct_debit,completed,2025-03-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile März 2025,BK-00798
+PAY-0043,ebill,completed,2025-04-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Mai 2025,BK-00883
+PAY-0044,direct_debit,completed,2025-04-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile April 2025,BK-00858
+PAY-0045,ebill,completed,2025-05-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Juni 2025,BK-00943
+PAY-0046,direct_debit,completed,2025-05-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Mai 2025,BK-00902
+PAY-0047,ebill,completed,2025-06-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Juli 2025,BK-00995
+PAY-0048,direct_debit,completed,2025-06-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juni 2025,BK-00963
+PAY-0049,ebill,completed,2025-07-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie August 2025,BK-01047
+PAY-0050,direct_debit,completed,2025-07-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juli 2025,BK-01017
+PAY-0051,ebill,completed,2025-08-22,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie September 2025,BK-01111
+PAY-0052,direct_debit,completed,2025-08-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile August 2025,BK-01078
+PAY-0053,ebill,completed,2025-09-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Oktober 2025,BK-01188
+PAY-0054,direct_debit,completed,2025-09-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile September 2025,BK-01153
+PAY-0055,ebill,completed,2025-10-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie November 2025,BK-01247
+PAY-0056,direct_debit,completed,2025-10-06,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Oktober 2025,BK-01212
+PAY-0057,ebill,completed,2025-11-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,296.8,CHF,296.8,Prämie Dezember 2025,BK-01333
+PAY-0058,direct_debit,completed,2025-11-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile November 2025,BK-01278
+PAY-0059,ebill,completed,2025-11-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet November 2025,BK-01306
+PAY-0060,ebill,completed,2025-12-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Januar 2026,BK-01410
+PAY-0061,direct_debit,completed,2025-12-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Dezember 2025,BK-01362
+PAY-0062,ebill,completed,2025-12-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Dezember 2025,BK-01383
+PAY-0063,ebill,completed,2026-01-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Februar 2026,BK-01476
+PAY-0064,direct_debit,completed,2026-01-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Januar 2026,BK-01434
+PAY-0065,ebill,completed,2026-01-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Januar 2026,BK-01456
+PAY-0066,ebill,completed,2026-02-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie März 2026,BK-01552
+PAY-0067,direct_debit,completed,2026-02-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Februar 2026,BK-01509
+PAY-0068,ebill,completed,2026-02-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Februar 2026,BK-01534
+PAY-0069,direct_debit,completed,2026-02-02,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Februar 2026,BK-01504
+PAY-0070,ebill,completed,2026-03-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie April 2026,BK-01617
+PAY-0071,direct_debit,completed,2026-03-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile März 2026,BK-01579
+PAY-0072,ebill,completed,2026-03-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet März 2026,BK-01601
+PAY-0073,direct_debit,completed,2026-03-02,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo März 2026,BK-01573
+PAY-0074,ebill,completed,2026-04-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Mai 2026,BK-01692
+PAY-0075,direct_debit,completed,2026-04-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile April 2026,BK-01653
+PAY-0076,ebill,completed,2026-04-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet April 2026,BK-01665
+PAY-0077,direct_debit,completed,2026-04-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo April 2026,BK-01643
+PAY-0078,ebill,completed,2026-05-22,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Juni 2026,BK-01760
+PAY-0079,direct_debit,completed,2026-05-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Mai 2026,BK-01724
+PAY-0080,ebill,completed,2026-05-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Mai 2026,BK-01742
+PAY-0081,direct_debit,completed,2026-05-04,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Mai 2026,BK-01721
+PAY-0082,ebill,completed,2026-06-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Juli 2026,BK-01848
+PAY-0083,direct_debit,completed,2026-06-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juni 2026,BK-01799
+PAY-0084,ebill,completed,2026-06-15,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Juni 2026,BK-01825
+PAY-0085,direct_debit,completed,2026-06-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Juni 2026,BK-01791
+PAY-0086,ebill,completed,2026-07-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie August 2026,BK-01927
+PAY-0087,direct_debit,completed,2026-07-06,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Juli 2026,BK-01881
+PAY-0088,ebill,completed,2026-07-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Juli 2026,BK-01899
+PAY-0089,direct_debit,completed,2026-07-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Juli 2026,BK-01874
+PAY-0090,ebill,completed,2026-08-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie September 2026,BK-02000
+PAY-0091,direct_debit,completed,2026-08-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile August 2026,BK-01961
+PAY-0092,ebill,completed,2026-08-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet August 2026,BK-01978
+PAY-0093,direct_debit,completed,2026-08-03,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo August 2026,BK-01957
+PAY-0094,ebill,completed,2026-09-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Oktober 2026,BK-02070
+PAY-0095,direct_debit,completed,2026-09-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile September 2026,BK-02031
+PAY-0096,ebill,completed,2026-09-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet September 2026,BK-02045
+PAY-0097,direct_debit,completed,2026-09-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo September 2026,BK-02023
+PAY-0098,ebill,completed,2026-10-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie November 2026,BK-02153
+PAY-0099,direct_debit,completed,2026-10-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Oktober 2026,BK-02099
+PAY-0100,ebill,completed,2026-10-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Oktober 2026,BK-02128
+PAY-0101,direct_debit,completed,2026-10-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Oktober 2026,BK-02092
+PAY-0102,ebill,completed,2026-11-24,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,399.4,CHF,399.4,Prämie Dezember 2026,BK-02238
+PAY-0103,direct_debit,completed,2026-11-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile November 2026,BK-02193
+PAY-0104,ebill,completed,2026-11-16,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet November 2026,BK-02216
+PAY-0105,direct_debit,completed,2026-11-02,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo November 2026,BK-02182
+PAY-0106,qr_bill,completed,2024-02-12,ACC-PRIV,P-UNI,Universität Bern,CH86 0023 3000 0004 2346 5,780.0,CHF,780.0,Semestergebühren FS 2024,BK-00124
+PAY-0107,qr_bill,completed,2024-08-12,ACC-PRIV,P-UNI,Universität Bern,CH86 0023 3000 0004 2346 5,780.0,CHF,780.0,Semestergebühren HS 2024,BK-00446
+PAY-0108,qr_bill,completed,2025-02-10,ACC-PRIV,P-UNI,Universität Bern,CH86 0023 3000 0004 2346 5,780.0,CHF,780.0,Semestergebühren FS 2025,BK-00758
+PAY-0109,qr_bill,completed,2025-08-11,ACC-PRIV,P-UNI,Universität Bern,CH86 0023 3000 0004 2346 5,780.0,CHF,780.0,Semestergebühren HS 2025,BK-01091
+PAY-0110,ebill,completed,2024-10-07,ACC-PRIV,P-DERMA,Dermatologie am Bärenplatz,CH83 0900 0000 0005 8579 3,184.6,CHF,184.6,Konsultation 18.09.2024,BK-00540
+PAY-0111,qr_bill,completed,2025-03-24,ACC-PRIV,P-DENT,Zahnarztpraxis Länggasse,CH71 0070 0000 0006 6441 9,168.0,CHF,168.0,Kontrolle + Dentalhygiene 2025,BK-00833
+PAY-0112,qr_bill,completed,2026-06-08,ACC-PRIV,P-DENT,Zahnarztpraxis Länggasse,CH71 0070 0000 0006 6441 9,212.5,CHF,212.5,Kontrolle + Dentalhygiene 2026,BK-01807
+PAY-0113,qr_bill,completed,2024-04-30,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,96.4,CHF,96.4,"Steuern 2023, Schlussrechnung",BK-00263
+PAY-0114,qr_bill,completed,2025-04-30,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,142.85,CHF,142.85,"Steuern 2024, Schlussrechnung",BK-00894
+PAY-0115,qr_bill,completed,2026-05-29,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,1180.0,CHF,1180.0,"Steuern 2026, 1. Rate (provisorisch)",BK-01781
+PAY-0116,qr_bill,completed,2026-08-31,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,1180.0,CHF,1180.0,"Steuern 2026, 2. Rate (provisorisch)",BK-02020
+PAY-0117,qr_bill,completed,2026-10-30,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,925.3,CHF,925.3,"Steuern 2025, Schlussrechnung",BK-02174
+PAY-0118,direct_debit,completed,2025-11-03,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,620.0,CHF,620.0,"IKEA Ratenkauf, Rate 1/3",BK-01272
+PAY-0119,direct_debit,completed,2025-12-03,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,620.0,CHF,620.0,"IKEA Ratenkauf, Rate 2/3",BK-01357
+PAY-0120,direct_debit,completed,2026-01-05,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,620.0,CHF,620.0,"IKEA Ratenkauf, Rate 3/3",BK-01433
+PAY-0121,direct_debit,completed,2026-01-15,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 1/6",BK-01458
+PAY-0122,direct_debit,completed,2026-02-16,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 2/6",BK-01533
+PAY-0123,direct_debit,completed,2026-03-16,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 3/6",BK-01600
+PAY-0124,direct_debit,completed,2026-04-15,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 4/6",BK-01669
+PAY-0125,direct_debit,completed,2026-05-15,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 5/6",BK-01740
+PAY-0126,direct_debit,completed,2026-06-15,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.0,CHF,89.0,"Interdiscount Finanzierung, Rate 6/6",BK-01824
+PAY-0127,direct_debit,completed,2024-11-29,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,89.9,CHF,89.9,"Zalando, Zahlung nach 30 Tagen",BK-00632
+PAY-0128,direct_debit,completed,2025-04-22,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,64.95,CHF,64.95,"Zalando, Zahlung nach 30 Tagen",BK-00877
+PAY-0129,direct_debit,completed,2026-03-09,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,129.8,CHF,129.8,"Zalando, Zahlung nach 30 Tagen",BK-01584
+PAY-0130,direct_debit,completed,2026-10-13,ACC-PRIV,P-KLARNA,Klarna Bank AB,CH90 0076 9000 0005 3219 9,74.9,CHF,74.9,"About You, Zahlung nach 30 Tagen",BK-02123
+PAY-0131,qr_bill,pending,2026-11-30,ACC-PRIV,P-STEUER,Steuerverwaltung des Kantons Bern,CH12 0900 0000 0004 9016 8,1180.0,CHF,1180.0,"Steuern 2026, 3. Rate (provisorisch)",
+PAY-0132,ebill,pending,2026-12-23,ACC-PRIV,P-KPT,KPT Krankenkasse AG,CH53 0630 0000 0002 6349 3,421.6,CHF,421.6,Prämie Januar 2027,
+PAY-0133,direct_debit,pending,2026-12-01,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Dezember 2026,
+PAY-0134,direct_debit,pending,2027-01-04,ACC-PRIV,P-ACTIV,Activ Fitness AG,CH96 0070 0000 0005 6076 1,79.0,CHF,79.0,Abo Januar 2027,
+PAY-0135,direct_debit,pending,2026-12-07,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Dezember 2026,
+PAY-0136,direct_debit,pending,2027-01-05,ACC-PRIV,P-WINGO,Wingo (Swisscom Schweiz AG),CH68 0630 0000 0003 0803 7,34.95,CHF,34.95,Abo Mobile Januar 2027,
+PAY-0137,ebill,pending,2026-12-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Dezember 2026,
+PAY-0138,ebill,pending,2027-01-14,ACC-PRIV,P-SUNRISE,Sunrise GmbH,CH75 0023 5000 0003 4848 5,49.9,CHF,49.9,Internet Januar 2027,
+PAY-0139,ebill,pending,2027-01-20,ACC-PRIV,P-EWB,Energie Wasser Bern,CH35 0023 5000 0003 6511 3,64.8,CHF,64.8,Strom Q4 2026,

@@ -1,0 +1,124 @@
+<!doctype html>
+<!--
+  Example TrustRoom UI. The e-banking loads this page in an iframe (TRUSTROOM_URL) and talks to it
+  via postMessage (docs/trustroom-panel-context.md). Questions go to our own backend (app.py, POST
+  /api/chat), which calls Apertus with tools. Plain HTML and JS, no build step.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example TrustRoom</title>
+  <style>
+    body { margin: 0; padding: 16px; font: 14px/1.4 system-ui, sans-serif; color: #0b1e2a; background: #fff; }
+    h1 { font-size: 18px; margin: 0 0 4px; }
+    h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #2e6b66; margin: 16px 0 6px; }
+    button { margin: 0 6px 6px 0; padding: 6px 10px; border: 1px solid #2e6b66; border-radius: 6px; background: #fff; color: #2e6b66; cursor: pointer; }
+    button:hover { background: #2e6b66; color: #fff; }
+    input { width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 6px; font: inherit; border: 1px solid #ccc; border-radius: 6px; }
+    pre { margin: 0; padding: 8px; background: #f0f0f0; border-radius: 6px; font-size: 12px; white-space: pre-wrap; word-break: break-all; }
+    #where { color: #666; margin-bottom: 12px; }
+    #chat { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+    .msg { padding: 8px 10px; border-radius: 8px; max-width: 85%; white-space: pre-wrap; }
+    .user { align-self: flex-end; background: #2e6b66; color: #fff; }
+    .assistant { align-self: flex-start; background: #f0f0f0; }
+    .error { align-self: flex-start; background: #fdecea; color: #a12622; }
+    #log { max-height: 200px; overflow: auto; }
+    .in { color: #2e6b66; } .out { color: #8a4b00; }
+  </style>
+</head>
+<body>
+  <h1>Example TrustRoom</h1>
+  <div id="where">Waiting for the e-banking…</div>
+
+  <div id="chat"></div>
+  <form id="ask">
+    <input id="question" placeholder="Ask something, e.g. “How much money do I have?”" autocomplete="off">
+  </form>
+
+  <details>
+    <summary>Protocol debugging</summary>
+    <h2>Send to the e-banking</h2>
+    <button id="request-context">request-context</button>
+    <button id="close">close</button>
+    <input id="path" value="/movements?account=ACC-PRIV&from=2026-10-01&to=2026-10-31&q=migros">
+    <button id="navigate">navigate</button>
+    <h2>Context</h2>
+    <pre id="context">–</pre>
+    <h2>Message log</h2>
+    <pre id="log"></pre>
+  </details>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    // --- 1. Talking to the e-banking (postMessage protocol) ------------------------------
+
+    // The e-banking that embeds us. Only talk to (and listen to) that origin.
+    const host = new URL(document.referrer || location.href).origin;
+    let context = null;  // where the customer is right now; updated on every page change
+
+    function send(type, payload = {}) {
+      parent.postMessage({ protocol: "trustroom", version: 1, type, payload }, host);
+      log("▶", type, payload);
+    }
+
+    window.addEventListener("message", (event) => {
+      if (event.origin !== host || event.data?.protocol !== "trustroom") return;
+      const { type, payload } = event.data;
+      log("◀", type, payload);
+      if (type === "context") {
+        context = payload;
+        $("context").textContent = JSON.stringify(context, null, 2);
+        const account = context.account ? `, account ${context.account.name}` : "";
+        $("where").textContent = `You are on “${context.page.title}”${account}.`;
+      }
+    });
+
+    function log(arrow, type, payload) {
+      const line = document.createElement("span");
+      line.className = arrow === "◀" ? "in" : "out";
+      line.textContent = `${arrow} ${type} ${JSON.stringify(payload)}\n`;
+      $("log").prepend(line);
+    }
+
+    // Handshake: tell the e-banking we are listening; it answers with the context.
+    send("ready");
+
+    // --- 2. Chatting (our backend calls Apertus) -----------------------------------------
+
+    const messages = [];  // the conversation, sent in full with every question
+
+    $("ask").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const question = $("question").value.trim();
+      if (!question || !context) return;
+      $("question").value = "";
+      messages.push({ role: "user", content: question });
+      show("user", question);
+
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages, context }),
+      });
+      const body = await response.json();
+      if (!response.ok) return show("error", body.detail ?? response.statusText);
+      messages.push({ role: "assistant", content: body.reply });
+      show("assistant", body.reply);
+    });
+
+    function show(role, text) {
+      const bubble = document.createElement("div");
+      bubble.className = `msg ${role}`;
+      bubble.textContent = text;  // textContent, never innerHTML: the reply is untrusted text
+      $("chat").append(bubble);
+    }
+
+    // --- Debug buttons ---------------------------------------------------------------------
+
+    $("request-context").onclick = () => send("request-context");
+    $("close").onclick = () => send("close");
+    $("navigate").onclick = () => send("navigate", { path: $("path").value });
+  </script>
+</body>
+</html>

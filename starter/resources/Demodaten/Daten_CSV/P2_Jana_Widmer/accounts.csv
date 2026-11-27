@@ -1,0 +1,4 @@
+account_id,name,type,iban,currency,opening_date,opening_balance,current_balance,balance_date,interest_rate,purpose,savings_goal
+ACC-PRIV,Privatkonto,current,CH41 0888 8000 0055 2004 0,CHF,2023-12-01,1240.0,8519.38,2026-11-26,0.0,"Lohnkonto, Alltag (bis 08/2025 Studierendenkonto)",
+ACC-SAV,Sparkonto,savings,CH49 0888 8000 0055 2115 7,CHF,2023-12-01,2350.0,4919.2,2026-11-26,0.25,Notgroschen und Ferien,Notgroschen CHF 10'000
+ACC-3A,Vorsorgekonto Säule 3a,pillar3a,CH57 0888 8000 0055 2227 4,CHF,2026-01-05,0.0,3300.0,2026-11-26,0.75,"Gebundene Vorsorge 3a, eröffnet 01/2026",

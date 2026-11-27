@@ -1,0 +1,6 @@
+account_id,name,type,iban,currency,opening_date,opening_balance,current_balance,balance_date,interest_rate,purpose,savings_goal
+ACC-PRIV,Privatkonto,current,CH06 0888 8000 0044 1002 0,CHF,2023-12-01,14000.0,9716.33,2026-11-26,0.0,"Lohnkonto, Alltag, Zahlungen",
+ACC-TAX,Sparkonto Steuern,savings,CH14 0888 8000 0044 1113 7,CHF,2023-12-01,9200.0,4638.04,2026-11-26,0.25,Rücklage für Steuerrechnungen,
+ACC-RES,Sparkonto Rücklagen,savings,CH22 0888 8000 0044 1225 4,CHF,2023-12-01,4800.0,6779.02,2026-11-26,0.25,"Jahreskosten (Versicherungen, Auto, Ferien, Zahnarzt)",
+ACC-LT,Sparkonto Langfristig,savings,CH30 0888 8000 0044 1337 1,CHF,2023-12-01,19300.0,37566.29,2026-11-26,0.4,Langfristiger Vermögensaufbau,Japanreise 2027: CHF 12'000
+ACC-3A,Vorsorgekonto Säule 3a,pillar3a,CH38 0888 8000 0044 1448 8,CHF,2023-12-01,33650.0,55899.65,2026-11-26,0.75,Gebundene Vorsorge 3a (Maximalbetrag 2026: CHF 7'258),

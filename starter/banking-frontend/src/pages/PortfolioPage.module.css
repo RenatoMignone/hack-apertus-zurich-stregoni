@@ -1,0 +1,101 @@
+.header {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.depotName {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.depotMeta {
+  color: var(--color-text-muted);
+}
+
+.total {
+  margin-top: 12px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.body {
+  margin-top: 24px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.table .right {
+  text-align: right;
+}
+
+.table td.right {
+  font-weight: 700;
+}
+
+.table tfoot td {
+  font-weight: 700;
+}
+
+.sub {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.positive {
+  color: var(--color-credit);
+}
+
+.negative {
+  color: var(--color-error);
+}
+
+.donuts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.periods {
+  margin-bottom: 20px;
+}
+
+.kpis {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 20px;
+}
+
+.kpiLabel {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.kpiValue {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.muted {
+  margin: 0;
+  color: var(--color-text-muted);
+}

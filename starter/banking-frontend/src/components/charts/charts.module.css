@@ -1,0 +1,89 @@
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.axisText {
+  fill: var(--color-text-muted);
+  font-size: 11px;
+}
+
+.grid {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.axisLine {
+  stroke: var(--color-border-strong);
+  stroke-width: 1;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+.donutWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donut {
+  width: 220px;
+  max-width: 100%;
+}
+
+.donutCurrency {
+  fill: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.donutTotal {
+  fill: var(--color-text);
+  font-size: 15px;
+}
+
+.donutLegend {
+  width: 100%;
+  margin-top: 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.donutLegend li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.donutLabel {
+  flex: 1;
+}
+
+.donutValue {
+  text-align: right;
+  white-space: nowrap;
+}

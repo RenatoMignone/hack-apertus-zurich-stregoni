@@ -1,0 +1,5 @@
+depot_id,depot_name,isin,name,asset_class,region,sector,currency,quantity,price,price_date,fx_rate,market_value_chf,weight_pct
+DEPOT-01,Depot 0418-2210.01,IE00B4L5Y983,iShares Core MSCI World UCITS ETF (Acc),Aktien,Welt,Diversifiziert,USD,374.5792,101.07,2026-11-26,0.8143,30828.36,42.51
+DEPOT-01,Depot 0418-2210.01,CH0237935652,iShares Core SPI ETF (CH),Aktien,Schweiz,Diversifiziert,CHF,151.0178,151.01,2026-11-26,,22805.2,31.45
+DEPOT-01,Depot 0418-2210.01,IE00BKM4GZ66,iShares Core MSCI EM IMI UCITS ETF (Acc),Aktien,Schwellenländer,Diversifiziert,USD,401.7218,42.55,2026-11-26,0.8143,13919.04,19.2
+DEPOT-01,Depot 0418-2210.01,CH0016999846,iShares Swiss Domestic Government Bond 3-7 ETF (CH),Obligationen,Schweiz,Staatsanleihen,CHF,75.4083,65.78,2026-11-26,,4960.36,6.84

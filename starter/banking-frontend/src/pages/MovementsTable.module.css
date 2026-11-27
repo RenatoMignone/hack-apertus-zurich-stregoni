@@ -1,0 +1,103 @@
+.frame {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th {
+  padding: 16px 12px;
+  background: var(--color-surface-muted);
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+.table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+.right {
+  text-align: right !important;
+  white-space: nowrap;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.row {
+  cursor: pointer;
+}
+.row:hover {
+  background: var(--color-surface-muted);
+}
+.chevronCell {
+  width: 44px;
+  padding-right: 0 !important;
+}
+.chevron {
+  border: 0;
+  background: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+}
+.strong {
+  font-weight: 600;
+}
+.sub {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+.credit {
+  color: var(--color-credit);
+  font-weight: 600;
+}
+.debit {
+  font-weight: 600;
+}
+.details td {
+  background: var(--color-surface-muted);
+  padding-left: 56px;
+}
+.detailList {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 6px 16px;
+  margin: 0;
+}
+.detailList dt {
+  color: var(--color-text-muted);
+}
+.detailList dd {
+  margin: 0;
+}
+.empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+.pager {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 12px;
+}
+.pager button {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-primary);
+  padding: 6px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pager button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

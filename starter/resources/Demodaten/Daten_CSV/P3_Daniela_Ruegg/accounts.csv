@@ -1,0 +1,4 @@
+account_id,name,type,iban,currency,opening_date,opening_balance,current_balance,balance_date,interest_rate,purpose,savings_goal
+ACC-PRIV,Privatkonto,current,CH76 0888 8000 0066 3006 0,CHF,2023-12-01,742.3,3075.16,2026-11-26,0.0,"Lohnkonto, Alltag, alle Rechnungen",
+ACC-SAV,Sparkonto Notgroschen,savings,CH84 0888 8000 0066 3117 7,CHF,2023-12-01,1180.0,284.25,2026-11-26,0.25,Reserve für Unvorhergesehenes,Notgroschen CHF 3'000
+ACC-KID,Jugendsparkonto Lina,savings,CH92 0888 8000 0066 3229 4,CHF,2023-12-01,2380.0,3470.5,2026-11-26,0.5,Geschenke der Grosseltern für Lina (nicht antasten),

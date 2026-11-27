@@ -1,0 +1,1 @@
+card_transaction_id,card_id,transaction_date,booking_date,merchant_text,merchant_name,channel,country,original_amount,original_currency,fx_rate,fx_fee_chf,amount_chf,statement_id

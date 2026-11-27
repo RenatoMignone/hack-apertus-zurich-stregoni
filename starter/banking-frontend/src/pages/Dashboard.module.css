@@ -1,0 +1,149 @@
+.switcher {
+  position: relative;
+}
+
+.switcherButton {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.switcherButton:hover {
+  background: var(--color-primary-soft);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 20;
+  min-width: 300px;
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-pop);
+}
+
+.entry {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entryName {
+  flex: 1;
+  padding: 12px 20px;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.entryName:hover,
+.entryActive {
+  background: var(--color-background);
+}
+
+.badge {
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.iconButton {
+  display: flex;
+  padding: 8px;
+  border: 0;
+  background: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  z-index: 21;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 4px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-pop);
+}
+
+.submenu button {
+  padding: 10px 16px;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.submenu button:hover {
+  background: var(--color-background);
+}
+
+.generate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  background: none;
+  color: var(--color-primary);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+}
+
+.catalogList {
+  display: grid;
+  gap: 12px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.catalogEntry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.catalogTitle {
+  font-weight: 600;
+}
+
+.catalogDescription {
+  margin-top: 4px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.mutationError {
+  margin-bottom: 16px;
+}

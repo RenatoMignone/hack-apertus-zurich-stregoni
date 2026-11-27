@@ -1,0 +1,2 @@
+card_id,type,product,masked_number,linked_account,holder,valid_until,status,monthly_limit_chf,billing
+CARD-DEBIT,debit,Debit Mastercard,5349 •••• •••• 6120,ACC-PRIV,Marco Baumann,2028-04,active,6000,direkt über Privatkonto

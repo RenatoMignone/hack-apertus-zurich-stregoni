@@ -1,0 +1,27 @@
+due_date,debit_account_id,type,payee_name,amount,currency,description,source_id
+2026-11-27,ACC-PRIV,standing_order,Wohnbau Sihlfeld AG Liegenschaftsverwaltung,2800.0,CHF,Miete Dezember 2026,SO-RENT
+2026-12-01,ACC-PRIV,direct_debit,Fitnesspark Zürich Stadelhofen,119.0,CHF,Mitgliedschaft Dezember 2026,PAY-0230
+2026-12-03,ACC-PRIV,direct_debit,Salt Mobile SA,39.95,CHF,Abo Mobile Dezember 2026,PAY-0228
+2026-12-07,ACC-PRIV,standing_order,Depot 0418-2210.01,600.0,CHF,ETF-Sparplan,SO-ETF
+2026-12-10,ACC-PRIV,qr_bill,Ferienwohnungen Engadin AG,600.0,CHF,Anzahlung Ferienwohnung 02.–09.01.2027,PAY-0233
+2026-12-14,ACC-PRIV,ebill,Swisscom (Schweiz) AG,94.0,CHF,Rechnung inOne home Dezember 2026,PAY-0226
+2026-12-15,ACC-PRIV,domestic,Glückskette,200.0,CHF,Spende Weihnachten 2026,PAY-0234
+2026-12-18,ACC-PRIV,account_transfer,Vorsorgekonto Säule 3a,58.0,CHF,Restbetrag 3a 2026 (Max. CHF 7'258),MANUAL-3A
+2026-12-21,ACC-PRIV,direct_debit,Visa Gold Abrechnung November 2026,3301.74,CHF,"Betrag vorläufig (Abrechnung per 30.11.2026, weitere Umsätze möglich)",STMT-2026-11
+2026-12-23,ACC-PRIV,ebill,Mythen Krankenversicherung AG,489.9,CHF,Prämie Januar 2027,PAY-0225
+2026-12-28,ACC-PRIV,standing_order,Wohnbau Sihlfeld AG Liegenschaftsverwaltung,2800.0,CHF,Miete Januar 2027,SO-RENT
+2026-12-28,ACC-PRIV,standing_order,Sparkonto Steuern,1400.0,CHF,Rücklage Steuern,SO-TAX
+2026-12-28,ACC-PRIV,standing_order,Sparkonto Rücklagen,600.0,CHF,Rücklage Jahreskosten,SO-RES
+2026-12-28,ACC-PRIV,standing_order,Sparkonto Langfristig,500.0,CHF,Sparen langfristig / Japanreise,SO-LT
+2026-12-28,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,600.0,CHF,Einzahlung Säule 3a,SO-3A
+2027-01-04,ACC-PRIV,direct_debit,Salt Mobile SA,39.95,CHF,Abo Mobile Januar 2027,PAY-0229
+2027-01-04,ACC-PRIV,direct_debit,Fitnesspark Zürich Stadelhofen,119.0,CHF,Mitgliedschaft Januar 2027,PAY-0231
+2027-01-05,ACC-PRIV,standing_order,Depot 0418-2210.01,600.0,CHF,ETF-Sparplan,SO-ETF
+2027-01-12,ACC-PRIV,ebill,Swisscom (Schweiz) AG,94.0,CHF,Rechnung inOne home Januar 2027,PAY-0227
+2027-01-12,ACC-RES,ebill,Die Mobiliar Versicherungsgesellschaft AG,424.8,CHF,Hausrat- & Privathaftpflicht 2027,PAY-0235
+2027-01-15,ACC-PRIV,ebill,EKZ Elektrizitätswerke des Kantons Zürich,168.25,CHF,Strom Q4 2026,PAY-0232
+2027-01-20,ACC-TAX,qr_bill,Steueramt der Stadt Zürich,1980.0,CHF,Schlussrechnung Staats- und Gemeindesteuern 2025,PAY-0236
+2027-01-26,ACC-PRIV,standing_order,Sparkonto Steuern,1400.0,CHF,Rücklage Steuern,SO-TAX
+2027-01-26,ACC-PRIV,standing_order,Sparkonto Rücklagen,600.0,CHF,Rücklage Jahreskosten,SO-RES
+2027-01-26,ACC-PRIV,standing_order,Sparkonto Langfristig,500.0,CHF,Sparen langfristig / Japanreise,SO-LT
+2027-01-26,ACC-PRIV,standing_order,Vorsorgekonto Säule 3a,600.0,CHF,Einzahlung Säule 3a,SO-3A

@@ -1,0 +1,17 @@
+payee_id,name,iban,city,country,first_payment_date,last_payment_date,payments_count,is_new_payee_last_90_days
+P-RENT,Wohnbaugenossenschaft Talgut,CH09 0630 0000 0001 6941 9,Winterthur,CH,2023-12-28,2026-10-28,35,false
+P-ASSURA,Assura-Basis SA,CH06 0070 0000 0002 4296 0,Pully,CH,2023-12-22,2026-11-24,36,false
+P-KITA,Kita Sunneschii GmbH,CH62 0023 3000 0002 6801 8,Winterthur,CH,2023-12-11,2025-07-10,20,false
+P-HORT,"Stadt Winterthur, Betreuung Schule",CH71 0630 0000 0003 3465 8,Winterthur,CH,2025-08-11,2026-11-10,16,false
+P-LEBARA,Lebara Schweiz,CH34 0076 9000 0003 5812 2,Zürich,CH,2023-12-06,2026-11-06,36,false
+P-SUNRISE,Sunrise GmbH,CH95 0900 0000 0004 0525 4,Opfikon,CH,2023-12-15,2026-11-16,36,false
+P-SW,Stadtwerk Winterthur,CH07 0900 0000 0004 6435 9,Winterthur,CH,2024-01-22,2026-10-22,12,false
+P-SERAFE,Serafe AG,CH14 0680 0000 0005 4959 5,Fehraltorf,CH,2024-02-19,2026-11-18,12,false
+P-MOB,Die Mobiliar Versicherungsgesellschaft AG,CH50 0900 0000 0005 8037 3,Bern,CH,2024-03-12,2026-03-12,3,false
+P-STEUER,Steueramt Winterthur,CH94 0900 0000 0006 6271 0,Winterthur,CH,2023-12-20,2026-11-20,38,false
+P-RATEN,Ratenwerk Finanz AG,CH19 0076 9000 0007 3853 5,Zug,CH,2025-04-07,2026-11-05,20,false
+P-KLARNA,Klarna Bank AB,CH27 0900 0000 0008 0815 5,Stockholm (SE),CH,2024-09-30,2026-09-28,3,false
+P-SCHWIMM,Schwimmschule Delfin Winterthur,CH06 0076 9000 0008 8203 8,Winterthur,CH,2024-03-04,2026-09-01,6,false
+P-ZAHN,Zahnarztpraxis Neuwiesen,CH97 3088 8000 0123 4567 8,Winterthur,CH,,,0,true
+P-ARZT,Kinderarztpraxis Rosenberg,CH27 0680 0000 0009 7063 2,Winterthur,CH,2024-02-12,2026-01-19,4,false
+P-TURN,Kinderturnen TV Töss,CH58 0630 0000 0010 5870 6,Winterthur,CH,2026-08-24,2026-08-24,1,false

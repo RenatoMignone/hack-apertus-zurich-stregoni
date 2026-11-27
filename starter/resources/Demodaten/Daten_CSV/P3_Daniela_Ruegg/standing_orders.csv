@@ -1,0 +1,3 @@
+standing_order_id,debit_account_id,payee_id,credit_account_id,payee_name,amount,frequency,day,start_date,end_date,next_execution_date,message,status
+SO-RENT,ACC-PRIV,P-RENT,,Wohnbaugenossenschaft Talgut,1640.0,monthly,28,2022-09-28,,2026-11-27,"Miete 3 Zi. Zürcherstrasse 214, für Folgemonat",active
+SO-STEUER,ACC-PRIV,P-STEUER,,Steueramt Winterthur,95.0,monthly,20,2023-01-20,,2026-12-21,Steuern Vorauszahlung,active
